@@ -1,0 +1,258 @@
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 14px;
+}
+body ._container {
+  width: 1290px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  line-height: 1.5;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.pad10_0 {
+  padding: 10px 0;
+}
+
+.pad20_0 {
+  padding: 20px 0;
+}
+
+.pad30_0 {
+  padding: 30px 0;
+}
+
+.padtp30_0 {
+  padding: 30px 0 0 0;
+}
+
+.padtp50_0 {
+  padding: 50px 0 0 0;
+}
+
+.padbt0_20 {
+  padding: 0 0 20px 0;
+}
+
+.padbt0_30 {
+  padding: 0 0 30px 0;
+}
+
+.padbt0_50 {
+  padding: 0 0 50px 0;
+}
+
+.pad30_50 {
+  padding: 30px 0 50px 0;
+}
+
+.pad50_0 {
+  padding: 50px 0;
+}
+
+._form_search form {
+  position: relative;
+}
+._form_search input[type=text] {
+  width: 614px;
+  background: #FFFFFF;
+  border: 0.5px solid #797979;
+  border-radius: 40px;
+  height: 40px;
+  padding: 0 70px 0 20px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+}
+._form_search input[type=text]::placeholder {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+}
+._form_search ._submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+._form_search ._submit img {
+  margin: 7px 20px;
+}
+._form_search ._submit input {
+  border: none;
+  width: 66px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  height: 40px;
+}
+
+._support ._img, ._account ._img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+._support span, ._account span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.boxscroll {
+  height: 545px;
+  width: 250px;
+  padding-right: 20px;
+}
+.boxscroll span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #C6C6C6;
+  display: block;
+}
+.boxscroll ul li a {
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  color: #434343 !important;
+  text-transform: none;
+}
+
+.nicescroll-rails {
+  background: #EDEDED;
+  border-radius: 5px;
+  width: 4px !important;
+}
+
+.nicescroll-cursors {
+  background-color: #FFC5C5 !important;
+  border-radius: 5px !important;
+  width: 4px !important;
+  border: none !important;
+}
+
+.menu {
+  border-top: 1px solid #106909;
+  border-bottom: 1px solid #106909;
+}
+.menu ul > li {
+  padding: 10px 0;
+  position: relative;
+}
+.menu ul > li a {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000000;
+}
+.menu ul > li .open {
+  display: none;
+  position: absolute;
+  width: 1290px;
+  top: 47px;
+  padding: 15px;
+  background-color: #fff;
+}
+.menu ul > li.dropdown a.top {
+  background: url("../img/arrowright.svg") no-repeat right center;
+  padding-right: 15px;
+}
+.menu ul > li.top {
+  border-bottom: 2px solid transparent;
+}
+.menu ul > li.top:hover, .menu ul > li.top.active {
+  border-bottom: 2px solid #FF326C;
+}
+.menu ul > li.top:hover .open, .menu ul > li.top.active .open {
+  display: flex;
+}
+.menu ._right {
+  width: calc(100% - 250px);
+}
+.menu ._right a.banner {
+  width: 32%;
+  margin: 0 0.5%;
+  padding-right: 0;
+}
+
+.footer-top {
+  background: #535252;
+}
+.footer-top ._item {
+  width: 300px;
+}
+.footer-top ._item:nth-child(1) p {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer-top ._item h4 {
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 10px;
+}
+.footer-top ._item ul li {
+  margin-bottom: 10px;
+}
+.footer-top ._item ul li a {
+  font-weight: 300;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.footer-top ._item ul li a .img {
+  width: 30px;
+  height: 30px;
+  background: #686868;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.footer-copyright {
+  background: #444444;
+}
+.footer-copyright ul:nth-child(1) li {
+  margin-right: 20px;
+}
+.footer-copyright ul:nth-child(2) li {
+  margin-left: 20px;
+  width: 50px;
+}

@@ -1,0 +1,209 @@
+body
+  font-family: 'Nunito',Arial, sans-serif
+  font-size: 14px
+
+  ._container
+    width: 1290px
+    padding: 0
+    margin: 0 auto
+
+h1, h2, h3, h4, h5, p, ul, li
+  margin: 0
+  line-height: 1.5
+
+ul
+  padding: 0
+
+li
+  list-style: none
+
+input
+  outline: none
+
+a
+  text-decoration: none
+  cursor: pointer
+
+  &:hover
+    text-decoration: none
+    cursor: pointer
+
+img
+  max-width: 100%
+
+.pad10_0
+  padding: 10px 0
+
+.pad20_0
+  padding: 20px 0
+
+.pad30_0
+  padding: 30px 0
+
+.padtp30_0
+  padding: 30px 0 0 0
+
+.padtp50_0
+  padding: 50px 0 0 0
+
+.padbt0_20
+  padding: 0 0 20px 0
+
+.padbt0_30
+  padding: 0 0 30px 0
+
+.padbt0_50
+  padding: 0 0 50px 0
+
+.pad30_50
+  padding: 30px 0 50px 0
+
+.pad50_0
+  padding: 50px 0
+
+._form_search
+  form
+    position: relative
+  input[type='text']
+    width: 614px
+    background: #FFFFFF
+    border: 0.5px solid #797979
+    border-radius: 40px
+    height: 40px
+    padding: 0 70px 0 20px
+    color: #666666
+    font-size: 16px
+    font-weight: 300
+    &::placeholder
+      color: #666666
+      font-size: 16px
+      font-weight: 300
+  ._submit
+    position: absolute
+    right: 0
+    top: 0
+    img
+      margin: 7px 20px
+    input
+      border: none
+      width: 66px
+      position: absolute
+      top: 0
+      right: 0
+      background: transparent
+      height: 40px
+._support, ._account
+  ._img
+    width: 40px
+    height: 40px
+    border: 1px solid #000000
+    border-radius: 50%
+    margin-right: 12px
+  span
+    font-size: 16px
+    font-weight: 300
+    color: #000
+.boxscroll
+  height: 545px
+  width: 250px
+  padding-right: 20px
+  span
+    font-size: 14px
+    font-weight: 600
+    color: #000000
+    padding-bottom: 5px
+    border-bottom: 1px solid #C6C6C6
+    display: block
+  ul
+    li
+      a
+        font-size: 14px !important
+        font-weight: 300 !important
+        color: #434343 !important
+        text-transform: none
+.nicescroll-rails
+  background: #EDEDED
+  border-radius: 5px
+  width: 4px !important
+.nicescroll-cursors
+  background-color: #FFC5C5 !important
+  border-radius: 5px !important
+  width: 4px !important
+  border: none !important
+.menu
+  border-top: 1px solid #106909
+  border-bottom: 1px solid #106909
+  ul > li
+    padding: 10px 0 
+    position: relative
+    a
+      font-size: 16px
+      font-weight: 600
+      text-transform: uppercase
+      color: #000000
+    .open
+      display: none
+      position: absolute
+      width: 1290px
+      top: 47px
+      padding: 15px
+      background-color: #fff
+    &.dropdown a.top
+      background: url("../img/arrowright.svg") no-repeat right center
+      padding-right: 15px
+    &.top
+      border-bottom: 2px solid transparent
+      &:hover, &.active
+        border-bottom: 2px solid #FF326C
+        .open
+          display: flex
+  ._right
+    width: calc(100% - 250px)
+    a.banner
+      width: 32%
+      margin: 0 0.5%
+      padding-right: 0
+.footer-top
+  background: #535252
+  ._item
+    width: 300px
+    &:nth-child(1)
+      p
+        font-size: 14px
+        color: #fff
+        text-transform: uppercase
+        margin-bottom: 10px
+    h4
+      font-size: 14px
+      color: #fff
+      text-transform: uppercase
+      margin-bottom: 10px
+      border-bottom: 1px solid #CCCCCC
+      padding-bottom: 10px
+    ul
+      li
+        margin-bottom: 10px
+        a
+          font-weight: 300
+          color: #fff
+          font-size: 14px
+          display: flex
+          align-items: center
+          .img
+            width: 30px
+            height: 30px
+            background: #686868
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 10px
+.footer-copyright
+  background: #444444
+  ul:nth-child(1)
+    li 
+      margin-right: 20px
+  ul:nth-child(2)
+    li 
+      margin-left: 20px
+      width: 50px
