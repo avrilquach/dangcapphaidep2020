@@ -571,7 +571,7 @@ img {
   width: 100%;
   outline: none;
   height: 130px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .popup #textarea::placeholder {
   color: #A2A2A2;
