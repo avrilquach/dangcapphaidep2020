@@ -1,0 +1,80 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    include inc/header.jade
+    include inc/breadcrumb.jade
+    .main.padbt0_30
+      ._container
+        .row
+          .sidebar
+            .top_account
+              .box.row.align-items-center
+                .img.row.align-items-center.justify-content-center
+                  img(src='img/userIcon.svg', alt='')
+                p Tài khoản của
+                  span Phuong Pham
+              ul
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem2.svg', alt='')
+                    span Vip
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem3.svg', alt='')
+                    span Thông tin tài khoản
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem4.svg', alt='')
+                    span Quản lí  đơn hàng
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem5.svg', alt='')
+                    span Sổ địa chỉ
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem6.svg', alt='')
+                    span Nhận xét sản phẩm đã mua
+                li.active
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem7.svg', alt='')
+                    span Sản phẩm đã xem
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem8.svg', alt='')
+                    span Xu của tôi
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem9.svg', alt='')
+                    span Nhận xét của tôi
+
+          .main_right
+            h4 sản phẩm đã xem
+            .san_pham_da_xem_2
+              -for (i=0;i<8;i++)
+                .item
+                  .inner
+                    img(src='img/image4.jpg', alt='').product
+                    span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
+                    span.star.row.align-items-center
+                      img(src='img/Star3.svg', alt='')
+                      img(src='img/Star3.svg', alt='')
+                      img(src='img/Star3.svg', alt='')
+                      img(src='img/Star3.svg', alt='')
+                      img(src='img/Star2.svg', alt='')
+                      span (20)
+                    span.price.row.align-items-center
+                      span.new 500.000đ
+                      span.old 750.000đ
+                  a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
+              
+    include inc/footer.jade
+    include inc/script.jade
