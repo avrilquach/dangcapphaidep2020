@@ -1,6 +1,7 @@
 body {
   font-family: "Nunito", Arial, sans-serif;
   font-size: 14px;
+  background: #f5f5f5;
 }
 body ._container {
   width: 1290px;
@@ -76,6 +77,18 @@ img {
 
 .pad50_0 {
   padding: 50px 0;
+}
+
+.width30 {
+  width: 30px;
+}
+
+.width50 {
+  width: 50px;
+}
+
+#header {
+  background: #fff;
 }
 
 ._form_search form {
@@ -182,6 +195,29 @@ img {
   top: 47px;
   padding: 15px;
   background-color: #fff;
+  z-index: 10;
+}
+.menu ul > li .open.style2 {
+  width: 540px;
+}
+.menu ul > li .open.style2 ul {
+  padding: 0 10px;
+}
+.menu ul > li .open.style2 ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
+}
+.menu ul > li .open.style1 {
+  width: 280px;
+}
+.menu ul > li .open.style1 ul {
+  padding: 0 10px;
+}
+.menu ul > li .open.style1 ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: none;
 }
 .menu ul > li.dropdown a.top {
   background: url("../img/arrowright.svg") no-repeat right center;
@@ -244,6 +280,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  mix-blend-mode: luminosity;
 }
 
 .footer-copyright {
@@ -254,5 +291,82 @@ img {
 }
 .footer-copyright ul:nth-child(2) li {
   margin-left: 20px;
+}
+.footer-copyright ul:nth-child(2) li img {
+  mix-blend-mode: luminosity;
+}
+
+._breadcrumb ul li {
+  padding: 0 10px;
+  position: relative;
+}
+._breadcrumb ul li a {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+}
+._breadcrumb ul li a img {
+  margin-right: 10px;
+}
+._breadcrumb ul li::after {
+  content: "/";
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+._breadcrumb ul li:last-child::after {
+  display: none;
+}
+
+.sidebar {
+  width: 370px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.top_account .box {
+  border-bottom: 1px solid #E7E7E7;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.top_account .box .img {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(180deg, #E9E9E9 0%, rgba(158, 158, 158, 0) 39.58%, #E9E9E9 80.21%, rgba(158, 158, 158, 0) 100%);
+  border: 0.5px solid #E3E3E3;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.top_account .box p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.top_account .box p span {
+  font-weight: 600;
+  display: block;
+}
+.top_account ul li {
+  margin-bottom: 20px;
+}
+.top_account ul li .img {
   width: 50px;
+  text-align: center;
+}
+.top_account ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.main_right {
+  margin-left: 20px;
+  background: #fff;
+  border-radius: 4px;
+  width: 900px;
+  padding: 16px;
 }
