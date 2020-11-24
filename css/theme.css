@@ -370,3 +370,64 @@ img {
   width: 900px;
   padding: 16px;
 }
+.main_right h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #000;
+  text-transform: uppercase;
+}
+.main_right .san_pham_da_xem .item {
+  border-bottom: 1px solid #EBEBEB;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.main_right .san_pham_da_xem .item .left {
+  padding-right: 20px;
+}
+.main_right .san_pham_da_xem .item .left .img {
+  margin-right: 20px;
+}
+.main_right .san_pham_da_xem .item .left .text {
+  width: 500px;
+}
+.main_right .san_pham_da_xem .item .left .text .row {
+  margin-bottom: 5px;
+}
+.main_right .san_pham_da_xem .item .left .text span.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #106909;
+  margin-bottom: 5px;
+  display: block;
+}
+.main_right .san_pham_da_xem .item .left .text span.date {
+  font-size: 14px;
+  font-weight: 300;
+  color: #939393;
+  margin-right: 18px;
+}
+.main_right .san_pham_da_xem .item .left .text span.star img {
+  margin: 0 3px;
+}
+.main_right .san_pham_da_xem .item .left .text .note {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.main_right .san_pham_da_xem .item .left .text p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+}
+.main_right .san_pham_da_xem .item .right p.approve {
+  font-size: 14px;
+  font-weight: 400;
+  color: #106909;
+}
+.main_right .san_pham_da_xem .item .right p.none {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A5A5A5;
+}
