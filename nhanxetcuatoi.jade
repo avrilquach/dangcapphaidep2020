@@ -40,7 +40,7 @@ html
                     .img
                       img(src='img/sanphamdaxem6.svg', alt='')
                     span Nhận xét sản phẩm đã mua
-                li.active
+                li
                   a(href="/").row.align-items-center
                     .img
                       img(src='img/sanphamdaxem7.svg', alt='')
@@ -50,31 +50,50 @@ html
                     .img
                       img(src='img/sanphamdaxem8.svg', alt='')
                     span Xu của tôi
-                li
+                li.active
                   a(href="/").row.align-items-center
                     .img
                       img(src='img/sanphamdaxem9.svg', alt='')
                     span Nhận xét của tôi
 
           .main_right
-            h4 sản phẩm đã xem
-            .san_pham_da_xem_2
-              -for (i=0;i<8;i++)
-                .item
-                  .inner
-                    img(src='img/image4.jpg', alt='').product
-                    span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
-                    span.star.row.align-items-center
-                      img(src='img/Star3.svg', alt='')
-                      img(src='img/Star3.svg', alt='')
-                      img(src='img/Star3.svg', alt='')
-                      img(src='img/Star3.svg', alt='')
-                      img(src='img/Star2.svg', alt='')
-                      span (20)
-                    span.price.row.align-items-center
-                      span.new 500.000đ
-                      span.old 750.000đ
-                  a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
-              
+            h4 nhận xét của tôi (05)
+            .san_pham_da_xem
+              .item.row.justify-content-between
+                .left.row
+                  .img
+                    img(src='img/image3.jpg', alt='')
+                  .text
+                    span.title Gel giúp giảm giãn mao mạch Dr Spiller Anti Couperose Gel
+                    .row.align-items-center
+                      span.date 15/11/2020 20:20:42
+                      span.star.row.align-items-center
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star2.svg', alt='')
+                    .note Cực kì hài lòng
+                    p Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận 
+                .right
+                  p.approve Đã duyệt
+              .item.row.justify-content-between
+                .left.row
+                  .img
+                    img(src='img/image3.jpg', alt='')
+                  .text
+                    span.title Gel giúp giảm giãn mao mạch Dr Spiller Anti Couperose Gel
+                    .row.align-items-center
+                      span.date 15/11/2020 20:20:42
+                      span.star.row.align-items-center
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star2.svg', alt='')
+                    .note Cực kì hài lòng
+                    p Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận 
+                .right
+                  p.none Chưa duyệt
     include inc/footer.jade
     include inc/script.jade
