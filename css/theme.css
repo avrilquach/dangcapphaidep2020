@@ -255,6 +255,9 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.footer-top ._item:nth-child(1) img {
+  margin-top: 10px;
+}
 .footer-top ._item h4 {
   font-size: 14px;
   color: #fff;
