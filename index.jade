@@ -1,0 +1,99 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    include inc/header.jade
+    include inc/breadcrumb.jade
+    .main.padbt0_30
+      ._container
+        .row
+          .sidebar
+            .top_account
+              .box.row.align-items-center
+                .img.row.align-items-center.justify-content-center
+                  img(src='img/userIcon.svg', alt='')
+                p Tài khoản của
+                  span Phuong Pham
+              ul
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem2.svg', alt='')
+                    span Vip
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem3.svg', alt='')
+                    span Thông tin tài khoản
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem4.svg', alt='')
+                    span Quản lí  đơn hàng
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem5.svg', alt='')
+                    span Sổ địa chỉ
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem6.svg', alt='')
+                    span Nhận xét sản phẩm đã mua
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem7.svg', alt='')
+                    span Sản phẩm đã xem
+                li
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem8.svg', alt='')
+                    span Xu của tôi
+                li.active
+                  a(href="/").row.align-items-center
+                    .img
+                      img(src='img/sanphamdaxem9.svg', alt='')
+                    span Nhận xét của tôi
+
+          .main_right
+            h4 nhận xét của tôi (05)
+            .san_pham_da_xem
+              .item.row.justify-content-between
+                .left.row
+                  .img
+                    img(src='img/image3.jpg', alt='')
+                  .text
+                    span.title Gel giúp giảm giãn mao mạch Dr Spiller Anti Couperose Gel
+                    .row.align-items-center
+                      span.date 15/11/2020 20:20:42
+                      span.star.row.align-items-center
+                        img(src='img/star1_new.svg', alt='')
+                        img(src='img/star1_new.svg', alt='')
+                        img(src='img/star1_new.svg', alt='')
+                        img(src='img/star1_new.svg', alt='')
+                        img(src='img/star2_new.svg', alt='')
+                    .note Cực kì hài lòng
+                    p Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận 
+                .right
+                  p.approve Đã duyệt
+              .item.row.justify-content-between
+                .left.row
+                  .img
+                    img(src='img/image3.jpg', alt='')
+                  .text
+                    span.title Gel giúp giảm giãn mao mạch Dr Spiller Anti Couperose Gel
+                    .row.align-items-center
+                      span.date 15/11/2020 20:20:42
+                      span.star.row.align-items-center
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star1.svg', alt='')
+                        img(src='img/star2.svg', alt='')
+                    .note Cực kì hài lòng
+                    p Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận Rất tốt sử dụng hiệu quả, không khô da , đóng gói cẩn thận 
+                .right
+                  p.none Chưa duyệt
+    include inc/footer.jade
+    include inc/script.jade
