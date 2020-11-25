@@ -249,9 +249,6 @@ img {
 .footer-top {
   background: #535252;
 }
-.footer-top ._item {
-  width: 300px;
-}
 .footer-top ._item:nth-child(1) p {
   font-size: 14px;
   color: #fff;
