@@ -691,7 +691,7 @@ img {
   border: 1px solid #D2D2D2;
   border-radius: 5px;
   width: 100%;
-  height: 52px;
+  height: 40px;
 }
 
 .button #cash {
@@ -819,7 +819,7 @@ img {
   color: #106909;
 }
 .phuongthucgiaohang .item span {
-  color: #575757;
+  color: #000;
   font-weight: 400;
   font-size: 16px;
 }
@@ -853,6 +853,56 @@ img {
   font-size: 16px;
   font-weight: 400;
   color: #000;
+}
+
+.phuongthucthanhtoan .box .item {
+  width: 19%;
+  background: #FFFFFF;
+  border: 1px solid #E2E2E2;
+  border-radius: 5px;
+  height: 250px;
+  text-align: center;
+  padding: 20px 5px;
+}
+.phuongthucthanhtoan .box .item .img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+.phuongthucthanhtoan .box .item:nth-child(2) img {
+  margin-top: -15px;
+}
+.phuongthucthanhtoan .box .item .radio {
+  position: relative;
+  height: 40px;
+}
+.phuongthucthanhtoan .box .item [type=radio]:checked, .phuongthucthanhtoan .box .item [type=radio]:not(:checked) {
+  width: 100%;
+  height: 256px;
+  left: 0;
+}
+.phuongthucthanhtoan .box .item p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.phuongthucthanhtoan .note {
+  margin-top: 25px;
+}
+.phuongthucthanhtoan .note p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.phuongthucthanhtoan .note p span {
+  font-weight: 400;
+}
+
+.thongtinxuathoadon.stylett .icon {
+  top: 14px;
+}
+.thongtinxuathoadon.style2 [type=radio]:checked, .thongtinxuathoadon.style2 [type=radio]:not(:checked) {
+  width: 100%;
+  height: 40px;
 }
 
 .thongtindonhang .head img {
@@ -910,6 +960,7 @@ img {
   height: 30px;
   text-align: center;
   outline: none;
+  text-align-last: center;
 }
 .thongtindonhang .content .item .right div span:nth-child(2) {
   padding: 0 20px;
