@@ -705,7 +705,7 @@ img
     height: 40px
     font-size: 14px
     font-weight: 300
-    color: #545454
+    color: #000
     margin-bottom: 20px
     padding: 0 10px
     &::placeholder
@@ -801,8 +801,90 @@ img
         font-weight: 300
         color: #575757
         display: block
-
-
+.thong_tin_tai_khoan
+  .box
+    position: relative
+    margin-bottom: 10px
+    &.active
+      .checkbox::before
+        content: ""
+        background: url("../img/arrow.svg") no-repeat
+        width: 12px
+        height: 9px
+        position: absolute
+        left: 5px 
+        top: 7px
+      & + .box2
+        display: block
+    p
+      margin-left: 10px
+      font-size: 16px
+      font-weight: 600
+      color: #000
+  .box2
+    display: none
+  .button
+    margin-left: 200px
+    .update
+      background: #106909
+      border-radius: 5px
+      width: 170px
+      height: 45px
+      font-size: 20px
+      font-weight: 400
+      color: #fff
+      outline: nonenone
+      cursor: pointer
+  .label
+    width: 200px
+    font-size: 16px
+    font-weight: 300
+    color: #000
+  .forminput
+    width: calc(100% - 200px)
+  .input
+    margin-bottom: 0
+  .item
+    margin-bottom: 15px
+    position: relative
+  .macdinh
+    position: absolute
+    top: 0
+    right: 0
+    background: #106909
+    border: 1px solid #CECECE
+    border-radius: 5px
+    font-size: 16px
+    font-weight: 300
+    color: #fff
+    height: 40px
+    width: 110px
+  .themsodienthoai
+    position: absolute
+    left: 200px
+    bottom: -40px
+    font-size: 16px
+    font-weight: 300
+    color: #106909 !important
+  .radio
+    margin-right: 20px
+  .sodienthoai
+    margin-bottom: 60px
+  .sodienthoai2
+    display: none
+  .day, .month, .year
+    width: 100px
+    height: 40px
+    background: #FFFFFF
+    border: 1px solid #CECECE
+    border-radius: 5px
+    text-align: center
+    text-align-last: center
+    font-size: 16px
+    font-weight: 300
+    color: #000
+    margin-right: 20px
+  
 .diachinhanhang
   .boxship
     background: #FFFFFF
@@ -1046,7 +1128,9 @@ img
       cursor: pointer
       line-height: 20px
       display: inline-block
-
+      font-size: 16px
+      font-weight: 300
+      color: #000
     &:checked + label:before, &:not(:checked) + label:before
       content: ''
       position: absolute

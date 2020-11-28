@@ -50,4 +50,12 @@ $(".bgpopup").click(function(e){
  $(".bgpopup").hide();
  $(".editaddress").hide();
 })
+$(".thong_tin_tai_khoan .box").click(function(e){
+	$(this).toggleClass("active");
+})
+$(".themsodienthoai").click(function(e){
+	$(".sodienthoai2").css("display","flex");
+	$(".themsodienthoai").hide();
+	$(".sodienthoai").css("margin-bottom","15px");
+})
 })
