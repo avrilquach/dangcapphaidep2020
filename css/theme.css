@@ -741,7 +741,7 @@ img {
   left: 30px;
 }
 .stylett .content {
-  padding: 0px 50px;
+  padding: 0px 0 0 50px;
 }
 .stylett .head {
   margin-bottom: 20px;
@@ -909,7 +909,17 @@ img {
   font-weight: 400;
   color: #000;
 }
-
+.diachinhanhang .content2 .boxship2 {
+  padding-left: 7px;
+}
+.diachinhanhang .content2 .boxship2 label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.diachinhanhang .content2 .style1 [type=radio]:checked + label, .diachinhanhang .content2 .style1 [type=radio]:not(:checked) + label {
+  padding-left: 45px;
+}
 .phuongthucthanhtoan .box .item {
   width: 19%;
   background: #FFFFFF;
@@ -939,6 +949,9 @@ img {
   font-size: 16px;
   font-weight: 300;
   color: #000;
+}
+.phuongthucthanhtoan .style1 [type=radio]:checked + label, .phuongthucthanhtoan .style1 [type=radio]:not(:checked) + label {
+  padding-left: 20px;
 }
 .phuongthucthanhtoan .note {
   margin-top: 25px;

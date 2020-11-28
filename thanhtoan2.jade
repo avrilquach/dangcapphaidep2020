@@ -1,0 +1,191 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		include inc/header2.jade
+		.main
+			._container
+				.row
+					.main_left
+						.diachinhanhang.bgmain.stylett
+							.icon
+								img(src='img/map.svg')
+							.content
+								.head
+									h2 địa chỉ nhận hàng
+							.content2
+								.boxship2.style1
+									.box1
+										input(type="radio" name="radio1" checked)
+										label Giao hàng tận nơi
+									.box2.row.align-items-center.justify-content-between
+										.input-column2
+											select.thanhpho.input2
+												option(value='Chọn Tỉnh / Thành Phố  (*)') Chọn Tỉnh / Thành Phố  (*)
+										.input-column2
+											select.quan.input2
+												option(value='Chọn Quận / Huyện  (*)') Chọn Quận / Huyện  (*)
+									.box2.row
+										
+									.box3
+										input(type="radio" name="radio1" )
+										label Nhận hàng tại Showroom
+						.phuongthucgiaohang.bgmain.stylett
+							.icon
+								img(src='img/icon8.svg')
+							.content
+								.head
+									h2 PHƯƠNG THỨC GIAO HÀNG
+								.row.justify-content-between.align-items-center
+									.input-column2
+										.item
+											p Giao hàng tiêu chuẩn  
+												span.free Miễn phí
+											p Thời gian dự kiến: 
+												span 18/09 - 21/09
+									.input-column2
+										.item
+											p Giao hàng giờ hành chính từ
+											span Thứ 2 đến Thứ 7
+						.dichvukemtheo.bgmain.stylett
+							.icon
+								img(src='img/icon9.svg')
+							.content
+								.head
+									h2 DỊCH VỤ KÈM THEO
+								.box.style2.row
+									.checkbox
+									p Gói quà tặng bạn bè, người thân
+										span Bao gồm: Hộp quà + Thiệp chúc mừng
+								.box2
+									textarea(name="", cols="30", rows="10", placeholder="Lời nhắn viết lên thiệp, tối đa 75 từ..." ).textarea
+						.phuongthucthanhtoan.bgmain.stylett
+							.icon
+								img(src='img/icontt.svg')
+							.content
+								.head
+									h2 PHƯƠNG THỨC THANH TOÁN
+								.box.style1.row.justify-content-between
+									.item.row.justify-content-center
+										div
+											.radio
+												input(type="radio" name="radio3" )
+												label
+											.img
+												img(src='img/phuongthuc1.svg')
+											p Tiền mặt
+									.item.row.justify-content-center
+										div
+											.radio
+												input(type="radio" name="radio3" )
+												label
+											.img
+												img(src='img/phuongthuc2.svg')
+											p Ví MoMo
+									.item.row.justify-content-center
+										div
+											.radio
+												input(type="radio" name="radio3" )
+												label
+											.img
+												img(src='img/phuongthuc3.svg')
+											p Chuyển khoản
+									.item.row.justify-content-center
+										div
+											.radio
+												input(type="radio" name="radio3" )
+												label
+											.img
+												img(src='img/phuongthuc4.svg')
+											p Thẻ ATM nội địa/Internet Banking (Miễn phí thanh toán)
+									.item.row.justify-content-center
+										div
+											.radio
+												input(type="radio" name="radio3" )
+												label
+											.img
+												img(src='img/phuongthuc5.svg')
+											p Thanh toán bằng thẻ quốc tế Visa, Master, JCB
+								.note
+									p 
+										span Tiền mặt: 
+										| Bạn sẽ thanh toán bằng tiền mặt cho nhân viên khi giao hàng. Vui lòng kiểm tra số lượng, tình trạng sản phẩm và số tiền trong đơn hàng khi thanh toán.
+						.thongtinxuathoadon.bgmain.stylett.style2
+							.box.style2.row.align-items-center
+								.checkbox
+								p THÔNG TIN XUẤT HOÁ ĐƠN
+							.box2
+								.row.align-items-center.justify-content-between
+									.input-column2
+										span Mã số thuế *
+										input(type="text" name="masothue" placeholder="Nhập mã số thuế").input3
+									.input-column2
+										span Địa chỉ *
+										input(type="text" name="diachi" placeholder="Nhập địa chỉ công ty").input3
+								.row.align-items-center.justify-content-between
+									.input-column2
+										span Mã số thuế *
+										input(type="text" name="masothue" placeholder="Nhập mã số thuế").input3
+									.input-column2
+										span Địa chỉ *
+										input(type="text" name="diachi" placeholder="Nhập địa chỉ công ty").input3
+						.ghichudonhang.bgmain.stylett.style2
+							.box.style2.row.align-items-center
+								.checkbox
+								p ghi chú đơn hàng
+							.box2
+								textarea(name="", cols="30", rows="10", placeholder="Lời nhắn viết lên thiệp, tối đa 75 từ..." ).textarea
+
+					.sidebar_right
+						.thongtindonhang.bgmain
+							.head.row.align-items-center
+								img(src='img/giohang.svg')
+								h4 thông tin đơn hàng
+								span (3 sản phẩm)
+							.content
+								- for(i=0;i<3;i++)
+										.item.row
+											.left
+												img(src='img/image5.jpg', alt="")
+												a.delete Xóa
+											.right
+												span.title Gold Elements Mega Serum - Tinh chất trẻ hóa da và trị liệu đa công dụng
+												.row
+													select.number
+														option(value='1') 1
+													span x
+													span.price 40.000.000đ
+						.magiamgia.bgmain
+							.head.row.align-items-center
+								img(src='img/magiamgia.svg')
+								h4 mã giảm giá
+							.content
+								input(type="text" name="code")
+							.bg
+								.row
+									.img
+										img(src='img/gift.svg')
+									p Tặng Sáp tẩy trang Okame Superfruit Cleansing Balm cho đơn hàng từ 
+										span 700K
+						.lixi.bgmain.row.align-items-center.justify-content-center.text-center
+							div
+								span Bạn sẽ nhận được
+								span 3.494 Lixicoin
+						.tongcong.bgmain
+							.item.row.align-items-center.justify-content-between
+								span Tiền hàng:
+								span 80.000.000đ
+							.item.row.align-items-center.justify-content-between
+								span Phí giao hàng:
+								span Miễn phí
+							.item.row.align-items-center.justify-content-between
+								span Giảm giá:
+								span 0đ
+						.button
+							button(type="button")#cash.row.align-items-center.justify-content-center
+								| Thanh toán tiền mặt
+							button(type="button")#vnpay.row.align-items-center.justify-content-center
+								| Thanh toán
+								img(src='img/vnpay.png')
+		include inc/footer.jade
+		include inc/script.jade
