@@ -17,4 +17,10 @@ $(document).ready(function () {
  $(".dichvukemtheo .box").click(function(e){
 	 $(this).toggleClass("active");
  })
+ $(".thongtinxuathoadon .box").click(function(e){
+	$(this).toggleClass("active");
+})
+$(".ghichudonhang .box").click(function(e){
+	$(this).toggleClass("active");
+})
 })

@@ -121,11 +121,31 @@ html
 										span Tiền mặt: 
 										| Bạn sẽ thanh toán bằng tiền mặt cho nhân viên khi giao hàng. Vui lòng kiểm tra số lượng, tình trạng sản phẩm và số tiền trong đơn hàng khi thanh toán.
 						.thongtinxuathoadon.bgmain.stylett.style2
-							.box.style2.row
+							.box.style2.row.align-items-center
 								.checkbox
-								p Gói quà tặng bạn bè, người thân
-									span Bao gồm: Hộp quà + Thiệp chúc mừng
+								p THÔNG TIN XUẤT HOÁ ĐƠN
 							.box2
+								.row.align-items-center.justify-content-between
+									.input-column2
+										span Mã số thuế *
+										input(type="text" name="masothue" placeholder="Nhập mã số thuế").input3
+									.input-column2
+										span Địa chỉ *
+										input(type="text" name="diachi" placeholder="Nhập địa chỉ công ty").input3
+								.row.align-items-center.justify-content-between
+									.input-column2
+										span Mã số thuế *
+										input(type="text" name="masothue" placeholder="Nhập mã số thuế").input3
+									.input-column2
+										span Địa chỉ *
+										input(type="text" name="diachi" placeholder="Nhập địa chỉ công ty").input3
+						.ghichudonhang.bgmain.stylett.style2
+							.box.style2.row.align-items-center
+								.checkbox
+								p ghi chú đơn hàng
+							.box2
+								textarea(name="", cols="30", rows="10", placeholder="Lời nhắn viết lên thiệp, tối đa 75 từ..." ).textarea
+
 					.sidebar_right
 						.thongtindonhang.bgmain
 							.head.row.align-items-center

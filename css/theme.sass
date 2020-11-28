@@ -648,6 +648,14 @@ img
     padding: 0 10px
     width: 100%
     height: 40px
+  .input3
+    border: none
+    border-bottom: 1px solid #C6C6C6
+    width: 100%
+    height: 40px
+    font-size: 16px
+    font-weight: 300
+    color: #9C9C9C
 .phuongthucgiaohang
   .item
     background: #FFFFFF
@@ -690,7 +698,7 @@ img
       font-size: 16px
       font-weight: 300
       color: #C8C8C8
-      outiline: none
+      outline: none
       padding: 15px
       border: none
   .box
@@ -769,14 +777,51 @@ img
       span
         font-weight: 400
   
-.thongtinxuathoadon
-  &.stylett .icon
-    top: 14px
-  &.style2
-    [type=radio]:checked, [type=radio]:not(:checked)
+.thongtinxuathoadon, .ghichudonhang
+  .box
+    margin-left: 10px
+    position: relative
+    cursor: pointer
+    p
+      margin-left: 20px
+      font-size: 18px
+      font-weight: 400
+      color: #000
+      text-transform: uppercase
+    &.active
+      .checkbox::before
+        content: ""
+        background: url("../img/arrow.svg") no-repeat
+        width: 12px
+        height: 9px
+        position: absolute
+        left: 5px 
+        top: 10px
+      & + .box2
+        display: block
+  .box2
+    display: none
+    margin: 20px 50px 0 50px
+    .row
+      margin-bottom: 20px
+      &:last-child
+        margin-bottom: 0
+    .input-column2
+      span
+        font-size: 16px
+        font-weight: 400
+        color: #2F2F2F
+    .textarea
       width: 100%
-      height: 40px
-      
+      background: #F5F5F5
+      border-radius: 5px
+      height: 80px
+      font-size: 16px
+      font-weight: 300
+      color: #C8C8C8
+      outline: none
+      padding: 15px
+      border: none
 .thongtindonhang
   .head
     img
