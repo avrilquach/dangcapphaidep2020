@@ -19,14 +19,31 @@ html
 										input(type="radio" name="radio1" checked)
 										label Giao hàng tận nơi
 									.box2.row.align-items-center.justify-content-between
-										.input-column2
-											select.thanhpho.input2
-												option(value='Chọn Tỉnh / Thành Phố  (*)') Chọn Tỉnh / Thành Phố  (*)
-										.input-column2
-											select.quan.input2
-												option(value='Chọn Quận / Huyện  (*)') Chọn Quận / Huyện  (*)
+										.input-column2.row 
+											.radio2
+												input(type="radio" name="diachi")
+												label 
+											.item
+												span Lam Dan, 0904567834
+													span.macdinh Mặc định
+												p 124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh
+												.choose
+													span
+													span
+													span
+										.input-column2.row
+											.radio2
+												input(type="radio" name="diachi")
+												label 
+											.item
+												span Lam Dan, 0904567834
+												p 124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh
+												.choose
+													span
+													span
+													span
 									.box2.row
-										
+
 									.box3
 										input(type="radio" name="radio1" )
 										label Nhận hàng tại Showroom

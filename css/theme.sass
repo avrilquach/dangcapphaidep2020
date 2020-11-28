@@ -748,10 +748,35 @@ img
         font-size: 16px
         font-weight: 400
         color: #000
+      .box2
+        padding-left: 45px
+        margin-bottom: 10px
+        .row
+          background: #FFFFFF
+          border: 1px solid #E2E2E2
+          border-radius: 5px
+          padding: 20px
+        .item
+          width: calc(100% - 60px)
+          position: relative
+          .choose
+            position: absolute
+            top: 0
+            right: -10px
+            span
+              display: block
+              width: 4px
+              height: 4px
+              background: #C4C4C4
+              border-radius: 50%
+              margin-bottom: 3px
+        [type=radio]:checked + label:before, [type=radio]:not(:checked) + label:before
+          top: -3px
+        [type=radio]:checked + label:after
+          top: 2px
     .style1 [type=radio]:checked + label, .style1 [type=radio]:not(:checked) + label
       padding-left: 45px
-    .style1 [type=radio]:checked + label:before, .style1 [type=radio]:not(:checked) + label:before
-      
+    
 .phuongthucthanhtoan
   .box
     .item
