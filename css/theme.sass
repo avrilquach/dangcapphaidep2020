@@ -667,8 +667,46 @@ img
       color: #000
       font-weight: 400
       font-size: 16px
+.tongcong
+  span:nth-child(1)
+    font-size: 16px
+    font-weight: 300
+    color: #000000
+  span:nth-child(2)
+    font-size: 16px
+    font-weight: 600
+    color: #000
+  .item
+    padding: 5px 0
 .dichvukemtheo
+  .box2
+    display: none
+    margin-top: 15px
+    .textarea
+      width: 100%
+      background: #F5F5F5
+      border-radius: 5px
+      height: 80px
+      font-size: 16px
+      font-weight: 300
+      color: #C8C8C8
+      outiline: none
+      padding: 15px
+      border: none
   .box
+    cursor: pointer
+    position: relative 
+    &.active
+      .checkbox::before
+        content: ""
+        background: url("../img/arrow.svg") no-repeat
+        width: 12px
+        height: 9px
+        position: absolute
+        left: 5px 
+        top: 6px
+      & + .box2
+        display: block
     p
       margin-left: 10px
       font-size: 16px
@@ -858,6 +896,12 @@ img
       -webkit-transform: scale(1)
       transform: scale(1)
 .style2
+  .checkbox
+    background: #FFFFFF
+    border: 1px solid #000000
+    border-radius: 3px
+    width: 22px
+    height: 22px
   [type="radio"]
     &:checked, &:not(:checked)
       position: absolute
@@ -872,8 +916,8 @@ img
       cursor: pointer
       line-height: 20px
       display: inline-block
+      height: 25px
       
-
     &:checked + label:before, &:not(:checked) + label:before
       content: ''
       position: absolute

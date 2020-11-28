@@ -64,10 +64,11 @@ html
 								.head
 									h2 DỊCH VỤ KÈM THEO
 								.box.style2.row
-									input(type="radio" name="radio2" )
-									label
+									.checkbox
 									p Gói quà tặng bạn bè, người thân
 										span Bao gồm: Hộp quà + Thiệp chúc mừng
+								.box2
+									textarea(name="", cols="30", rows="10", placeholder="Lời nhắn viết lên thiệp, tối đa 75 từ..." ).textarea
 						.phuongthucthanhtoan.bgmain.stylett
 							.icon
 								img(src='img/icontt.svg')
@@ -120,12 +121,11 @@ html
 										span Tiền mặt: 
 										| Bạn sẽ thanh toán bằng tiền mặt cho nhân viên khi giao hàng. Vui lòng kiểm tra số lượng, tình trạng sản phẩm và số tiền trong đơn hàng khi thanh toán.
 						.thongtinxuathoadon.bgmain.stylett.style2
-							.icon
-								input(type="radio" name="radio4")
-								label
-							.content
-								.head
-									h2 THÔNG TIN XUẤT HOÁ ĐƠN
+							.box.style2.row
+								.checkbox
+								p Gói quà tặng bạn bè, người thân
+									span Bao gồm: Hộp quà + Thiệp chúc mừng
+							.box2
 					.sidebar_right
 						.thongtindonhang.bgmain
 							.head.row.align-items-center
@@ -161,6 +161,16 @@ html
 							div
 								span Bạn sẽ nhận được
 								span 3.494 Lixicoin
+						.tongcong.bgmain
+							.item.row.align-items-center.justify-content-between
+								span Tiền hàng:
+								span 80.000.000đ
+							.item.row.align-items-center.justify-content-between
+								span Phí giao hàng:
+								span Miễn phí
+							.item.row.align-items-center.justify-content-between
+								span Giảm giá:
+								span 0đ
 						.button
 							button(type="button")#cash.row.align-items-center.justify-content-center
 								| Thanh toán tiền mặt

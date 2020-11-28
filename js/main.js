@@ -14,4 +14,7 @@ $(document).ready(function () {
 	$(".bgpopup").hide();
 	$(".popup").hide();
  })
+ $(".dichvukemtheo .box").click(function(e){
+	 $(this).toggleClass("active");
+ })
 })
