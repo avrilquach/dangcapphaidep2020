@@ -53,12 +53,19 @@
                   <div class="box2 row align-items-center justify-content-between">
                     <div class="input-column2 row"> 
                       <div class="radio2">
-                        <input type="radio" name="diachi">
+                        <input type="radio" name="diachi" checked>
                         <label> </label>
                       </div>
-                      <div class="item"><span>Lam Dan, 0904567834<span class="macdinh">Mặc định</span></span>
+                      <div class="item"><span class="row align-items-center">Lam Dan, 0904567834<span class="macdinh">Mặc định</span></span>
                         <p>124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
                         <div class="choose"><span></span><span></span><span></span></div>
+                        <div class="boxchoose">
+                          <ul>
+                            <li><a>Đặt làm mặc định</a></li>
+                            <li><a class="chinhsua">Chỉnh sửa</a></li>
+                            <li><a>Xóa địa chỉ</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="input-column2 row">
@@ -69,10 +76,19 @@
                       <div class="item"><span>Lam Dan, 0904567834</span>
                         <p>124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
                         <div class="choose"><span></span><span></span><span></span></div>
+                        <div class="boxchoose">
+                          <ul>
+                            <li><a>Đặt làm mặc định</a></li>
+                            <li><a class="chinhsua">Chỉnh sửa</a></li>
+                            <li><a>Xóa địa chỉ</a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="box2 row"></div>
+                  <div class="box2 row">
+                    <div class="input-column2 style"><a class="row align-items-center"><span>+</span><span>Thêm địa chỉ mới</span></a></div>
+                  </div>
                   <div class="box3">
                     <input type="radio" name="radio1">
                     <label>Nhận hàng tại Showroom</label>
@@ -279,6 +295,86 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!--popup-->
+    <div class="bgpopup"></div>
+    <div class="addaddress">
+      <div class="close_popup"><img src="img/close.svg"></div>
+      <h2 class="row justify-content-center align-items-center">
+        <img src="img/map.svg">Thêm địa chỉ nhận hàng</h2>
+      <div class="stylett">
+        <div class="row justify-content-between align-items-end item">
+          <div class="input-column2"><span>Tên người nhận (*)</span>
+            <input class="input3" type="text" name="tennguoinhan" placeholder="Tên người nhận (*)">
+          </div>
+          <div class="input-column2">
+            <input class="input3" type="text" name="sodienthoai" placeholder="Số điện thoại (*)">
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-end item">
+          <div class="input-column2">
+            <input class="input3" type="text" name="sonha" placeholder="Nhập số nhà và tên đường">
+          </div>
+          <div class="input-column2">
+            <input class="input3" type="text" name="tinh" placeholder="Tỉnh / Thành Phố">
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-end item">
+          <div class="input-column2">
+            <input class="input3" type="text" name="quan" placeholder="Quận / Huyện (*)">
+          </div>
+          <div class="input-column2">
+            <input class="input3" type="text" name="phuong" placeholder="Phường / Xã">
+          </div>
+        </div>
+      </div>
+      <div class="style2">
+        <input type="radio" name="addaddress">
+        <label>Sử dụng địa chỉ này làm mặc định</label>
+      </div>
+      <div class="button row align-items-center justify-content-center">
+        <button class="huy" type="button">Huỷ</button>
+        <button class="giao" type="button">Giao đến địa chỉ này	</button>
+      </div>
+    </div>
+    <div class="editaddress">
+      <div class="close_popup"><img src="img/close.svg"></div>
+      <h2 class="row justify-content-center align-items-center">
+        <img src="img/map.svg">sửa địa chỉ nhận hàng</h2>
+      <div class="stylett">
+        <div class="row justify-content-between align-items-end item">
+          <div class="input-column2">
+            <input class="input3" type="text" name="tennguoinhan" value="Hong Anh">
+          </div>
+          <div class="input-column2">
+            <input class="input3" type="text" name="sodienthoai" value="090645783642">
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-end item">
+          <div class="input-column2">
+            <input class="input3" type="text" name="sonha" value="569/33, Lý Chính Thắng">
+          </div>
+          <div class="input-column2">
+            <input class="input3" type="text" name="tinh" value="Tỉnh / Thành Phố">
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-end item">
+          <div class="input-column2">
+            <input class="input3" type="text" name="quan" value="Quận 3">
+          </div>
+          <div class="input-column2">
+            <input class="input3" type="text" name="phuong" value="Phường 12">
+          </div>
+        </div>
+      </div>
+      <div class="style2">
+        <input type="radio" name="addaddress" checked>
+        <label>Sử dụng địa chỉ này làm mặc định</label>
+      </div>
+      <div class="button row align-items-center justify-content-center">
+        <button class="huy" type="button">Huỷ</button>
+        <button class="giao" type="button">Giao đến địa chỉ này	</button>
       </div>
     </div>
     <!-- Footer-->

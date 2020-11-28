@@ -21,16 +21,24 @@ html
 									.box2.row.align-items-center.justify-content-between
 										.input-column2.row 
 											.radio2
-												input(type="radio" name="diachi")
+												input(type="radio" name="diachi" checked)
 												label 
 											.item
-												span Lam Dan, 0904567834
+												span.row.align-items-center Lam Dan, 0904567834
 													span.macdinh Mặc định
 												p 124/15 Duong So 5, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh
 												.choose
 													span
 													span
 													span
+												.boxchoose
+													ul
+														li
+															a Đặt làm mặc định
+														li
+															a.chinhsua Chỉnh sửa
+														li
+															a Xóa địa chỉ
 										.input-column2.row
 											.radio2
 												input(type="radio" name="diachi")
@@ -42,7 +50,19 @@ html
 													span
 													span
 													span
+												.boxchoose
+													ul
+														li
+															a Đặt làm mặc định
+														li
+															a.chinhsua Chỉnh sửa
+														li
+															a Xóa địa chỉ
 									.box2.row
+										.input-column2.style
+											a.row.align-items-center
+												span +
+												span Thêm địa chỉ mới
 
 									.box3
 										input(type="radio" name="radio1" )
@@ -204,5 +224,64 @@ html
 							button(type="button")#vnpay.row.align-items-center.justify-content-center
 								| Thanh toán
 								img(src='img/vnpay.png')
+		//popup
+		.bgpopup
+		.addaddress
+			.close_popup
+				img(src="img/close.svg")
+			h2.row.justify-content-center.align-items-center
+				<img src="img/map.svg">
+				| Thêm địa chỉ nhận hàng
+			.stylett
+				.row.justify-content-between.align-items-end.item
+					.input-column2
+						span Tên người nhận (*)
+						input(type="text" name="tennguoinhan" placeholder="Tên người nhận (*)").input3
+					.input-column2
+						input(type="text" name="sodienthoai" placeholder="Số điện thoại (*)").input3
+				.row.justify-content-between.align-items-end.item
+					.input-column2
+						input(type="text" name="sonha" placeholder="Nhập số nhà và tên đường").input3
+					.input-column2
+						input(type="text" name="tinh" placeholder="Tỉnh / Thành Phố").input3
+				.row.justify-content-between.align-items-end.item
+					.input-column2
+						input(type="text" name="quan" placeholder="Quận / Huyện (*)").input3
+					.input-column2
+						input(type="text" name="phuong" placeholder="Phường / Xã").input3
+			.style2
+				input(type="radio" name="addaddress")
+				label Sử dụng địa chỉ này làm mặc định
+			.button.row.align-items-center.justify-content-center
+				button(type="button").huy Huỷ
+				button(type="button").giao Giao đến địa chỉ này	
+		.editaddress
+			.close_popup
+				img(src="img/close.svg")
+			h2.row.justify-content-center.align-items-center
+				<img src="img/map.svg">
+				| sửa địa chỉ nhận hàng
+			.stylett
+				.row.justify-content-between.align-items-end.item
+					.input-column2
+						input(type="text" name="tennguoinhan" value="Hong Anh").input3
+					.input-column2
+						input(type="text" name="sodienthoai" value="090645783642").input3
+				.row.justify-content-between.align-items-end.item
+					.input-column2
+						input(type="text" name="sonha" value="569/33, Lý Chính Thắng").input3
+					.input-column2
+						input(type="text" name="tinh" value="Tỉnh / Thành Phố").input3
+				.row.justify-content-between.align-items-end.item
+					.input-column2
+						input(type="text" name="quan" value="Quận 3").input3
+					.input-column2
+						input(type="text" name="phuong" value="Phường 12").input3
+			.style2
+				input(type="radio" name="addaddress" checked)
+				label Sử dụng địa chỉ này làm mặc định
+			.button.row.align-items-center.justify-content-center
+				button(type="button").huy Huỷ
+				button(type="button").giao Giao đến địa chỉ này	
 		include inc/footer.jade
 		include inc/script.jade

@@ -488,6 +488,80 @@ img
       display: block
       overflow: hidden
       height: 42px
+.boxchoose
+  position: absolute
+  background: #FFFFFF
+  box-shadow: 0px 0px 7px rgba(81, 81, 81, 0.25)
+  border-radius: 5px
+  padding: 16px
+  top: 30px
+  right: -10px
+  display: none
+  ul li
+    margin: 5px 0
+    a
+      font-size: 16px
+      font-weight: 300
+      color: #000000
+
+.addaddress, .editaddress
+  position: absolute
+  width: 766px
+  left: 0
+  top: 100px
+  right: 0
+  margin: 0 auto
+  background: #FFFFFF
+  border-radius: 10px
+  padding: 30px
+  z-index: 14
+  display: none
+  .style2
+    margin: 20px 0
+    label
+      font-size: 16px
+      font-weight: 400
+      color: #000000
+  .button
+    .huy
+      margin-right: 10px
+      background: #FFFFFF
+      border: 1px solid #727272
+      border-radius: 5px
+      font-size: 16px
+      font-weight: 300
+      color: #000000
+      width: 60px
+      height: 40px
+      outline: none
+      cursor: pointer
+    .giao
+      background: #DBDBDB
+      border-radius: 5px
+      width: 175px
+      height: 40px
+      border: none
+      font-size: 16px
+      font-weight: 600
+      color: #fff
+      outline: none
+      cursor: pointer
+      &:hover
+        background: #212121
+  .item
+    margin: 10px 0
+  .close_popup
+    display: flex
+    justify-content: flex-end
+    cursor: pointer
+  h2
+    margin-bottom: 20px
+    img
+      margin-right: 10px
+    font-size: 20px
+    font-weight: 400
+    color: #000
+    text-transform: uppercase
 .bgmain 
   background: #FFFFFF
   border-radius: 5px
@@ -618,7 +692,7 @@ img
         font-weight: 300
         text-decoration: underline
   .input-column2
-    width: 49%
+    width: 48%
   .input-column1
     width: 100%
   .input-column3
@@ -655,7 +729,9 @@ img
     height: 40px
     font-size: 16px
     font-weight: 300
-    color: #9C9C9C
+    color: #000
+    &::placeholder
+      color: #B5B5B5
 .phuongthucgiaohang
   .item
     background: #FFFFFF
@@ -743,26 +819,61 @@ img
       color: #000
   .content2
     .boxship2
-      padding-left: 7px
+      padding-left: 8px
       label
         font-size: 16px
         font-weight: 400
         color: #000
       .box2
-        padding-left: 45px
-        margin-bottom: 10px
-        .row
+        padding-left: 42px
+        margin-bottom: 12px
+        .input-column2
           background: #FFFFFF
           border: 1px solid #E2E2E2
           border-radius: 5px
           padding: 20px
+        .style
+          padding: 5px 15px
+          border: 1px dashed #B0B0B0
+          span:nth-child(1)
+            font-size: 26px
+            font-weight: 400
+            color: #000
+          span:nth-child(2)
+            font-size: 16px
+            font-weight: 300
+            color: #000
+            padding: 0 20px 0 7px
         .item
           width: calc(100% - 60px)
           position: relative
+          &.active
+            .boxchoose
+              display: block
+          span
+            font-size: 16px
+            font-weight: 400
+            color: #000000
+            span.macdinh
+              font-size: 12px
+              font-weight: 300
+              color: #fff
+              background: #106909
+              border-radius: 2px
+              padding: 0 5px
+              margin-left: 5px
+          p
+            font-size: 16px
+            font-weight: 300
+            color: #575757
+            margin-top: 8px
+            height: 45px
+            overflow: hidden
           .choose
             position: absolute
             top: 0
             right: -10px
+            cursor: pointer
             span
               display: block
               width: 4px
@@ -775,7 +886,7 @@ img
         [type=radio]:checked + label:after
           top: 2px
     .style1 [type=radio]:checked + label, .style1 [type=radio]:not(:checked) + label
-      padding-left: 45px
+      padding-left: 42px
     
 .phuongthucthanhtoan
   .box
@@ -924,8 +1035,8 @@ img
   [type="radio"]
     &:checked, &:not(:checked)
       position: absolute
-      width: 20%
-      height: 20px
+      width: 20px
+      height: 30px
       z-index: 10
       opacity: 0
       cursor: pointer
@@ -995,7 +1106,7 @@ img
       cursor: pointer
     &:checked + label, &:not(:checked) + label
       position: relative
-      padding-left: 28px
+      padding-left: 35px
       cursor: pointer
       line-height: 20px
       display: inline-block
