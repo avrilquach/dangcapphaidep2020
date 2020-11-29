@@ -1,0 +1,52 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    include inc/header.jade
+    include inc/breadcrumb.jade
+    ._container
+      .product
+        .row
+          .left
+            .gallery
+              #big.owl-carousel.owl-theme
+                .item
+                  img(src='img/product-detail.jpg')
+                .item
+                  img(src='img/product-detail.jpg')
+                .item
+                  img(src='img/product-detail.jpg')
+                .item
+                  img(src='img/product-detail.jpg')
+              #thumbs.owl-carousel.owl-theme
+                .item
+                  img(src='img/product-detail.jpg')
+                .item
+                  img(src='img/product-detail.jpg')
+                .item
+                  img(src='img/product-detail.jpg')
+                .item
+                  img(src='img/product-detail.jpg')
+          .right
+            h1 Vitamin C Booster Concentrate 20 ml – Tinh chất làm trắng da, chống lão hóa
+            span.options
+              span.rate
+                i.fa.fa-star.green
+                i.fa.fa-star.green
+                i.fa.fa-star.green
+                i.fa.fa-star.green
+                i.fa.fa-star
+              span.comments
+                i.fa.fa-comment
+                | Xem đánh giá (3)
+              span.write-comment
+                i.fas.fa-pencil-alt
+                | Viết đánh giá
+
+
+
+              
+    include inc/footer.jade
+    include inc/script.jade
+    script(type='text/javascript', src='js/main2.js')
+    
