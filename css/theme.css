@@ -91,6 +91,14 @@ img {
   width: 70px;
 }
 
+.width100 {
+  width: 100px;
+}
+
+.width175 {
+  width: 175px;
+}
+
 #header {
   background: #fff;
 }
@@ -381,14 +389,117 @@ img {
   margin-right: 20px;
 }
 
-.quan_ly_don_hang table {
+.quan_ly_don_hang .item {
+  margin-bottom: 20px;
+}
+.quan_ly_don_hang .top {
   background: #FFFFFF;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 30px;
+}
+.quan_ly_don_hang .top p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.quan_ly_don_hang .top p span {
+  font-weight: 700;
+}
+.quan_ly_don_hang .middle {
+  background: #FBF3F3;
+  padding: 20px 30px;
+}
+.quan_ly_don_hang .middle span:nth-child(2) {
+  color: #FF326C;
+  font-size: 25px;
+  font-weight: 600;
+}
+.quan_ly_don_hang .middle span:nth-child(1) {
+  margin-right: 100px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.quan_ly_don_hang .bottom {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 0 0 10px 10px;
+}
+.quan_ly_don_hang .bottom a {
+  height: 44px;
+  width: 157px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #FF326C;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.quan_ly_don_hang table tr th, .quan_ly_don_hang table tr td {
+  padding: 20px;
+}
+.quan_ly_don_hang table tr th:first-child, .quan_ly_don_hang table tr td:first-child, .quan_ly_don_hang table tr th:last-child, .quan_ly_don_hang table tr td:last-child {
+  padding: 20px 30px;
+}
+.quan_ly_don_hang table tr th {
+  background: #FBF3F3;
+  color: #000;
+  font-size: 14px;
+  font-weight: 300;
+}
+.quan_ly_don_hang table tr td {
+  background: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  border-bottom: 1px solid #E9E9E9;
+}
+.quan_ly_don_hang table tr td a {
+  height: 25px;
+  width: 67px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #106909;
+  background: #FFFFFF;
+  border: 1px solid #106909;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.quan_ly_don_hang table tr td .img {
+  width: 100px;
+}
+.quan_ly_don_hang table tr td .text {
+  width: calc(100% - 100px);
 }
 
 .main_right2 {
   margin-left: 20px;
   width: 920px;
+}
+.main_right2 h4 {
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.pager ul li {
+  height: 32px;
+  width: 32px;
+  background: #C4C4C4;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pager ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.pager ul li:hover, .pager ul li.active {
+  background: #FF326C;
 }
 
 .main_right {

@@ -66,6 +66,10 @@ img
   width: 50px
 .width70
   width: 70px
+.width100
+  width: 100px
+.width175 
+  width: 175px
 #header
   background: #fff
 ._form_search
@@ -299,12 +303,99 @@ img
   width: 820px
   margin-right: 20px
 .quan_ly_don_hang
-  table
+  .item
+    margin-bottom: 20px
+  .top
     background: #FFFFFF
-    border-radius: 10px 
+    border-radius: 10px 10px 0 0 
+    padding: 20px 30px
+    p
+      font-size: 16px
+      font-weight: 300
+      color: #000
+      span
+        font-weight: 700
+  .middle
+    background: #FBF3F3
+    padding: 20px 30px
+    span:nth-child(2)
+      color: #FF326C
+      font-size: 25px
+      font-weight: 600
+    span:nth-child(1)
+      margin-right: 100px
+      font-size: 16px
+      font-weight: 300
+      color: #000
+  .bottom
+    background: #fff
+    padding: 20px 30px
+    border-radius: 0 0 10px 10px
+    a
+      height: 44px
+      width: 157px
+      font-size: 16px
+      font-weight: 600
+      color: #fff
+      background: #FF326C
+      border-radius: 5px
+      text-transform: uppercase
+  table
+    tr th, tr td
+      padding: 20px
+    tr th:first-child, tr td:first-child, tr th:last-child, tr td:last-child
+      padding: 20px 30px
+    tr th
+      background: #FBF3F3
+      color: #000
+      font-size: 14px
+      font-weight: 300
+    tr td
+      background: #fff
+      font-size: 14px
+      font-weight: 300
+      color: #000
+      border-bottom: 1px solid #E9E9E9
+      a
+        height: 25px
+        width: 67px
+        font-size: 14px
+        font-weight: 300
+        color: #106909
+        background: #FFFFFF
+        border: 1px solid #106909
+        border-radius: 5px
+        margin-top: 10px
+      .img
+        width: 100px
+      .text
+        width: calc(100% - 100px)
 .main_right2
   margin-left: 20px
   width: 920px
+  h4
+    padding-left: 30px
+    font-size: 20px
+    font-weight: 400
+    color: #000
+    margin-bottom: 15px
+    text-transform: uppercase
+.pager
+  ul
+    li
+      height: 32px
+      width: 32px
+      background: #C4C4C4
+      border-radius: 50%
+      margin: 0 5px
+      cursor: pointer
+      a
+        font-size: 16px
+        font-weight: 300
+        color: #fff 
+      &:hover, &.active
+        background: #FF326C
+
 .main_right
   margin-left: 20px
   background: #fff

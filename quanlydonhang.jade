@@ -59,33 +59,53 @@ html
 					.main_right2
 						h4 đơn hàng của tôi
 						.quan_ly_don_hang
-							table
-								thead
-									tr
-										th Mã đơn hàng: #5465313132
-										th Ngày mua: 20/10/2020
-										th Trạng thái đơn hàng: Đang giao
-									tr
-										th Sản phẩm
-										th
-										th Giá
-										th Số lượng
-										th Giảm giá
-										th Tạm tính
-								tbody
-									tr
-										td 
-											img(src="img/image4.jpg", alt="")
-										td
-											| Thuốc Mọc Dài Và Làm Rậm Lông Mi Revitalash Advanced 2.0ml
-											a(href="/") Mua lại
-										td
-											| 10.900.000 ₫
-										td 1
-										td 0đ
-										td 10.900.000 ₫
-
-												
-														
+							-for(y=0 ; y<2 ;y++)
+								.item
+									.top.row.align-items-center.justify-content-between
+										p Mã đơn hàng: 
+											span #5465313132
+										p Ngày mua: 20/10/2020
+										p Trạng thái đơn hàng: 
+											span Đang giao
+									table
+										thead
+											tr
+												th Sản phẩm
+												th.width175.text-center Giá
+												th.width100.text-center Số lượng
+												th.width100.text-center Giảm giá
+												th.width175.text-center Tạm tính
+										tbody
+											-for(i=0;i<3;i++)
+												tr
+													td.row
+														.img 
+															img(src="img/image4.jpg", alt="")
+														.text 
+															| Thuốc Mọc Dài Và Làm Rậm Lông Mi Revitalash Advanced 2.0ml
+															a(href="/").row.align-items-center.justify-content-center Mua lại
+													td.text-center
+														| 10.900.000 ₫
+													td.text-center 1
+													td.text-center 0đ
+													td.text-right 10.900.000 ₫
+									.middle
+										.row.align-items-center.justify-content-end
+											span Tổng tiền:
+											span 80.000.000đ
+									.bottom
+										.row.align-items-center.justify-content-end
+											a.row.align-items-center.justify-content-center(href="/") Mua lại
+							.pager.pad20_0
+								ul.row.align-items-center.justify-content-center
+									li.row.align-items-center.justify-content-center
+										a(href="/") 1
+									li.active.row.align-items-center.justify-content-center
+										a(href="/") 2
+									li.row.align-items-center.justify-content-center
+										a(href="/") 3
+									li.row.align-items-center.justify-content-center
+										a(href="/") 4
+																								
 		include inc/footer.jade
 		include inc/script.jade
