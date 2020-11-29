@@ -1028,8 +1028,9 @@ img {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
-  outline: nonenone;
+  outline: none;
   cursor: pointer;
+  border: none;
 }
 .thong_tin_tai_khoan .label {
   width: 200px;
@@ -1202,10 +1203,14 @@ img {
   height: 250px;
   text-align: center;
   padding: 20px 5px;
+  position: relative;
 }
 .phuongthucthanhtoan .box .item .img {
-  height: 60px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 55px;
+}
+.phuongthucthanhtoan .box .item .img img {
+  mix-blend-mode: luminosity;
 }
 .phuongthucthanhtoan .box .item:nth-child(2) img {
   margin-top: -15px;
@@ -1213,6 +1218,9 @@ img {
 .phuongthucthanhtoan .box .item .radio {
   position: relative;
   height: 40px;
+}
+.phuongthucthanhtoan .box .item [type=radio]:checked + label + .img img {
+  mix-blend-mode: normal;
 }
 .phuongthucthanhtoan .box .item [type=radio]:checked, .phuongthucthanhtoan .box .item [type=radio]:not(:checked) {
   width: 100%;
@@ -1223,6 +1231,8 @@ img {
   font-size: 16px;
   font-weight: 300;
   color: #000;
+  position: absolute;
+  top: 130px;
 }
 .phuongthucthanhtoan .style1 [type=radio]:checked + label, .phuongthucthanhtoan .style1 [type=radio]:not(:checked) + label {
   padding-left: 20px;
@@ -1388,6 +1398,9 @@ img {
   border: 1px solid #106909;
   border-radius: 100%;
   background: #fff;
+}
+.style1 [type=radio]:not(:checked) + label:before {
+  border: 1px solid #CECECE;
 }
 .style1 [type=radio]:checked + label:after {
   content: "";
