@@ -42,10 +42,92 @@ html
               span.write-comment
                 i.fas.fa-pencil-alt
                 | Viết đánh giá
+            .size
+              span Dung tích:
+              ul
+                li
+                  a(href='#') 5ml
+                li
+                  a(href='#') 10ml
 
 
 
-              
+    ._container
+      .styleproduct
+        h3 đánh giá nhận xét
+      .danhgianhanxet
+        .reviewvote
+          .row.align-items-center.justify-content-between.item
+            span.number_total.row.align-items-center.justify-content-center
+              | 3.5
+              img(src='img/Starbig.svg')
+            ul
+              li.active.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 5
+                  img(src='img/Star3.svg')
+                span.line.width100
+                span.text 10 đánh giá
+              li.active.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 4
+                  img(src='img/Star3.svg')
+                span.line.width80
+                span.text 3 đánh giá
+              li.active.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 3
+                  img(src='img/Star3.svg')
+                span.line.width20
+                span.text 3 đánh giá
+              li.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 2
+                  img(src='img/Star3.svg')
+                span.line
+                  i
+                span.text 0 đánh giá
+              li.row.align-items-center.justify-content-between
+                span.number.row.align-items-center
+                  | 1
+                  img(src='img/Star3.svg')
+                span.line
+                  i
+                span.text 0 đánh giá
+            a.send-comment(href='#').row.align-items-center.justify-content-center Gửi đánh giá của bạn
+          .row.align-items-center.pad30_0
+            span.title
+              | Bạn thấy sản phẩm như thế nào ?
+              br
+              | (Chọn sao nhé)
+            .choose-star
+              img(src='img/Star6.svg')
+              img(src='img/Star6.svg')
+              img(src='img/Star6.svg')
+              img(src='img/Star6.svg')
+              img(src='img/Star7.svg')
+    .information
+      ._container.row.align-items-center.justify-content-between
+        .item.row.align-items-center.justify-content-center
+          img(src='img/camketchinhhang.svg')
+          p CAM KẾT 
+            br
+            | HÀNG CHÍNH HÃNG
+        .item.row.align-items-center.justify-content-center
+          img(src='img/tichdiem.svg')
+          p TÍCH ĐIỂM
+            br
+            | THÀNH VIÊN VIP 
+        .item.row.align-items-center.justify-content-center
+          img(src='img/mienphi.svg')
+          p MIỄN PHÍ 
+            br
+            | VẬN CHUYỂN
+        .item.row.align-items-center.justify-content-center
+          img(src='img/chamsoc.svg')
+          p CHĂM SÓC
+            br
+            | & TƯ VẤN TẬN TÌNH
     include inc/footer.jade
     include inc/script.jade
     script(type='text/javascript', src='js/main2.js')
