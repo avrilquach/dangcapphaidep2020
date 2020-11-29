@@ -484,6 +484,14 @@ img {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
+.main_right2 h3 {
+  font-size: 25px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
 
 .pager ul li {
   height: 32px;
@@ -1657,6 +1665,217 @@ img {
 .style2 [type=radio]:checked + label:after {
   opacity: 1;
   transform: scale(1);
+}
+
+.lichsugiaodich {
+  padding: 50px 100px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+.lichsugiaodich h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+.lichsugiaodich table {
+  border: 1px solid #E9E9E9;
+  margin-bottom: 20px;
+}
+.lichsugiaodich table tr th, .lichsugiaodich table tr td {
+  padding: 20px 30px;
+}
+.lichsugiaodich table tr th {
+  background: #F8F8F8;
+}
+.lichsugiaodich table tr td {
+  border-bottom: 1px solid #E9E9E9;
+  font-size: 14px;
+  color: #000;
+}
+.lichsugiaodich table tr td:nth-child(1) {
+  color: #106909;
+}
+
+.quychelenhang {
+  margin-bottom: 20px;
+}
+.quychelenhang .input-column3 {
+  width: 32%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 20px;
+}
+.quychelenhang .input-column3 img {
+  display: block;
+  margin: 0 auto 10px;
+}
+.quychelenhang .input-column3 h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.quychelenhang .input-column3 p.style {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.quychelenhang .input-column3 p.style2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.quychelenhang .input-column3 p.style2 span {
+  font-weight: 700;
+  margin-left: 3px;
+}
+.quychelenhang .input-column3 .uudai h6 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px dashed #C5C5C5;
+}
+.quychelenhang .input-column3 .uudai.vang .item p {
+  background: url("../img/vang2.svg") no-repeat left 4px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.quychelenhang .input-column3 .uudai.vang .item p span {
+  color: #FF326C;
+}
+.quychelenhang .input-column3 .uudai.bac .item p {
+  background: url("../img/bac2.svg") no-repeat left 4px;
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.quychelenhang .input-column3 .uudai.bac .item p span {
+  color: #FF326C;
+}
+
+.hangdiemhientai {
+  padding: 50px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.hangdiemhientai .input-column2:nth-child(1) {
+  margin-left: 50px;
+}
+.hangdiemhientai .hang {
+  margin-top: 80px;
+  position: relative;
+}
+.hangdiemhientai .hang p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #373737;
+}
+.hangdiemhientai .hang p span {
+  font-weight: 600;
+}
+.hangdiemhientai .hang .circle {
+  position: relative;
+  margin-right: 35px;
+  width: 36px;
+  height: 36px;
+}
+.hangdiemhientai .hang .circle::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #106909;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+}
+.hangdiemhientai .hang .circle::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #106909;
+  width: 24px;
+  height: 24px;
+  background: #106909;
+  border-radius: 50%;
+  left: 6px;
+  top: 6px;
+}
+.hangdiemhientai .diem {
+  position: relative;
+}
+.hangdiemhientai .diem::after {
+  content: "";
+  width: 1px;
+  height: 68px;
+  position: absolute;
+  background: #106909;
+  top: 42px;
+  left: 17px;
+}
+.hangdiemhientai .diem p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #373737;
+}
+.hangdiemhientai .diem p span {
+  font-weight: 600;
+}
+.hangdiemhientai .diem .circle {
+  position: relative;
+  margin-right: 35px;
+  width: 36px;
+  height: 36px;
+}
+.hangdiemhientai .diem .circle::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #106909;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+}
+.hangdiemhientai .diem .circle::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #106909;
+  width: 24px;
+  height: 24px;
+  background: #106909;
+  border-radius: 50%;
+  left: 6px;
+  top: 6px;
+}
+.hangdiemhientai .head {
+  margin-bottom: 10px;
+}
+.hangdiemhientai .head h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.hangdiemhientai .head .img {
+  width: 40px;
+}
+.hangdiemhientai .thanhvien .content, .hangdiemhientai .uudai .content {
+  margin-left: 40px;
+}
+.hangdiemhientai .thanhvien .content p, .hangdiemhientai .uudai .content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 5px;
+}
+.hangdiemhientai .thanhvien .content p span, .hangdiemhientai .uudai .content p span {
+  font-weight: 700;
+}
+.hangdiemhientai .thanhvien .content {
+  border-bottom: 1px dashed #C5C5C5;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1279px) {
