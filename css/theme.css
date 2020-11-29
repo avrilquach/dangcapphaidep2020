@@ -1185,6 +1185,7 @@ img {
 }
 .thong_tin_tai_khoan .button {
   margin-left: 200px;
+  margin-top: 10px;
 }
 .thong_tin_tai_khoan .button .update {
   background: #106909;

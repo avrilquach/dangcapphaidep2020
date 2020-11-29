@@ -1,0 +1,105 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		include inc/header.jade
+		include inc/breadcrumb.jade
+		.main.padbt0_30
+			._container
+				.row
+					.sidebar
+						.top_account
+							.box.row.align-items-center
+								.img.row.align-items-center.justify-content-center
+									img(src='img/userIcon.svg', alt='')
+								p Tài khoản của
+									span Phuong Pham
+							ul
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem2.svg', alt='')
+										span Vip
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem3.svg', alt='')
+										span Thông tin tài khoản
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem4.svg', alt='')
+										span Quản lí  đơn hàng
+								li.active
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem5.svg', alt='')
+										span Sổ địa chỉ
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem6.svg', alt='')
+										span Nhận xét sản phẩm đã mua
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem7.svg', alt='')
+										span Sản phẩm đã xem
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem8.svg', alt='')
+										span Xu của tôi
+								li
+									a(href="/").row.align-items-center
+										.img
+											img(src='img/sanphamdaxem9.svg', alt='')
+										span Nhận xét của tôi
+
+					.main_right
+						h4 chỉnh sửa địa chỉ
+						.thong_tin_tai_khoan.style1.stylett
+							.row.align-items-center.item
+								.label Họ và tên
+								.forminput
+									input(type="text" value="Nguyễn Hồng Nhung").input
+							.row.align-items-center.item
+								.label Số điện thoại
+								.forminput
+									input(type="text" value="09034566566").input
+							.row.align-items-center.item
+								.label Tỉnh / Thành Phố
+								.forminput
+									select.input
+										option(value='Hồ Chí Minh') Hồ Chí Minh
+							.row.align-items-center.item
+								.label Quận / Huyện
+								.forminput
+									select.input
+										option(value='Gò Vấp') Gò Vấp
+							.row.align-items-center.item
+								.label Phường / Xã
+								.forminput
+									select.input
+										option(value='Phường 17') Phường 17
+							.row.align-items-center.item
+								.label Địa chỉ
+								.forminput
+									input(type="text" value="245/23 Lê Đức Thọ").input
+							.row.align-items-center.item
+								.label Loại địa chỉ
+								.forminput.row.align-items-center
+									.radio
+										input(type="radio" name="loaidiachi" checked)
+										label Nhà riêng / Chung cư
+									.radio
+										input(type="radio" name="loaidiachi")
+										label Cơ quan / Công ty
+							.style2.button
+								input(type='radio' name='addaddress')
+								label Sử dụng địa chỉ này làm mặc định
+							.button
+								button(type="button").update.row.align-items-center.justify-content-center Cập nhật
+
+		include inc/footer.jade
+		include inc/script.jade
