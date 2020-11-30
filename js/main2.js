@@ -31,10 +31,6 @@ $(document).ready(function () {
        items: 3,
        dots: true,
        nav: true,
-       navText: [
-         '<i class="fas fa-chevron-left" aria-hidden="true"></i>',
-         '<i class="fas fa-chevron-right" aria-hidden="true"></i>'
-       ],
        smartSpeed: 200,
        slideSpeed: 500,
        slideBy: 3,
