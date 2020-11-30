@@ -95,7 +95,7 @@ html
                   i
                 span.text 0 đánh giá
             a.send-comment(href='#').row.align-items-center.justify-content-center Gửi đánh giá của bạn
-          .row.align-items-center.pad30_0
+          .row.align-items-center.item2
             span.title
               | Bạn thấy sản phẩm như thế nào ?
               br
@@ -106,6 +106,19 @@ html
               img(src='img/Star6.svg')
               img(src='img/Star6.svg')
               img(src='img/Star7.svg')
+        form.comments-review
+          textarea.comments(name='comments' placeholder="Đánh giá sản phẩm")
+          span.options.row.align-items-center
+            span.files
+              span
+                img(src='img/camera.svg')
+                | Gửi ảnh
+              input(type='file')
+            .row.algin-items-center.justify-content-between.form
+              input(type='text' name='hoten' placeholder='Họ và tên (bắt buộc)').input
+              input(type='text' name='email' placeholder='Email').input
+              input(type='submit' value='Gửi').submit
+
     .information
       ._container.row.align-items-center.justify-content-between
         .item.row.align-items-center.justify-content-center
