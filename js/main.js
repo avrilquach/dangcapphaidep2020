@@ -1,4 +1,12 @@
 $(document).ready(function () {
+	var banner = $('.banner');
+	banner.owlCarousel({
+		nav: false,
+		dots: true,
+		items: 1,
+		nav: true,
+		autoplay: true
+	});
  $(".do-nicescrol").niceScroll({
 	autohidemode: false, 
  });

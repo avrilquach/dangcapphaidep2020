@@ -262,11 +262,18 @@ img
       display: none
 .contentproduct
   display: inline-block
-  width: 100%
+  width: calc(100% + 10px)
+  margin-left: -5px
+  &.contentproduct_right
+    width: calc(100% - 516px)
+    margin-left: 7.5px
+    .item
+      margin: 0 7.5px 15px 7.5px
+      width: 243px	
   .item
     float: left
-    width: 19%
-    margin: 0 0.5% 15px 0.5%
+    width: 245px
+    margin: 0 7.5px 15px 7.5px
     border-radius: 5px
     background: #fff
     .inner
@@ -274,7 +281,7 @@ img
       img.product
         margin: 0 auto 5px auto
         width: 230px
-        height: 230px
+        height: 212px
         display: block
       .title
         font-size: 14px
@@ -1301,6 +1308,7 @@ img
         position: absolute
         bottom: 0
         width: 100%
+        left: 0
         a
           border: 1px solid #000000
           border-radius: 5px
@@ -1818,7 +1826,83 @@ img
           border-radius: 5px
           margin: 0 auto
           padding: 10px
+.partner
+  background: #fff
+  border-top: 1px solid #DBDBDB
+  border-bottom: 1px solid #DBDBDB
+  margin-bottom: 25px
+  ul
+    li
+      width: 129px
+      height: 129px
+      border-right: 1px solid #DBDBDB
+      &:first-child
+        border-left: 1px solid #DBDBDB
+      &:hover, &.active
+        background: #FBF3F3
+.banner
+  .item
+    height: 560px
+    width: 1920px
+    .caption
+      width: 375px
+      text-align: center
+      padding-top: 150px
+      h1
+        font-size: 30px
+        font-weight: 300
+        color: #000
+        text-transform: uppercase
+        span
+          font-size: 44px
+          font-weight: 400
+          color: #000
+          display: block
+      p
+        background: #FF9E9B
+        border-radius: 30px
+        margin-bottom: 10px
+        span:nth-child(1)
+          font-size: 30px
+          font-weight: 300
+          color: #fff
+          text-transform: uppercase
+          padding-top: 22px
+        span:nth-child(2)
+          font-size: 51px
+          font-weight: 700
+          margin-left: 5px
+          color: #fff
+      a
+        font-size: 30px
+        font-weight: 300
+        color: #000000
+        text-decoration: underline
+
 .styleproduct
+  .banner-left
+    width: 508px
+  .style
+    margin-bottom: 25px
+  a.xtc
+    font-size: 18px
+    font-weight: 300
+    color: #000
+    text-decoration: underline
+  h2
+    font-size: 25px
+    font-weight: 300
+    position: relative
+    padding-left: 50px
+    text-transform: uppercase
+    &::before
+      content: ""
+      width: 40px
+      height: 1px 
+      background: #000
+      position: absolute
+      top: 16px
+      left: 0
   h3
     font-size: 25px
     font-weight: 300
