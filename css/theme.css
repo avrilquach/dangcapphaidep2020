@@ -406,8 +406,9 @@ img {
   font-weight: 700;
 }
 .quan_ly_don_hang .middle {
-  background: #FBF3F3;
+  background: #fff;
   padding: 20px 30px;
+  border-bottom: 1px solid #E9E9E9;
 }
 .quan_ly_don_hang .middle span:nth-child(2) {
   color: #FF326C;
@@ -1476,6 +1477,108 @@ img {
   border: none;
 }
 
+.thongtinsanpham {
+  margin-bottom: 25px;
+}
+.thongtinsanpham .left .content {
+  width: 828px;
+  margin-right: 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+.thongtinsanpham .left .content .show-data {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) -148.14%, #FFFFFF 100%);
+  border-radius: 5px;
+  height: 315px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.thongtinsanpham .left .content .show-data a {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  width: 256px;
+  height: 40px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.thongtinsanpham .left .content .hide-data {
+  display: none;
+}
+.thongtinsanpham .left .content p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 10px;
+}
+.thongtinsanpham .left .content .img {
+  text-align: center;
+}
+.thongtinsanpham .left .content .img img {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+.thongtinsanpham .left .content .img p {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  color: #000;
+}
+.thongtinsanpham .left .content .img h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+}
+.thongtinsanpham .box-buy {
+  width: 442px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.thongtinsanpham .box-buy .img {
+  width: 246px;
+  height: 246px;
+  margin: 0 auto 30px auto;
+}
+.thongtinsanpham .box-buy span.title {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 5px;
+}
+.thongtinsanpham .box-buy .buy_product {
+  font-size: 20px;
+  background: #FE2B6D;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.thongtinsanpham .box-buy span.options {
+  margin-bottom: 20px;
+}
+.thongtinsanpham .box-buy span.price-new {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FE2B6D;
+  margin-right: 20px;
+}
+.thongtinsanpham .box-buy span.price-old {
+  font-size: 20px;
+  font-weight: 300;
+  color: #737373;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
 .thongtindonhang .head img {
   margin-right: 15px;
 }
@@ -1677,12 +1780,11 @@ img {
   width: 530px;
 }
 .product .right h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: #212121;
   height: 90px;
   overflow: hidden;
-  margin-bottom: 10px;
 }
 .product .right .mua-chung h4 {
   font-size: 20px;
@@ -1969,6 +2071,8 @@ img {
 .product .left .gallery #big img {
   display: block;
   margin: 0 auto;
+  width: auto;
+  max-width: 100%;
 }
 .product .left .gallery #thumbs {
   width: 400px;
@@ -2069,6 +2173,9 @@ img {
 .comments-area .persion-replay {
   margin-left: 100px;
   margin-top: 10px;
+}
+.comments-area .persion-replay .right .name h5 {
+  margin-bottom: 0;
 }
 
 .box-comments {

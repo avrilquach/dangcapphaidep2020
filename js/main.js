@@ -58,4 +58,8 @@ $(".themsodienthoai").click(function(e){
 	$(".themsodienthoai").hide();
 	$(".sodienthoai").css("margin-bottom","15px");
 })
+$(".show-data a").click(function(e){
+	$(".hide-data").show();
+	$(".show-data").hide();
+})
 })
