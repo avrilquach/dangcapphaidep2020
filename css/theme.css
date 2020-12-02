@@ -2274,6 +2274,13 @@ img {
   text-decoration: underline;
 }
 
+.bannerproduct {
+  margin-bottom: 25px;
+}
+.bannerproduct a {
+  width: 49%;
+}
+
 .styleproduct .banner-left {
   width: 508px;
 }

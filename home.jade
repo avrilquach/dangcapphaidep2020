@@ -55,6 +55,7 @@ html
                 span.new 500.000đ
                 span.old 750.000đ
             a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
+    
     ._container
       .styleproduct
         .row.align-items-center.justify-content-between.style
@@ -79,6 +80,42 @@ html
                     span.new 500.000đ
                     span.old 750.000đ
                 a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
+    ._container
+      .styleproduct
+        .row.align-items-center.justify-content-between.style
+          h2 Hot deals
+      .bannerproduct
+        .row.align-items-center.justify-content-between
+          a(href="#")
+            img(src='img/banner1.jpg' alt='')
+          a(href="#")
+            img(src='img/banner1.jpg' alt='')
+           
+      .contentproduct
+        -for(i=0;i<5;i++)
+          .item
+            .inner
+              img.product(src='img/image4.jpg' alt='')
+              span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
+              span.star.row.align-items-center
+                img(src='img/Star3.svg' alt='')
+                img(src='img/Star3.svg' alt='')
+                img(src='img/Star3.svg' alt='')
+                img(src='img/Star3.svg' alt='')
+                img(src='img/Star2.svg' alt='')
+                span (20)
+              span.price.row.align-items-center
+                span.new 500.000đ
+                span.old 750.000đ
+            a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
+    ._container
+      .styleproduct
+        .row.align-items-center.justify-content-between.style
+          h2 KINH NGHIỆM LÀM ĐẸP
+      .kinhnghiemlamdep.row
+        -for(i=0;i<3;i++)
+          .item
+            
     .information
       ._container.row.align-items-center.justify-content-between
         .item.row.align-items-center.justify-content-center
