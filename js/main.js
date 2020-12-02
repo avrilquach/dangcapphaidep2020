@@ -7,6 +7,13 @@ $(document).ready(function () {
 		nav: true,
 		autoplay: true
 	});
+	var timkiem = $('.timkiemnhieunhat');
+	timkiem.owlCarousel({
+		nav: false,
+		nav: true,
+		autoplay: true,
+		autoWidth:true,
+	});
  $(".do-nicescrol").niceScroll({
 	autohidemode: false, 
  });

@@ -83,6 +83,14 @@ html
     ._container
       .styleproduct
         .row.align-items-center.justify-content-between.style
+          h2 TÌM KIẾM NHIỀU NHẤT
+      .timkiemnhieunhat.owl-carousel.owl-theme
+        -for(i=0;i<10;i++)
+          .item
+            a(href="#") Tinh chất trị tàn nhan
+    ._container
+      .styleproduct
+        .row.align-items-center.justify-content-between.style
           h2 Hot deals
       .bannerproduct
         .row.align-items-center.justify-content-between
@@ -111,15 +119,50 @@ html
     ._container
       .styleproduct
         .row.align-items-center.justify-content-between.style
+          h2 sản phẩm Dành riêng cho bạn
+        .row.justify-content-between
+          .banner-left
+            img(src='img/banner-left.jpg' alt='')
+          .contentproduct.contentproduct_right
+            -for(i=0;i<6;i++)
+              .item
+                .inner
+                  img.product(src='img/image4.jpg' alt='')
+                  span.title Sữa rửa mặt dành cho nam giới Maria Galland 900...
+                  span.star.row.align-items-center
+                    img(src='img/Star3.svg' alt='')
+                    img(src='img/Star3.svg' alt='')
+                    img(src='img/Star3.svg' alt='')
+                    img(src='img/Star3.svg' alt='')
+                    img(src='img/Star2.svg' alt='')
+                    span (20)
+                  span.price.row.align-items-center
+                    span.new 500.000đ
+                    span.old 750.000đ
+                a.addtocart.row.justify-content-center.align-items-center Thêm giỏ hàng
+    ._container
+      .styleproduct
+        .row.align-items-center.justify-content-between.style
           h2 KINH NGHIỆM LÀM ĐẸP
-      .kinhnghiemlamdep.row
+      .kinhnghiemlamdep.row.align-items-center.justify-content-between
         -for(i=0;i<3;i++)
           .item
-            
+            .img
+              img(src='img/image7.jpg')
+              span.date 07/10/2020
+            .text
+              h5 Khi nào bạn cần đi gặp bác sĩ khi xuất hiện những đốm nâu trên da
+              p Bạn có bao giờ thắc mắc tại sao những đốm nâu trên da xuất hiện ngày một nhiều mặc dù bạn vẫn đang còn trẻ hay chưa? Những đốm này còn được gọi là đốm đồi mồi...
+              a(href="/") Xem thêm
+    .videomoinhat
+      ._container
+        .styleproduct
+          .row.align-items-center.justify-content-between.style
+            h2 VIDEO MỚI NHẤT
     .information
       ._container.row.align-items-center.justify-content-between
         .item.row.align-items-center.justify-content-center
-          img(src='img/camketchinhhang.svg')
+          Xem thêm
           p CAM KẾT 
             br
             | HÀNG CHÍNH HÃNG
