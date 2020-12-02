@@ -2170,6 +2170,10 @@ img {
   width: auto;
   max-width: 100%;
 }
+.product .left .gallery #big .item {
+  width: 450px;
+  margin: 0 auto;
+}
 .product .left .gallery #thumbs {
   width: 400px;
   margin: 0 auto;
@@ -2194,6 +2198,7 @@ img {
   width: 129px;
   height: 129px;
   border-right: 1px solid #DBDBDB;
+  cursor: pointer;
 }
 .partner ul li:first-child {
   border-left: 1px solid #DBDBDB;
@@ -2202,6 +2207,27 @@ img {
   background: #FBF3F3;
 }
 
+.banner {
+  position: relative;
+}
+.banner .owl-nav .owl-next {
+  background: url("../img/next.svg") no-repeat;
+  width: 26px;
+  height: 83px;
+  position: absolute;
+  right: 30px;
+  top: 40%;
+  text-indent: -9999px;
+}
+.banner .owl-nav .owl-prev {
+  background: url("../img/prev.svg") no-repeat;
+  width: 26px;
+  height: 83px;
+  position: absolute;
+  left: 30px;
+  top: 40%;
+  text-indent: -9999px;
+}
 .banner .item {
   height: 560px;
   width: 1920px;

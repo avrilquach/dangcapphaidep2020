@@ -1815,6 +1815,9 @@ img
           margin: 0 auto
           width: auto
           max-width: 100%
+        .item
+          width: 450px
+          margin: 0 auto
       #thumbs
         width: 400px
         margin: 0 auto
@@ -1836,11 +1839,30 @@ img
       width: 129px
       height: 129px
       border-right: 1px solid #DBDBDB
+      cursor: pointer
       &:first-child
         border-left: 1px solid #DBDBDB
       &:hover, &.active
         background: #FBF3F3
 .banner
+  position: relative
+  .owl-nav
+    .owl-next
+      background: url("../img/next.svg") no-repeat
+      width: 26px
+      height: 83px
+      position: absolute
+      right: 30px
+      top: 40%
+      text-indent: -9999px
+    .owl-prev
+      background: url("../img/prev.svg") no-repeat
+      width: 26px
+      height: 83px
+      position: absolute
+      left: 30px
+      top: 40%
+      text-indent: -9999px
   .item
     height: 560px
     width: 1920px
