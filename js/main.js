@@ -16,7 +16,9 @@ $(document).ready(function () {
 	video.owlCarousel({
 		center: true,
     items:2,
-    loop:true,
+		loop:true,
+		nav: true,
+		autoplay: true,
 	});
  $(".do-nicescrol").niceScroll({
 	autohidemode: false, 

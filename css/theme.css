@@ -140,6 +140,24 @@ img {
   height: 40px;
 }
 
+._cart {
+  position: relative;
+}
+._cart span {
+  position: absolute;
+  background: #FF326C;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  top: -5px;
+  right: -5px;
+  text-align: center;
+  line-height: 25px;
+}
+
 ._support ._img, ._account ._img {
   width: 40px;
   height: 40px;
@@ -2265,6 +2283,25 @@ img {
   margin-bottom: 25px;
   padding: 25px 0 50px 0;
   border-top: 1px solid #E1E1E1;
+  position: relative;
+}
+.videomoinhat .owl-nav .owl-next {
+  background: url("../img/right.svg") no-repeat;
+  width: 20px;
+  height: 45px;
+  position: absolute;
+  bottom: 25px;
+  right: 26%;
+  text-indent: -9999px;
+}
+.videomoinhat .owl-nav .owl-prev {
+  background: url("../img/left.svg") no-repeat;
+  width: 20px;
+  height: 45px;
+  position: absolute;
+  bottom: 25px;
+  left: 23%;
+  text-indent: -9999px;
 }
 .videomoinhat .owl-item {
   padding-bottom: 150px;
@@ -2326,6 +2363,7 @@ img {
   padding-right: 50px;
   height: 70px;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 .timkiemnhieunhat {
@@ -2452,7 +2490,7 @@ img {
   margin-bottom: 25px;
 }
 .styleproduct a.xtc {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   color: #000;
   text-decoration: underline;
@@ -2654,6 +2692,7 @@ img {
   border: none;
   color: #fff;
   text-transform: uppercase;
+  font-size: 16px;
 }
 .comments-review .options .files {
   border-right: 1px solid #D1D1D1;
