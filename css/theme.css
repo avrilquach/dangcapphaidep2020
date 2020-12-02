@@ -2263,11 +2263,11 @@ img {
 .videomoinhat {
   background: #FFFFFF;
   margin-bottom: 25px;
-  padding: 25px 0 100px 0;
+  padding: 25px 0 50px 0;
   border-top: 1px solid #E1E1E1;
 }
 .videomoinhat .owl-item {
-  padding-bottom: 120px;
+  padding-bottom: 150px;
   padding-right: 50px;
   position: relative;
 }
@@ -2275,8 +2275,29 @@ img {
   content: "";
   border-bottom: 1px solid #E1E1E1;
   position: absolute;
-  bottom: 60px;
+  bottom: 100px;
   width: 100%;
+}
+.videomoinhat .owl-item.center::before {
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  width: calc(100% - 50px);
+  height: 4px;
+  background: #000;
+  z-index: 12;
+}
+.videomoinhat .owl-item.center .img::after {
+  background: url("../img/play.svg") no-repeat;
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+  z-index: 10;
 }
 .videomoinhat .item .img {
   position: relative;
@@ -2303,6 +2324,8 @@ img {
   left: 0;
   right: 0;
   padding-right: 50px;
+  height: 70px;
+  overflow: hidden;
 }
 
 .timkiemnhieunhat {
@@ -3015,7 +3038,7 @@ img {
 }
 
 @media (max-width: 1279px) {
-  #header, #footer-new, #header2 {
-    width: 1320px;
+  #header, #footer-new, #header2, .banner, .partner, .videomoinhat {
+    width: 1320px !important;
   }
 }
