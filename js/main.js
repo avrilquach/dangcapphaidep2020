@@ -14,11 +14,9 @@ $(document).ready(function () {
 	});
 	var video = $(".videomoinhat .content");
 	video.owlCarousel({
-		nav: true,
-		autoplay: true,
-		item: 2,
 		center: true,
-		loop: true,
+    items:2,
+    loop:true,
 	});
  $(".do-nicescrol").niceScroll({
 	autohidemode: false, 

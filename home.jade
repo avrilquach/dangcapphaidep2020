@@ -60,6 +60,7 @@ html
       .styleproduct
         .row.align-items-center.justify-content-between.style
           h2 sản phẩm mua nhiều
+          a.xtc Xem tất cả
         .row.justify-content-between
           .banner-left
             img(src='img/banner-left.jpg' alt='')
@@ -84,6 +85,7 @@ html
       .styleproduct
         .row.align-items-center.justify-content-between.style
           h2 TÌM KIẾM NHIỀU NHẤT
+          a.xtc Xem tất cả
       .timkiemnhieunhat.owl-carousel.owl-theme
         -for(i=0;i<10;i++)
           .item
@@ -92,6 +94,7 @@ html
       .styleproduct
         .row.align-items-center.justify-content-between.style
           h2 Hot deals
+          a.xtc Xem tất cả
       .bannerproduct
         .row.align-items-center.justify-content-between
           a(href="#")
@@ -120,6 +123,7 @@ html
       .styleproduct
         .row.align-items-center.justify-content-between.style
           h2 sản phẩm Dành riêng cho bạn
+          a.xtc Xem tất cả
         .row.justify-content-between
           .banner-left
             img(src='img/banner-left.jpg' alt='')
@@ -144,6 +148,7 @@ html
       .styleproduct
         .row.align-items-center.justify-content-between.style
           h2 KINH NGHIỆM LÀM ĐẸP
+          a.xtc Xem tất cả
       .kinhnghiemlamdep.row.align-items-center.justify-content-between
         -for(i=0;i<3;i++)
           .item
@@ -159,10 +164,14 @@ html
         .styleproduct
           .row.align-items-center.justify-content-between.style
             h2 VIDEO MỚI NHẤT
+            a.xtc Xem tất cả
       .content.owl-carousel.owl-theme
         -for(i=0;i<4;i++)
-          .item
-            img(src='img/img7.jpg', alt="")
+          a(href="#").item
+            .img
+              img(src='img/img7.jpg', alt="")
+            p Hướng Dẫn Chọn Kem Chống Nắng Đúng - Image Skincare Spf 32 spf 50 Chống uva
+
     .information
       ._container.row.align-items-center.justify-content-between
         .item.row.align-items-center.justify-content-center

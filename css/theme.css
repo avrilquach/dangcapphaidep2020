@@ -340,12 +340,11 @@ img {
   margin-left: -5px;
 }
 .contentproduct.contentproduct_right {
-  width: calc(100% - 516px);
-  margin-left: 7.5px;
+  width: calc(100% - 510px);
+  margin-right: -5px;
 }
 .contentproduct.contentproduct_right .item {
   margin: 0 7.5px 15px 7.5px;
-  width: 243px;
 }
 .contentproduct .item {
   float: left;
@@ -2263,6 +2262,47 @@ img {
 
 .videomoinhat {
   background: #FFFFFF;
+  margin-bottom: 25px;
+  padding: 25px 0 100px 0;
+  border-top: 1px solid #E1E1E1;
+}
+.videomoinhat .owl-item {
+  padding-bottom: 120px;
+  padding-right: 50px;
+  position: relative;
+}
+.videomoinhat .owl-item::after {
+  content: "";
+  border-bottom: 1px solid #E1E1E1;
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+}
+.videomoinhat .item .img {
+  position: relative;
+}
+.videomoinhat .item .img::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.videomoinhat .item .img img {
+  border-radius: 5px;
+}
+.videomoinhat .item p {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-right: 50px;
 }
 
 .timkiemnhieunhat {
