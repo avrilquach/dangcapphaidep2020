@@ -1,18 +1,24 @@
 $(document).ready(function () {
 	var banner = $('.banner');
 	banner.owlCarousel({
-		nav: false,
-		dots: true,
 		items: 1,
 		nav: true,
 		autoplay: true
 	});
 	var timkiem = $('.timkiemnhieunhat');
 	timkiem.owlCarousel({
-		nav: false,
 		nav: true,
 		autoplay: true,
 		autoWidth:true,
+		item: 6,
+	});
+	var video = $(".videomoinhat .content");
+	video.owlCarousel({
+		nav: true,
+		autoplay: true,
+		item: 2,
+		center: true,
+		loop: true,
 	});
  $(".do-nicescrol").niceScroll({
 	autohidemode: false, 
