@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var banner = $('.banner');
+	var banner = $('.main-banner');
 	banner.owlCarousel({
 		items: 1,
 		nav: true,
