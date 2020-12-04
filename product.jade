@@ -14,8 +14,8 @@ html
                   img(src='img/product-detail.jpg')
                 .item
                   img(src='img/product-detail.jpg')
-                .item
-                  img(src='img/product-detail.jpg')
+                .item.video
+                  iframe(width='450' height='315' src='https://www.youtube.com/embed/x9JxyZNBzh4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
                 .item
                   img(src='img/product-detail.jpg')
               #thumbs.owl-carousel.owl-theme
@@ -23,8 +23,10 @@ html
                   img(src='img/product-detail.jpg')
                 .item
                   img(src='img/product-detail.jpg')
-                .item
+                .item.video
                   img(src='img/product-detail.jpg')
+                  .play
+                    img(src='img/play.svg')
                 .item
                   img(src='img/product-detail.jpg')
           .right
@@ -52,8 +54,12 @@ html
               ul.row.align-items-center
                 li.active
                   a(href='#') 5ml
+                    span.old 20.000.000đ
+                    span.new 4.000.000đ
                 li
                   a(href='#') 10ml
+                    span.old 25.000.000đ
+                    span.new 2.000.000đ
             span.options.row.align-items-center.justify-content-between
               a.buy_product(href="#").row.align-items-center.justify-content-center Đặt mua
               a.add_to_cart(href="#").row.align-items-center.justify-content-center Thêm vào giỏ hàng
@@ -249,19 +255,21 @@ html
                 span.number.row.align-items-center
                   | 5
                   img(src='img/Star3.svg')
-                span.line.width100
+                span.line
+                  div(style="width: 100%").percent
                 span.text 10 đánh giá
               li.active.row.align-items-center.justify-content-between
                 span.number.row.align-items-center
                   | 4
                   img(src='img/Star3.svg')
-                span.line.width80
+                span.line
+                  div(style="width: 30%").percent
                 span.text 3 đánh giá
               li.active.row.align-items-center.justify-content-between
                 span.number.row.align-items-center
                   | 3
                   img(src='img/Star3.svg')
-                span.line.width20
+                span.line
                 span.text 3 đánh giá
               li.row.align-items-center.justify-content-between
                 span.number.row.align-items-center
@@ -317,6 +325,8 @@ html
                   .right
                     .name
                       h5 Nguyễn Mạnh Linh
+                        img(src="img/camketchinhhang.svg")
+                        span Đã mua hàng
                       .rate
                         img(src="img/Star3.svg")
                         img(src="img/Star3.svg")

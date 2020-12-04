@@ -72,6 +72,8 @@ img
   width: 175px
 #header
   background: #fff
+  position: relative
+  z-index: 10
 ._form_search
   form
     position: relative
@@ -1758,6 +1760,8 @@ img
           justify-content: center
           font-size: 16px
           font-weight: 300
+          span
+            display: none
         &:hover, &.active
           position: relative
           a
@@ -1832,6 +1836,8 @@ img
         .item
           width: 450px
           margin: 0 auto
+          &.video
+            margin-top: 50px
       #thumbs
         width: 400px
         margin: 0 auto
@@ -1841,8 +1847,28 @@ img
           background: #FFFFFF
           border: 1px solid #C2C2C2
           border-radius: 5px
-          margin: 0 auto
-          padding: 10px
+          margin: 0 10px
+          position: relative
+          cursor: pointer
+          &.video
+            .play
+              img
+                width: 30px
+                height: 30px
+                position: absolute
+                left: 32px 
+                top: 32px
+                z-index: 2
+              &::after
+                content: ""
+                background: rgba(0,0,0,0.5)
+                position: absolute
+                left: 0
+                right: 0
+                top: 0
+                width: 100%
+                height: 100%
+                
 .partner
   background: #fff
   border-top: 1px solid #DBDBDB
@@ -2079,6 +2105,15 @@ img
         font-weight: 300
         color: #000000
         text-decoration: underline
+.bg_header
+  position: fixed
+  background: rgba(0,0,0,0.6)
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 8
+  display: none
 .bannerproduct
   margin-bottom: 25px
   a
@@ -2144,6 +2179,13 @@ img
         font-weight: 700
         color: #000000
         margin-bottom: 5px
+        img
+          width: 30px
+          height: 30px
+          margin: 0 5px
+        span
+          font-size: 14px
+          font-weight: 300
       .md
         height: 20px
         width: 90px
@@ -2317,57 +2359,9 @@ img
     text-transform: uppercase
   ul
     width: 440px
-    .width100
-      &::before
-        content: ""
-        width: 100%
-        height: 5px
-        position: absolute
-        left: 0
-        top: 0
-        background: #000000
-        border-radius: 4px
-    .width80
-      &::before
-        content: ""
-        width: 80%
-        height: 5px
-        position: absolute
-        left: 0
-        top: 0
-        background: #000000
-        border-radius: 4px
-    .width60
-      &::before
-        content: ""
-        width: 60%
-        height: 5px
-        position: absolute
-        left: 0
-        top: 0
-        background: #000000
-        border-radius: 4px
-    .width40
-      &::before
-        content: ""
-        width: 40%
-        height: 5px
-        position: absolute
-        left: 0
-        top: 0
-        background: #000000
-        border-radius: 4px
-    .width20
-      &::before
-        content: ""
-        width: 20%
-        height: 5px
-        position: absolute
-        left: 0
-        top: 0
-        background: #000000
-        border-radius: 4px
-    
+    .percent
+      background: #000000
+      border-radius: 4px
     li
       margin: 5px 0
       span.number

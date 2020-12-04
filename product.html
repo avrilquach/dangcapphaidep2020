@@ -40,7 +40,7 @@
       <div class="menu">
         <div class="_container">
           <ul class="row align-items-center justify-content-between">
-            <li class="dropdown top"><a class="top">Thương Hiệu</a>
+            <li class="dropdown top first"><a class="top">Thương Hiệu</a>
               <div class="open row">
                 <div class="_left do-nicescrol boxscroll"><span>A</span>
                   <ul>
@@ -76,7 +76,7 @@
                 <div class="_right row align-items-center justify-content-center"><a class="banner" href="/"><img src="img/img1.png"></a><a class="banner" href="/"><img src="img/img2.png"></a><a class="banner" href="/"><img src="img/img1.png"></a></div>
               </div>
             </li>
-            <li class="dropdown top"><a class="top" href="/">chăm sóc da</a>
+            <li class="dropdown top first"><a class="top" href="/">chăm sóc da</a>
               <div class="open row style2">
                 <ul>
                   <li><a href="/">Bộ Kit</a></li>
@@ -104,7 +104,7 @@
                 </ul>
               </div>
             </li>
-            <li class="dropdown top"><a class="top" href="/">callogen</a>
+            <li class="dropdown top first"><a class="top" href="/">callogen</a>
               <div class="open row style1">
                 <ul>
                   <li><a href="/">Bộ Kit</a></li>
@@ -120,18 +120,19 @@
                 </ul>
               </div>
             </li>
-            <li><a href="/">mi, mày, tóc</a></li>
-            <li><a href="/">sức khỏe</a></li>
-            <li><a href="/">giảm cân</a></li>
-            <li><a href="/">siêu thị organic</a></li>
-            <li><a href="/">tới spa</a></li>
-            <li><a href="/">khuyến mãi</a></li>
-            <li><a href="/">khỏe đẹp</a></li>
-            <li><a href="/">Video</a></li>
+            <li class="first"><a href="/">mi, mày, tóc</a></li>
+            <li class="first"><a href="/">sức khỏe</a></li>
+            <li class="first"><a href="/">giảm cân</a></li>
+            <li class="first"><a href="/">siêu thị organic</a></li>
+            <li class="first"><a href="/">tới spa</a></li>
+            <li class="first"><a href="/">khuyến mãi</a></li>
+            <li class="first"><a href="/">khỏe đẹp</a></li>
+            <li class="first"><a href="/">Video</a></li>
           </ul>
         </div>
       </div>
     </header>
+    <div class="bg_header"></div>
     <div class="_breadcrumb pad10_0">
       <div class="_container">
         <ul class="row align-items-center">
@@ -148,13 +149,17 @@
               <div class="owl-carousel owl-theme" id="big">
                 <div class="item"><img src="img/product-detail.jpg"></div>
                 <div class="item"><img src="img/product-detail.jpg"></div>
-                <div class="item"><img src="img/product-detail.jpg"></div>
+                <div class="item video">
+                  <iframe width="450" height="315" src="https://www.youtube.com/embed/x9JxyZNBzh4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
                 <div class="item"><img src="img/product-detail.jpg"></div>
               </div>
               <div class="owl-carousel owl-theme" id="thumbs">
                 <div class="item"><img src="img/product-detail.jpg"></div>
                 <div class="item"><img src="img/product-detail.jpg"></div>
-                <div class="item"><img src="img/product-detail.jpg"></div>
+                <div class="item video"><img src="img/product-detail.jpg">
+                  <div class="play"><img src="img/play.svg"></div>
+                </div>
                 <div class="item"><img src="img/product-detail.jpg"></div>
               </div>
             </div>
@@ -166,8 +171,8 @@
               </select><span class="price-new">3.000.000đ</span><span class="price-old">5.000.000đ</span></span>
             <div class="size row align-items-center"><span>Dung tích:</span>
               <ul class="row align-items-center">
-                <li class="active"><a href="#">5ml</a></li>
-                <li><a href="#">10ml</a></li>
+                <li class="active"><a href="#">5ml<span class="old">20.000.000đ</span><span class="new">4.000.000đ</span></a></li>
+                <li><a href="#">10ml<span class="old">25.000.000đ</span><span class="new">2.000.000đ</span></a></li>
               </ul>
             </div><span class="options row align-items-center justify-content-between"><a class="buy_product row align-items-center justify-content-center" href="#">Đặt mua</a><a class="add_to_cart row align-items-center justify-content-center" href="#">Thêm vào giỏ hàng</a></span>
             <ul class="description">
@@ -355,9 +360,11 @@
         <div class="reviewvote">
           <div class="row align-items-center justify-content-between item"><span class="number_total row align-items-center justify-content-center">3.5<img src="img/Starbig.svg"></span>
             <ul>
-              <li class="active row align-items-center justify-content-between"><span class="number row align-items-center">5<img src="img/Star3.svg"></span><span class="line width100"></span><span class="text">10 đánh giá</span></li>
-              <li class="active row align-items-center justify-content-between"><span class="number row align-items-center">4<img src="img/Star3.svg"></span><span class="line width80"></span><span class="text">3 đánh giá</span></li>
-              <li class="active row align-items-center justify-content-between"><span class="number row align-items-center">3<img src="img/Star3.svg"></span><span class="line width20"></span><span class="text">3 đánh giá</span></li>
+              <li class="active row align-items-center justify-content-between"><span class="number row align-items-center">5<img src="img/Star3.svg"></span><span class="line">
+                  <div class="percent" style="width: 100%"></div></span><span class="text">10 đánh giá</span></li>
+              <li class="active row align-items-center justify-content-between"><span class="number row align-items-center">4<img src="img/Star3.svg"></span><span class="line">
+                  <div class="percent" style="width: 30%"></div></span><span class="text">3 đánh giá</span></li>
+              <li class="active row align-items-center justify-content-between"><span class="number row align-items-center">3<img src="img/Star3.svg"></span><span class="line"></span><span class="text">3 đánh giá</span></li>
               <li class="row align-items-center justify-content-between"><span class="number row align-items-center">2<img src="img/Star3.svg"></span><span class="line"><i></i></span><span class="text">0 đánh giá</span></li>
               <li class="row align-items-center justify-content-between"><span class="number row align-items-center">1<img src="img/Star3.svg"></span><span class="line"><i></i></span><span class="text">0 đánh giá</span></li>
             </ul><a class="send-comment row align-items-center justify-content-center" href="#">Gửi đánh giá của bạn</a>
@@ -388,7 +395,7 @@
                 <div class="left"><img src="img/avatar.jpg"></div>
                 <div class="right">
                   <div class="name">
-                    <h5>Nguyễn Mạnh Linh</h5>
+                    <h5>Nguyễn Mạnh Linh<img src="img/camketchinhhang.svg"><span>Đã mua hàng</span></h5>
                     <div class="rate"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star2.svg"></div>
                     <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                   </div>
@@ -419,7 +426,7 @@
                 <div class="left"><img src="img/avatar.jpg"></div>
                 <div class="right">
                   <div class="name">
-                    <h5>Nguyễn Mạnh Linh</h5>
+                    <h5>Nguyễn Mạnh Linh<img src="img/camketchinhhang.svg"><span>Đã mua hàng</span></h5>
                     <div class="rate"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star3.svg"><img src="img/Star2.svg"></div>
                     <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                   </div>
