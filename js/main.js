@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	var banner = $('.banner');
+	var banner = $('.main-banner');
 	banner.owlCarousel({
 		items: 1,
 		nav: true,
@@ -20,9 +20,20 @@ $(document).ready(function () {
 		nav: true,
 		autoplay: true,
 	});
- $(".do-nicescrol").niceScroll({
-	autohidemode: false, 
- });
+	$(".do-nicescrol").niceScroll(); 
+	$('#header .menu ul > li.first').hover(
+		function(){
+			$(".bg_header").show();
+		}, 
+		function() {
+			$(".bg_header").hide();
+	  });
+	  $(".size li").click(function(e){
+			var old = $(this).find("span.old").html();
+			var data = $(this).find("span.new").html();
+			$(".options .price-new").html(data);
+			$(".options .price-old").html(old);
+	  })
  $(".san_pham_da_xem_2 .write").click(function(e){
 	 $(".bgpopup").show();
 	 $(".popup").show();

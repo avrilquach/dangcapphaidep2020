@@ -101,6 +101,8 @@ img {
 
 #header {
   background: #fff;
+  position: relative;
+  z-index: 10;
 }
 
 ._form_search form {
@@ -227,6 +229,9 @@ img {
   z-index: 10;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu ul > li .open ul li:hover a {
+  color: #FF326C !important;
 }
 .menu ul > li .open.style2 {
   width: 540px;
@@ -2103,6 +2108,9 @@ img {
   font-size: 16px;
   font-weight: 300;
 }
+.product .right .size li a span {
+  display: none;
+}
 .product .right .size li:hover, .product .right .size li.active {
   position: relative;
 }
@@ -2191,6 +2199,9 @@ img {
   width: 450px;
   margin: 0 auto;
 }
+.product .left .gallery #big .item.video {
+  margin-top: 50px;
+}
 .product .left .gallery #thumbs {
   width: 400px;
   margin: 0 auto;
@@ -2201,8 +2212,27 @@ img {
   background: #FFFFFF;
   border: 1px solid #C2C2C2;
   border-radius: 5px;
-  margin: 0 auto;
-  padding: 10px;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+}
+.product .left .gallery #thumbs .item.video .play img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  z-index: 2;
+}
+.product .left .gallery #thumbs .item.video .play::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .partner {
@@ -2364,20 +2394,24 @@ img {
   height: 70px;
   overflow: hidden;
   text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .timkiemnhieunhat {
-  position: relative;
   padding: 0 40px;
   margin-bottom: 25px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px 40px;
 }
 .timkiemnhieunhat .owl-nav .owl-next {
   background: url("../img/right.svg") no-repeat;
   width: 20px;
   height: 45px;
   position: absolute;
-  right: 0px;
-  top: 5px;
+  right: 10px;
+  top: 18px;
   text-indent: -9999px;
 }
 .timkiemnhieunhat .owl-nav .owl-prev {
@@ -2385,8 +2419,8 @@ img {
   width: 20px;
   height: 45px;
   position: absolute;
-  left: 0;
-  top: 5px;
+  left: 10px;
+  top: 18px;
   text-indent: -9999px;
 }
 .timkiemnhieunhat .item {
@@ -2409,10 +2443,10 @@ img {
   color: #fff;
 }
 
-.banner {
+.main-banner {
   position: relative;
 }
-.banner .owl-nav .owl-next {
+.main-banner .owl-nav .owl-next {
   background: url("../img/next.svg") no-repeat;
   width: 26px;
   height: 83px;
@@ -2421,7 +2455,7 @@ img {
   top: 40%;
   text-indent: -9999px;
 }
-.banner .owl-nav .owl-prev {
+.main-banner .owl-nav .owl-prev {
   background: url("../img/prev.svg") no-repeat;
   width: 26px;
   height: 83px;
@@ -2430,49 +2464,60 @@ img {
   top: 40%;
   text-indent: -9999px;
 }
-.banner .item {
+.main-banner .item {
   height: 560px;
 }
-.banner .item .caption {
+.main-banner .item .caption {
   width: 375px;
   text-align: center;
   padding-top: 150px;
 }
-.banner .item .caption h1 {
+.main-banner .item .caption h1 {
   font-size: 30px;
   font-weight: 300;
   color: #000;
   text-transform: uppercase;
 }
-.banner .item .caption h1 span {
+.main-banner .item .caption h1 span {
   font-size: 44px;
   font-weight: 400;
   color: #000;
   display: block;
 }
-.banner .item .caption p {
+.main-banner .item .caption p {
   background: #FF9E9B;
   border-radius: 30px;
   margin-bottom: 10px;
 }
-.banner .item .caption p span:nth-child(1) {
+.main-banner .item .caption p span:nth-child(1) {
   font-size: 30px;
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
   padding-top: 22px;
 }
-.banner .item .caption p span:nth-child(2) {
+.main-banner .item .caption p span:nth-child(2) {
   font-size: 51px;
   font-weight: 700;
   margin-left: 5px;
   color: #fff;
 }
-.banner .item .caption a {
+.main-banner .item .caption a {
   font-size: 30px;
   font-weight: 300;
   color: #000000;
   text-decoration: underline;
+}
+
+.bg_header {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  display: none;
 }
 
 .bannerproduct {
@@ -2554,6 +2599,15 @@ img {
   font-weight: 700;
   color: #000000;
   margin-bottom: 5px;
+}
+.comments-area .right .name h5 img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+.comments-area .right .name h5 span {
+  font-size: 14px;
+  font-weight: 300;
 }
 .comments-area .right .name .md {
   height: 20px;
@@ -2762,53 +2816,7 @@ img {
 .reviewvote ul {
   width: 440px;
 }
-.reviewvote ul .width100::before {
-  content: "";
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #000000;
-  border-radius: 4px;
-}
-.reviewvote ul .width80::before {
-  content: "";
-  width: 80%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #000000;
-  border-radius: 4px;
-}
-.reviewvote ul .width60::before {
-  content: "";
-  width: 60%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #000000;
-  border-radius: 4px;
-}
-.reviewvote ul .width40::before {
-  content: "";
-  width: 40%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: #000000;
-  border-radius: 4px;
-}
-.reviewvote ul .width20::before {
-  content: "";
-  width: 20%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  top: 0;
+.reviewvote ul .percent {
   background: #000000;
   border-radius: 4px;
 }
