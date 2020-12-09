@@ -94,4 +94,12 @@ $(".show-data a").click(function(e){
 	$(".hide-data").show();
 	$(".show-data").hide();
 })
+$(".openShow .input3").click(function(e){
+	$(this).parent().find(".showNew").addClass("active");
+})
+$(".showNew li").click(function(e){
+	var data = $(this).html();
+	$(this).parent().parent().parent().find('.showNew').removeClass("active");
+	$(this).parent().parent().parent().find(".input3").val(data);
+})
 })

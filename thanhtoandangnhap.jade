@@ -192,13 +192,32 @@ html
 				.row.justify-content-between.align-items-end.item
 					.input-column2
 						input(type="text" name="sonha" placeholder="Nhập số nhà và tên đường").input3
-					.input-column2
+					.input-column2.openShow
 						input(type="text" name="tinh" placeholder="Tỉnh / Thành Phố").input3
+						.showNew
+							input(type="text" value="Tìm kiếm Tỉnh / Thành Phố")
+							ul
+								li Hồ Chí Minh
+								li Hà Nội
+								li Đà Nẵng
+
 				.row.justify-content-between.align-items-end.item
-					.input-column2
+					.input-column2.openShow
 						input(type="text" name="quan" placeholder="Quận / Huyện (*)").input3
-					.input-column2
+						.showNew
+							input(type="text" value="Tìm kiếm Quận / Huyện")
+							ul
+								li Quận 1
+								li Quận 2
+								li Quận 3
+					.input-column2.openShow
 						input(type="text" name="phuong" placeholder="Phường / Xã").input3
+						.showNew
+							input(type="text" value="Tìm kiếm Phường / Xã")
+							ul
+								li Phường 1
+								li Phường 2
+								li Phường 3
 			.style2
 				input(type="radio" name="addaddress")
 				label Sử dụng địa chỉ này làm mặc định
