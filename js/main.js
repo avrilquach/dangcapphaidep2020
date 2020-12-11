@@ -90,16 +90,40 @@ $(".themsodienthoai").click(function(e){
 	$(".themsodienthoai").hide();
 	$(".sodienthoai").css("margin-bottom","15px");
 })
-$(".show-data a").click(function(e){
-	$(".hide-data").show();
-	$(".show-data").hide();
+$(".diachinhanhang .thanhpho").click(function(e){
+	$(".popup-tinh-thanh-pho").addClass("active");
 })
-$(".openShow .input3").click(function(e){
-	$(this).parent().find(".showNew").addClass("active");
+$(".popup-tinh-thanh-pho .close").click(function(e){
+	$(".popup-tinh-thanh-pho").removeClass("active");
 })
-$(".showNew li").click(function(e){
-	var data = $(this).html();
-	$(this).parent().parent().parent().find('.showNew').removeClass("active");
-	$(this).parent().parent().parent().find(".input3").val(data);
+$(".diachinhanhang .quan").click(function(e){
+	$(".popup-quan-huyen").addClass("active");
+})
+$(".popup-quan-huyen .close").click(function(e){
+	$(".popup-quan-huyen").removeClass("active");
+})
+$(".diachinhanhang .phuong").click(function(e){
+	$(".popup-phuong-xa").addClass("active");
+})
+$(".popup-phuong-xa .close").click(function(e){
+	$(".popup-phuong-xa").removeClass("active");
+})
+$(".addaddress .thanhpho").click(function(e){
+	$(".popup-tinh-thanh-pho").addClass("active");
+})
+$(".popup-tinh-thanh-pho .close").click(function(e){
+	$(".popup-tinh-thanh-pho").removeClass("active");
+})
+$(".addaddress .quan").click(function(e){
+	$(".popup-quan-huyen").addClass("active");
+})
+$(".popup-quan-huyen .close").click(function(e){
+	$(".popup-quan-huyen").removeClass("active");
+})
+$(".addaddress .phuong").click(function(e){
+	$(".popup-phuong-xa").addClass("active");
+})
+$(".popup-phuong-xa .close").click(function(e){
+	$(".popup-phuong-xa").removeClass("active");
 })
 })

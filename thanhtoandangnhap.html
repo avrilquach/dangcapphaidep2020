@@ -297,40 +297,16 @@
           <div class="input-column2">
             <input class="input3" type="text" name="sonha" placeholder="Nhập số nhà và tên đường">
           </div>
-          <div class="input-column2 openShow">
+          <div class="input-column2 thanhpho">
             <input class="input3" type="text" name="tinh" placeholder="Tỉnh / Thành Phố">
-            <div class="showNew">
-              <input type="text" value="Tìm kiếm Tỉnh / Thành Phố">
-              <ul>
-                <li>Hồ Chí Minh</li>
-                <li>Hà Nội</li>
-                <li>Đà Nẵng</li>
-              </ul>
-            </div>
           </div>
         </div>
         <div class="row justify-content-between align-items-end item">
-          <div class="input-column2 openShow">
+          <div class="input-column2 quan">
             <input class="input3" type="text" name="quan" placeholder="Quận / Huyện (*)">
-            <div class="showNew">
-              <input type="text" value="Tìm kiếm Quận / Huyện">
-              <ul>
-                <li>Quận 1</li>
-                <li>Quận 2</li>
-                <li>Quận 3</li>
-              </ul>
-            </div>
           </div>
-          <div class="input-column2 openShow">
+          <div class="input-column2 phuong">
             <input class="input3" type="text" name="phuong" placeholder="Phường / Xã">
-            <div class="showNew">
-              <input type="text" value="Tìm kiếm Phường / Xã">
-              <ul>
-                <li>Phường 1</li>
-                <li>Phường 2</li>
-                <li>Phường 3</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -379,7 +355,160 @@
       </div>
       <div class="button row align-items-center justify-content-center">
         <button class="huy" type="button">Huỷ</button>
-        <button class="giao" type="button">Giao đến địa chỉ này	</button>
+        <button class="giao" type="button">Giao đến địa chỉ này</button>
+      </div>
+    </div>
+    <div class="popup-tinh-thanh-pho">
+      <div class="all"><span class="back"><i class="icon-arrow-pre"></i></span>
+        <h5>Chọn Tỉnh / Thành Phố</h5><span class="close"></span>
+        <div class="detail">
+          <div class="pr">
+            <form>
+              <div class="control">
+                <input class="text" type="text" placeholder="Tìm kiếm Tỉnh / Thành Phố">
+              </div>
+            </form>
+            <div class="result">
+              <div class="item">
+                <p>Hồ Chí Minh</p>
+              </div>
+              <div class="item">
+                <p>Hà Nội</p>
+              </div>
+              <div class="item">
+                <p>Đà Nẵng</p>
+              </div>
+              <div class="item">
+                <p>Đồng Nai</p>
+              </div>
+              <div class="item">
+                <p>Bà Rịa - Vũng Tàu</p>
+              </div>
+              <div class="item">
+                <p>Cần Thơ</p>
+              </div>
+              <div class="item">
+                <p>Khánh Hòa</p>
+              </div>
+              <div class="item">
+                <p>Lâm Đồng</p>
+              </div>
+              <div class="item">
+                <p>Quảng Ninh</p>
+              </div>
+              <div class="item">
+                <p>Kiên Giang</p>
+              </div>
+              <div class="item">
+                <p>Nghệ An</p>
+              </div>
+              <div class="item">
+                <p>ĐắkLắc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-quan-huyen">
+      <div class="all"><span class="back"><i class="icon-arrow-pre"></i></span>
+        <h5>Chọn Quận / Huyện</h5><span class="close"></span>
+        <div class="detail">
+          <div class="pr">
+            <form>
+              <div class="control">
+                <input class="text" type="text" placeholder="Chọn Quận / Huyện">
+              </div>
+            </form>
+            <div class="result">
+              <div class="item">
+                <p>Quận 1</p>
+              </div>
+              <div class="item">
+                <p>Quận 2</p>
+              </div>
+              <div class="item">
+                <p>Quận 3</p>
+              </div>
+              <div class="item">
+                <p>Quận 4</p>
+              </div>
+              <div class="item">
+                <p>Quận 5</p>
+              </div>
+              <div class="item">
+                <p>Quận 6</p>
+              </div>
+              <div class="item">
+                <p>Quận 7</p>
+              </div>
+              <div class="item">
+                <p>Quận 8</p>
+              </div>
+              <div class="item">
+                <p>Quận 9</p>
+              </div>
+              <div class="item">
+                <p>Quận 10</p>
+              </div>
+              <div class="item">
+                <p>Quận 11</p>
+              </div>
+              <div class="item">
+                <p>Quận 12</p>
+              </div>
+              <div class="item">
+                <p>Quận Gò Vấp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-phuong-xa">
+      <div class="all"><span class="back"><i class="icon-arrow-pre"></i></span>
+        <h5>Chọn Phường / Xã</h5><span class="close"></span>
+        <div class="detail">
+          <div class="pr">
+            <form>
+              <div class="control">
+                <input class="text" type="text" placeholder="Chọn Phường / Xã">
+              </div>
+            </form>
+            <div class="result">
+              <div class="item">
+                <p>Phường Bến Nghé</p>
+              </div>
+              <div class="item">
+                <p>Phường Bến Thành</p>
+              </div>
+              <div class="item">
+                <p>Phường Cầu Kho</p>
+              </div>
+              <div class="item">
+                <p>Phường Cầu Ông Lãnh</p>
+              </div>
+              <div class="item">
+                <p>Phường Cô Giang</p>
+              </div>
+              <div class="item">
+                <p>Phường Đa Kao</p>
+              </div>
+              <div class="item">
+                <p>Phường Nguyễn Cư Trinh</p>
+              </div>
+              <div class="item">
+                <p>Phường Nguyễn Thái Bình</p>
+              </div>
+              <div class="item">
+                <p>Phường Phạm Ngũ Lão</p>
+              </div>
+              <div class="item">
+                <p>Phường Tân Định</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Footer-->

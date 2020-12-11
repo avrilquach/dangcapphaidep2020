@@ -29,14 +29,14 @@ html
 										label Giao hàng tận nơi
 									.box2.row.align-items-center.justify-content-between
 										.input-column3
-											select.thanhpho.input2
-												option(value='Chọn Tỉnh / Thành Phố  (*)') Chọn Tỉnh / Thành Phố  (*)
+											.thanhpho
+												input(type="text" placeholder="Chọn Tỉnh / Thành Phố  (*)").input
 										.input-column3
-											select.quan.input2
-												option(value='Chọn Quận / Huyện  (*)') Chọn Quận / Huyện  (*)
+											.quan
+												input(type="text" placeholder="Chọn Quận / Huyện  (*)").input
 										.input-column3
-											select.phuong.input2
-												option(value='Chọn Phường / Xã (*)') Chọn Phường / Xã (*)
+											.phuong
+												input(type="text" placeholder="Chọn Phường / Xã (*)").input
 									.box3
 										input(type="radio" name="radio1" )
 										label Nhận hàng tại Showroom
@@ -147,5 +147,8 @@ html
 							button(type="button")#vnpay.row.align-items-center.justify-content-center
 								| Thanh toán
 								img(src='img/vnpay.png')
+		include inc/bottom7.jade
+		include inc/bottom8.jade
+		include inc/bottom9.jade
 		include inc/footer.jade
 		include inc/script.jade
