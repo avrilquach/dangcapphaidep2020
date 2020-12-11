@@ -285,29 +285,23 @@
       <h2 class="row justify-content-center align-items-center">
         <img src="img/map.svg">Thêm địa chỉ nhận hàng</h2>
       <div class="stylett">
-        <div class="row justify-content-between align-items-end item">
-          <div class="input-column2"><span>Tên người nhận (*)</span>
-            <input class="input3" type="text" name="tennguoinhan" placeholder="Tên người nhận (*)">
-          </div>
-          <div class="input-column2">
-            <input class="input3" type="text" name="sodienthoai" placeholder="Số điện thoại (*)">
-          </div>
+        <div class="row item"><span>Tên người nhận (*)</span>
+          <input class="input3" type="text" name="tennguoinhan" placeholder="Tên người nhận (*)">
         </div>
-        <div class="row justify-content-between align-items-end item">
-          <div class="input-column2">
-            <input class="input3" type="text" name="sonha" placeholder="Nhập số nhà và tên đường">
-          </div>
-          <div class="input-column2 thanhpho">
-            <input class="input3" type="text" name="tinh" placeholder="Tỉnh / Thành Phố">
-          </div>
+        <div class="row item">
+          <input class="input3" type="text" name="sodienthoai" placeholder="Số điện thoại (*)">
         </div>
-        <div class="row justify-content-between align-items-end item">
-          <div class="input-column2 quan">
-            <input class="input3" type="text" name="quan" placeholder="Quận / Huyện (*)">
-          </div>
-          <div class="input-column2 phuong">
-            <input class="input3" type="text" name="phuong" placeholder="Phường / Xã">
-          </div>
+        <div class="row item">
+          <input class="input3" type="text" name="sonha" placeholder="Nhập số nhà và tên đường">
+        </div>
+        <div class="row item thanhpho-popup">
+          <input class="input3" type="text" name="tinh" placeholder="Tỉnh / Thành Phố">
+        </div>
+        <div class="row item quan-popup">
+          <input class="input3" type="text" name="quan" placeholder="Quận / Huyện (*)">
+        </div>
+        <div class="row item phuong-popup">
+          <input class="input3" type="text" name="phuong" placeholder="Phường / Xã">
         </div>
       </div>
       <div class="style2">
@@ -358,153 +352,127 @@
         <button class="giao" type="button">Giao đến địa chỉ này</button>
       </div>
     </div>
-    <div class="popup-tinh-thanh-pho">
+    <div class="popup-address">
       <div class="all"><span class="back"><i class="icon-arrow-pre"></i></span>
         <h5>Chọn Tỉnh / Thành Phố</h5><span class="close"></span>
         <div class="detail">
           <div class="pr">
             <form>
               <div class="control">
-                <input class="text" type="text" placeholder="Tìm kiếm Tỉnh / Thành Phố">
+                <input class="text" type="text">
               </div>
             </form>
-            <div class="result">
-              <div class="item">
-                <p>Hồ Chí Minh</p>
+            <div class="resultall">
+              <div class="result" id="thanhpho-popup">
+                <div class="item">
+                  <p>Hồ Chí Minh</p>
+                </div>
+                <div class="item">
+                  <p>Hà Nội</p>
+                </div>
+                <div class="item">
+                  <p>Đà Nẵng</p>
+                </div>
+                <div class="item">
+                  <p>Đồng Nai</p>
+                </div>
+                <div class="item">
+                  <p>Bà Rịa - Vũng Tàu</p>
+                </div>
+                <div class="item">
+                  <p>Cần Thơ</p>
+                </div>
+                <div class="item">
+                  <p>Khánh Hòa</p>
+                </div>
+                <div class="item">
+                  <p>Lâm Đồng</p>
+                </div>
+                <div class="item">
+                  <p>Quảng Ninh</p>
+                </div>
+                <div class="item">
+                  <p>Kiên Giang</p>
+                </div>
+                <div class="item">
+                  <p>Nghệ An</p>
+                </div>
+                <div class="item">
+                  <p>ĐắkLắc</p>
+                </div>
               </div>
-              <div class="item">
-                <p>Hà Nội</p>
+              <div class="result" id="quan-popup">
+                <div class="item">
+                  <p>Quận 1</p>
+                </div>
+                <div class="item">
+                  <p>Quận 2</p>
+                </div>
+                <div class="item">
+                  <p>Quận 3</p>
+                </div>
+                <div class="item">
+                  <p>Quận 4</p>
+                </div>
+                <div class="item">
+                  <p>Quận 5</p>
+                </div>
+                <div class="item">
+                  <p>Quận 6</p>
+                </div>
+                <div class="item">
+                  <p>Quận 7</p>
+                </div>
+                <div class="item">
+                  <p>Quận 8</p>
+                </div>
+                <div class="item">
+                  <p>Quận 9</p>
+                </div>
+                <div class="item">
+                  <p>Quận 10</p>
+                </div>
+                <div class="item">
+                  <p>Quận 11</p>
+                </div>
+                <div class="item">
+                  <p>Quận 12</p>
+                </div>
+                <div class="item">
+                  <p>Quận Gò Vấp</p>
+                </div>
               </div>
-              <div class="item">
-                <p>Đà Nẵng</p>
-              </div>
-              <div class="item">
-                <p>Đồng Nai</p>
-              </div>
-              <div class="item">
-                <p>Bà Rịa - Vũng Tàu</p>
-              </div>
-              <div class="item">
-                <p>Cần Thơ</p>
-              </div>
-              <div class="item">
-                <p>Khánh Hòa</p>
-              </div>
-              <div class="item">
-                <p>Lâm Đồng</p>
-              </div>
-              <div class="item">
-                <p>Quảng Ninh</p>
-              </div>
-              <div class="item">
-                <p>Kiên Giang</p>
-              </div>
-              <div class="item">
-                <p>Nghệ An</p>
-              </div>
-              <div class="item">
-                <p>ĐắkLắc</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="popup-quan-huyen">
-      <div class="all"><span class="back"><i class="icon-arrow-pre"></i></span>
-        <h5>Chọn Quận / Huyện</h5><span class="close"></span>
-        <div class="detail">
-          <div class="pr">
-            <form>
-              <div class="control">
-                <input class="text" type="text" placeholder="Chọn Quận / Huyện">
-              </div>
-            </form>
-            <div class="result">
-              <div class="item">
-                <p>Quận 1</p>
-              </div>
-              <div class="item">
-                <p>Quận 2</p>
-              </div>
-              <div class="item">
-                <p>Quận 3</p>
-              </div>
-              <div class="item">
-                <p>Quận 4</p>
-              </div>
-              <div class="item">
-                <p>Quận 5</p>
-              </div>
-              <div class="item">
-                <p>Quận 6</p>
-              </div>
-              <div class="item">
-                <p>Quận 7</p>
-              </div>
-              <div class="item">
-                <p>Quận 8</p>
-              </div>
-              <div class="item">
-                <p>Quận 9</p>
-              </div>
-              <div class="item">
-                <p>Quận 10</p>
-              </div>
-              <div class="item">
-                <p>Quận 11</p>
-              </div>
-              <div class="item">
-                <p>Quận 12</p>
-              </div>
-              <div class="item">
-                <p>Quận Gò Vấp</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="popup-phuong-xa">
-      <div class="all"><span class="back"><i class="icon-arrow-pre"></i></span>
-        <h5>Chọn Phường / Xã</h5><span class="close"></span>
-        <div class="detail">
-          <div class="pr">
-            <form>
-              <div class="control">
-                <input class="text" type="text" placeholder="Chọn Phường / Xã">
-              </div>
-            </form>
-            <div class="result">
-              <div class="item">
-                <p>Phường Bến Nghé</p>
-              </div>
-              <div class="item">
-                <p>Phường Bến Thành</p>
-              </div>
-              <div class="item">
-                <p>Phường Cầu Kho</p>
-              </div>
-              <div class="item">
-                <p>Phường Cầu Ông Lãnh</p>
-              </div>
-              <div class="item">
-                <p>Phường Cô Giang</p>
-              </div>
-              <div class="item">
-                <p>Phường Đa Kao</p>
-              </div>
-              <div class="item">
-                <p>Phường Nguyễn Cư Trinh</p>
-              </div>
-              <div class="item">
-                <p>Phường Nguyễn Thái Bình</p>
-              </div>
-              <div class="item">
-                <p>Phường Phạm Ngũ Lão</p>
-              </div>
-              <div class="item">
-                <p>Phường Tân Định</p>
+              <div class="result" id="phuong-popup">
+                <div class="item">
+                  <p>Phường Bến Nghé</p>
+                </div>
+                <div class="item">
+                  <p>Phường Bến Thành</p>
+                </div>
+                <div class="item">
+                  <p>Phường Cầu Kho</p>
+                </div>
+                <div class="item">
+                  <p>Phường Cầu Ông Lãnh</p>
+                </div>
+                <div class="item">
+                  <p>Phường Cô Giang</p>
+                </div>
+                <div class="item">
+                  <p>Phường Đa Kao</p>
+                </div>
+                <div class="item">
+                  <p>Phường Nguyễn Cư Trinh</p>
+                </div>
+                <div class="item">
+                  <p>Phường Nguyễn Thái Bình</p>
+                </div>
+                <div class="item">
+                  <p>Phường Phạm Ngũ Lão</p>
+                </div>
+                <div class="item">
+                  <p>Phường Tân Định</p>
+                </div>
               </div>
             </div>
           </div>

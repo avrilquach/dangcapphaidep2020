@@ -734,7 +734,7 @@ img
 
 .addaddress, .editaddress
   position: absolute
-  width: 766px
+  width: 500px
   left: 0
   top: 100px
   right: 0
@@ -1120,7 +1120,7 @@ img
     background: #FFFFFF
     border-radius: 5px
     border: 1px solid #CECECE
-    .thanhpho, .quan, .phuong
+    .thanhpho-popup, .quan-popup, .phuong-popup
       .input
         margin-bottom: 0
     .box1, .box3
@@ -2611,12 +2611,12 @@ img
       cursor: pointer
   &.active
     display: block
-.popup-tinh-thanh-pho, .popup-quan-huyen, .popup-phuong-xa
+.popup-address
   &.active
     &::before
       bottom: 0
     .all
-      bottom: 0
+      display: block
   &::before
     content: ""
     background: rgba(0,0,0,0.15)
@@ -2629,20 +2629,20 @@ img
     transition: 0.1s ease-out
     bottom: -1000px
   .all
-    position: fixed
+    position: absolute
     background-color: #fff
     z-index: 16
     left: 0
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
+    border-radius: 20px
     width: 50%
     -webkit-transition: 1s ease-out
     -o-transition: 1s ease-out
     transition: 1s ease-out
-    bottom: -1000px
     margin: 0 auto
     left: 0
     right: 0
+    top: 50px
+    display: none
   h5
     text-align: center
     font-family: "Roboto"
@@ -2697,6 +2697,10 @@ img
           border: none
           color: #fff
     .result
+      opacity: 0
+      transition: opacity 1s linear
+      &.active
+        opacity: 1
       .item
         display: flex
         align-items: center

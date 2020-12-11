@@ -90,40 +90,60 @@ $(".themsodienthoai").click(function(e){
 	$(".themsodienthoai").hide();
 	$(".sodienthoai").css("margin-bottom","15px");
 })
-$(".diachinhanhang .thanhpho").click(function(e){
-	$(".popup-tinh-thanh-pho").addClass("active");
+$(".thanhpho-popup").click(function(e){
+	$('.popup-address').addClass("active");
+	$(".popup-address h5").html("Chọn Tỉnh / Thành Phố");
+	$("input.text").val("Tìm kiếm Tỉnh / Thành Phố");
+	$(".result").addClass("active");
+	$("#thanhpho-popup").show();
+	$("#quan-popup").hide();
+	$("#phuong-popup").hide();
 })
-$(".popup-tinh-thanh-pho .close").click(function(e){
-	$(".popup-tinh-thanh-pho").removeClass("active");
+$(".quan-popup").click(function(e){
+	$('.popup-address').addClass("active");
+	$(".popup-address h5").html("Chọn Quận / Huyện");
+	$("input.text").val("Tìm kiếm Quận / Huyện");
+	$(".result").addClass("active");
+	$("#thanhpho-popup").hide();
+	$("#quan-popup").show();
+	$("#phuong-popup").hide();
 })
-$(".diachinhanhang .quan").click(function(e){
-	$(".popup-quan-huyen").addClass("active");
+$(".phuong-popup").click(function(e){
+	$('.popup-address').addClass("active");
+	$(".popup-address h5").html("Chọn Phường / Xã");
+	$("input.text").val("Tìm kiếm Phường / Xã");
+	$(".result").addClass("active");
+	$("#thanhpho-popup").hide();
+	$("#quan-popup").hide();
+	$("#phuong-popup").show();
 })
-$(".popup-quan-huyen .close").click(function(e){
-	$(".popup-quan-huyen").removeClass("active");
+$("#thanhpho-popup .item").click(function(e){
+	$(".result").removeClass("active");
+	setTimeout(function(){ 
+		$(".result").addClass("active");
+	 }, 100);
+	$(".popup-address h5").html("Chọn Quận / Huyện");
+	$("input.text").val("Tìm kiếm Quận / Huyện");
+	$("#thanhpho-popup").hide();
+	$("#quan-popup").show();
+	$("#phuong-popup").hide();
 })
-$(".diachinhanhang .phuong").click(function(e){
-	$(".popup-phuong-xa").addClass("active");
+$("#quan-popup .item").click(function(e){
+	$(".result").removeClass("active");
+	setTimeout(function(){ 
+		$(".result").addClass("active");
+	 }, 100);
+	$(".popup-address h5").html("Chọn Phường / Xã");
+	$("input.text").val("Tìm kiếm Phường / Xã");
+	$("#thanhpho-popup").hide();
+	$("#quan-popup").hide();
+	$("#phuong-popup").show();
 })
-$(".popup-phuong-xa .close").click(function(e){
-	$(".popup-phuong-xa").removeClass("active");
+$("#phuong-popup .item").click(function(e){
+	$(".popup-address").removeClass("active");
 })
-$(".addaddress .thanhpho").click(function(e){
-	$(".popup-tinh-thanh-pho").addClass("active");
-})
-$(".popup-tinh-thanh-pho .close").click(function(e){
-	$(".popup-tinh-thanh-pho").removeClass("active");
-})
-$(".addaddress .quan").click(function(e){
-	$(".popup-quan-huyen").addClass("active");
-})
-$(".popup-quan-huyen .close").click(function(e){
-	$(".popup-quan-huyen").removeClass("active");
-})
-$(".addaddress .phuong").click(function(e){
-	$(".popup-phuong-xa").addClass("active");
-})
-$(".popup-phuong-xa .close").click(function(e){
-	$(".popup-phuong-xa").removeClass("active");
+
+$(".popup-address .close").click(function(e){
+	$(".popup-address").removeClass("active");
 })
 })

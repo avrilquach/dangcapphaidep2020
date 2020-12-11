@@ -904,7 +904,7 @@ img {
 
 .addaddress, .editaddress {
   position: absolute;
-  width: 766px;
+  width: 500px;
   left: 0;
   top: 100px;
   right: 0;
@@ -1363,7 +1363,7 @@ img {
   border-radius: 5px;
   border: 1px solid #CECECE;
 }
-.diachinhanhang .boxship .thanhpho .input, .diachinhanhang .boxship .quan .input, .diachinhanhang .boxship .phuong .input {
+.diachinhanhang .boxship .thanhpho-popup .input, .diachinhanhang .boxship .quan-popup .input, .diachinhanhang .boxship .phuong-popup .input {
   margin-bottom: 0;
 }
 .diachinhanhang .boxship .box1, .diachinhanhang .boxship .box3 {
@@ -3117,13 +3117,13 @@ img {
   display: block;
 }
 
-.popup-tinh-thanh-pho.active::before, .popup-quan-huyen.active::before, .popup-phuong-xa.active::before {
+.popup-address.active::before {
   bottom: 0;
 }
-.popup-tinh-thanh-pho.active .all, .popup-quan-huyen.active .all, .popup-phuong-xa.active .all {
-  bottom: 0;
+.popup-address.active .all {
+  display: block;
 }
-.popup-tinh-thanh-pho::before, .popup-quan-huyen::before, .popup-phuong-xa::before {
+.popup-address::before {
   content: "";
   background: rgba(0, 0, 0, 0.15);
   width: 100%;
@@ -3133,55 +3133,55 @@ img {
   transition: 0.1s ease-out;
   bottom: -1000px;
 }
-.popup-tinh-thanh-pho .all, .popup-quan-huyen .all, .popup-phuong-xa .all {
-  position: fixed;
+.popup-address .all {
+  position: absolute;
   background-color: #fff;
   z-index: 16;
   left: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   width: 50%;
   transition: 1s ease-out;
-  bottom: -1000px;
   margin: 0 auto;
   left: 0;
   right: 0;
+  top: 50px;
+  display: none;
 }
-.popup-tinh-thanh-pho h5, .popup-quan-huyen h5, .popup-phuong-xa h5 {
+.popup-address h5 {
   text-align: center;
   font-family: "Roboto";
   font-weight: 500;
   margin: 10px 0 0 0;
 }
-.popup-tinh-thanh-pho .icon-arrow-pre, .popup-quan-huyen .icon-arrow-pre, .popup-phuong-xa .icon-arrow-pre {
+.popup-address .icon-arrow-pre {
   position: absolute;
   left: 15px;
   top: 18px;
   font-size: 1rem;
 }
-.popup-tinh-thanh-pho .close, .popup-quan-huyen .close, .popup-phuong-xa .close {
+.popup-address .close {
   position: absolute;
   right: 15px;
   top: 18px;
   font-size: 1rem;
 }
-.popup-tinh-thanh-pho .close::after, .popup-quan-huyen .close::after, .popup-phuong-xa .close::after {
+.popup-address .close::after {
   content: "X";
 }
-.popup-tinh-thanh-pho .detail, .popup-quan-huyen .detail, .popup-phuong-xa .detail {
+.popup-address .detail {
   padding: 15px;
   border-top: 1px solid #e1e1e1;
   margin: 15px 0 0 0;
 }
-.popup-tinh-thanh-pho .detail .pr .control, .popup-quan-huyen .detail .pr .control, .popup-phuong-xa .detail .pr .control {
+.popup-address .detail .pr .control {
   margin: 0 0 20px 0;
 }
-.popup-tinh-thanh-pho .detail .pr .control label, .popup-quan-huyen .detail .pr .control label, .popup-phuong-xa .detail .pr .control label {
+.popup-address .detail .pr .control label {
   display: block;
   color: #4b4b4b;
   font-size: 16px;
 }
-.popup-tinh-thanh-pho .detail .pr .control input.text, .popup-quan-huyen .detail .pr .control input.text, .popup-phuong-xa .detail .pr .control input.text {
+.popup-address .detail .pr .control input.text {
   width: 100%;
   color: #4b4b4b;
   font-size: 14px;
@@ -3193,14 +3193,14 @@ img {
   color: #a2a2a2;
   padding: 0 10px;
 }
-.popup-tinh-thanh-pho .detail .pr .control input.text::placeholder, .popup-quan-huyen .detail .pr .control input.text::placeholder, .popup-phuong-xa .detail .pr .control input.text::placeholder {
+.popup-address .detail .pr .control input.text::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
-.popup-tinh-thanh-pho .detail .pr .control:last-child, .popup-quan-huyen .detail .pr .control:last-child, .popup-phuong-xa .detail .pr .control:last-child {
+.popup-address .detail .pr .control:last-child {
   margin: 0;
 }
-.popup-tinh-thanh-pho .detail .pr .control input.submit, .popup-quan-huyen .detail .pr .control input.submit, .popup-phuong-xa .detail .pr .control input.submit {
+.popup-address .detail .pr .control input.submit {
   background-color: #d0ced1;
   border-radius: 10px;
   height: 45px;
@@ -3210,20 +3210,27 @@ img {
   border: none;
   color: #fff;
 }
-.popup-tinh-thanh-pho .detail .result .item, .popup-quan-huyen .detail .result .item, .popup-phuong-xa .detail .result .item {
+.popup-address .detail .result {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.popup-address .detail .result.active {
+  opacity: 1;
+}
+.popup-address .detail .result .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0;
   cursor: pointer;
 }
-.popup-tinh-thanh-pho .detail .result .item::after, .popup-quan-huyen .detail .result .item::after, .popup-phuong-xa .detail .result .item::after {
+.popup-address .detail .result .item::after {
   content: ">";
   font-weight: 300;
   color: #4b4b4b;
   font-size: 15px;
 }
-.popup-tinh-thanh-pho .detail .result .item i, .popup-tinh-thanh-pho .detail .result .item p, .popup-quan-huyen .detail .result .item i, .popup-quan-huyen .detail .result .item p, .popup-phuong-xa .detail .result .item i, .popup-phuong-xa .detail .result .item p {
+.popup-address .detail .result .item i, .popup-address .detail .result .item p {
   font-weight: 300;
   color: #4b4b4b;
   font-size: 15px;
