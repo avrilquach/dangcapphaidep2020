@@ -146,4 +146,18 @@ $("#phuong-popup .item").click(function(e){
 $(".popup-address .close").click(function(e){
 	$(".popup-address").removeClass("active");
 })
+$(window).on('scroll', function () {
+	var wtop = $(window).scrollTop();
+	if (wtop > 500) {
+		$("#top").addClass('active');
+	} else {
+		$("#top").removeClass('active');
+	}
+});
+$("a[href='#top']").click(function () {
+	$("html, body").animate({
+		scrollTop: 0
+	}, "slow");
+	return false;
+});
 })

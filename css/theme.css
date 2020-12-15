@@ -3236,6 +3236,17 @@ img {
   font-size: 15px;
 }
 
+#top {
+  transition: right 2s;
+  right: -100%;
+  position: fixed;
+  bottom: 180px;
+  z-index: 10;
+}
+#top.active {
+  right: 30px;
+}
+
 @media (max-width: 1279px) {
   #header, #footer-new, #header2, .banner, .partner, .videomoinhat {
     width: 1320px !important;
