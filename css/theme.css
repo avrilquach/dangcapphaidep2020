@@ -1600,6 +1600,9 @@ img {
 .thongtinsanpham {
   margin-bottom: 25px;
 }
+.thongtinsanpham .left {
+  position: relative;
+}
 .thongtinsanpham .left .content {
   width: 828px;
   margin-right: 20px;
@@ -1608,16 +1611,16 @@ img {
   padding: 20px;
   position: relative;
 }
-.thongtinsanpham .left .content .show-data {
+.thongtinsanpham .left .show-data {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -148.14%, #FFFFFF 100%);
   border-radius: 5px;
-  height: 315px;
+  height: 100px;
   position: absolute;
   bottom: 0;
   width: 100%;
   left: 0;
 }
-.thongtinsanpham .left .content .show-data a {
+.thongtinsanpham .left .show-data a {
   border: 1px solid #000000;
   border-radius: 5px;
   width: 256px;
@@ -1627,29 +1630,29 @@ img {
   font-weight: 300;
   color: #000;
 }
-.thongtinsanpham .left .content .hide-data {
+.thongtinsanpham .left .show-data .hide-data {
   display: none;
 }
-.thongtinsanpham .left .content p {
+.thongtinsanpham .left .show-data p {
   font-size: 16px;
   font-weight: 300;
   color: #000;
   margin-bottom: 10px;
 }
-.thongtinsanpham .left .content .img {
+.thongtinsanpham .left .show-data .img {
   text-align: center;
 }
-.thongtinsanpham .left .content .img img {
+.thongtinsanpham .left .show-data .img img {
   display: block;
   margin: 0 auto 10px auto;
 }
-.thongtinsanpham .left .content .img p {
+.thongtinsanpham .left .show-data .img p {
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
   color: #000;
 }
-.thongtinsanpham .left .content .img h2 {
+.thongtinsanpham .left .show-data .img h2 {
   font-size: 25px;
   font-weight: 400;
   color: #000;

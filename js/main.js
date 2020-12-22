@@ -160,4 +160,8 @@ $("a[href='#top']").click(function () {
 	}, "slow");
 	return false;
 });
+$(".thongtinsanpham .show-data a").click(function(e){
+	$(".thongtinsanpham .left .content").css("height", "auto");
+	$(".thongtinsanpham .left .content").css("overflow", "scroll");
+})
 })
