@@ -163,5 +163,6 @@ $("a[href='#top']").click(function () {
 $(".thongtinsanpham .show-data a").click(function(e){
 	$(".thongtinsanpham .left .content").css("height", "auto");
 	$(".thongtinsanpham .left .content").css("overflow", "scroll");
+	$(".thongtinsanpham .show-data").hide();
 })
 })
