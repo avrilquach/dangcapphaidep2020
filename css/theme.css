@@ -3243,7 +3243,8 @@ img {
   margin: 10px 0;
 }
 .popup-gallery a {
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
+  display: inline-block;
 }
 
 #top {

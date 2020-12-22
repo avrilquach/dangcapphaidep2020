@@ -1,10 +1,6 @@
 $(document).ready(function () {
  gallery_slider();
- })
- $('.popup-gallery').magnificPopup({
-  delegate: 'a', // child items selector, by clicking on it popup will open
-  type: 'image'
-  // other options
+ $('.gallery').gallerybox();
 });
  function gallery_slider()
  {
