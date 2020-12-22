@@ -592,50 +592,56 @@ html
               img(src='img/search2.svg')
         #comments.comments-area
           .replay_comment
-            -for(i=0;i<2;i++)
-              .l
-                .row
+            .l
+              .row
+                .left
+                  img(src="img/avatar.jpg")
+                .right
+                  .name
+                    h5 Nguyễn Mạnh Linh
+                      img(src="img/camketchinhhang.svg")
+                      span Đã mua hàng
+                    .rate
+                      img(src="img/Star3.svg")
+                      img(src="img/Star3.svg")
+                      img(src="img/Star3.svg")
+                      img(src="img/Star3.svg")
+                      img(src="img/Star2.svg")
+                    .content
+                      | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                      .popup-gallery
+                        a(href='http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg' title='The Cleaner')
+                          img(src='http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg' width='75' height='75')
+                        a(href='http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg' title='Winter Dance')
+                          img(src='http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg' width='75' height='75')
+                      
+
+                  .replay.row.align-items-center
+                    a(href='#') Trả lời
+                    a(href='#')
+                      img(src="img/like.svg")
+                      | Thích
+                    .time Cách đây 5 giờ
+              .persion-replay
+                .pr.row
                   .left
                     img(src="img/avatar.jpg")
                   .right
                     .name
-                      h5 Nguyễn Mạnh Linh
-                        img(src="img/camketchinhhang.svg")
-                        span Đã mua hàng
-                      .rate
-                        img(src="img/Star3.svg")
-                        img(src="img/Star3.svg")
-                        img(src="img/Star3.svg")
-                        img(src="img/Star3.svg")
-                        img(src="img/Star2.svg")
+                      .row.align-items-center
+                        h5 Ngan Giang
+                        span.md.row.align-items-center.justify-content-center Quản trị viên
                       .content
-                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        | Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
                     .replay.row.align-items-center
                       a(href='#') Trả lời
                       a(href='#')
                         img(src="img/like.svg")
-                        | Thích
+                        | Hài lòng
+                      a(href='#')
+                        img(src="img/dislike.svg")
+                        | Không hài lòng
                       .time Cách đây 5 giờ
-                .persion-replay
-                  .pr.row
-                    .left
-                      img(src="img/avatar.jpg")
-                    .right
-                      .name
-                        .row.align-items-center
-                          h5 Ngan Giang
-                          span.md.row.align-items-center.justify-content-center Quản trị viên
-                        .content
-                          | Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
-                      .replay.row.align-items-center
-                        a(href='#') Trả lời
-                        a(href='#')
-                          img(src="img/like.svg")
-                          | Hài lòng
-                        a(href='#')
-                          img(src="img/dislike.svg")
-                          | Không hài lòng
-                        .time Cách đây 5 giờ
     .information
       ._container.row.align-items-center.justify-content-between
         .item.row.align-items-center.justify-content-center
@@ -660,5 +666,6 @@ html
             | & TƯ VẤN TẬN TÌNH
     include inc/footer.jade
     include inc/script.jade
+    script(type='text/javascript', src='js/jquery.magnific-popup.js')
     script(type='text/javascript', src='js/main2.js')
     

@@ -1,6 +1,11 @@
 $(document).ready(function () {
  gallery_slider();
  })
+ $('.popup-gallery').magnificPopup({
+  delegate: 'a', // child items selector, by clicking on it popup will open
+  type: 'image'
+  // other options
+});
  function gallery_slider()
  {
      var bigimage = $("#big");
