@@ -3239,6 +3239,13 @@ img {
   font-size: 15px;
 }
 
+.popup-gallery {
+  margin: 10px 0;
+}
+.popup-gallery a {
+  margin-right: 10px;
+}
+
 #top {
   transition: right 2s;
   right: -100%;
