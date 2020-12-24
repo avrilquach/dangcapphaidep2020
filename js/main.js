@@ -182,4 +182,5 @@ $(".do-nicescrol li").hover(function(e){
     scrollTop: $("."+id).offset().top
 }, "faster");
 })
+$('.lazy').lazy();
 })

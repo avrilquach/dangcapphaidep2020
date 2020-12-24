@@ -1,6 +1,5 @@
 $(document).ready(function () {
  gallery_slider();
- $('.gallery').gallerybox();
 });
  function gallery_slider()
  {
