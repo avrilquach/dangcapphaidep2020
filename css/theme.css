@@ -2841,6 +2841,21 @@ img {
   color: #000000;
   margin-right: 75px;
 }
+.reviewvote .choose-star ul {
+  display: flex;
+  direction: rtl;
+}
+.reviewvote .choose-star ul li {
+  background: url("../img/Star7.svg") no-repeat;
+  width: 47px;
+  padding-top: 60px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.reviewvote .choose-star ul li:hover, .reviewvote .choose-star ul li:hover ~ li {
+  background: url("../img/Star6.svg") no-repeat;
+}
 .reviewvote .choose-star img {
   margin: 0 10px;
 }
