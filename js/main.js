@@ -20,7 +20,6 @@ $(document).ready(function () {
 		nav: true,
 		autoplay: true,
 	});
-	$(".do-nicescrol").niceScroll(); 
 	$('#header .menu ul > li.first').hover(
 		function(){
 			$(".bg_header").show();
@@ -164,7 +163,7 @@ $("a[href='#top']").click(function () {
 });
 $(".thongtinsanpham .show-data a").click(function(e){
 	$(".thongtinsanpham .left .content").css("height", "auto");
-	$(".thongtinsanpham .left .content").css("overflow", "scroll");
+	$(".thongtinsanpham .left .content").css("overflow", "unset");
 	$(".thongtinsanpham .show-data").hide();
 })
 $(".mua-chung input[type='checkbox']").click(function(e){
@@ -177,4 +176,10 @@ var product = $(".productslider");
     	items:5,
 		nav: true,
 	});
+$(".do-nicescrol li").hover(function(e){
+	var id = $(this).attr("id");
+	$('.boxscroll').animate({
+    scrollTop: $("."+id).offset().top
+}, "faster");
+})
 })

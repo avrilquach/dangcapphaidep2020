@@ -177,6 +177,15 @@ img {
   height: 545px;
   width: 250px;
   padding-right: 20px;
+  overflow-y: scroll;
+}
+.boxscroll::-webkit-scrollbar {
+  width: 4px;
+  background-color: #EDEDED;
+  border-radius: 5px;
+}
+.boxscroll::-webkit-scrollbar-thumb {
+  background-color: #FFC5C5;
 }
 .boxscroll span {
   font-size: 14px;
@@ -268,8 +277,21 @@ img {
 .menu ul > li.top:hover .open, .menu ul > li.top.active .open {
   display: flex;
 }
+.menu ._left {
+  display: flex;
+}
+.menu ._left.do-nicescrol ul.alpha {
+  padding: 0 20px 0 10px;
+}
+.menu ._left.do-nicescrol ul.alpha li {
+  padding: 0;
+}
+.menu ._left.do-nicescrol ul.alpha li:hover {
+  color: #FF326C;
+  cursor: pointer;
+}
 .menu ._right {
-  width: calc(100% - 250px);
+  width: calc(100% - 292px);
 }
 .menu ._right a.banner {
   width: 32%;
@@ -1612,6 +1634,9 @@ img {
   padding: 20px;
   position: relative;
 }
+.thongtinsanpham .left .content h1, .thongtinsanpham .left .content h2, .thongtinsanpham .left .content h3, .thongtinsanpham .left .content h4, .thongtinsanpham .left .content h5 {
+  line-height: 1.2;
+}
 .thongtinsanpham .left .show-data {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) -148.14%, #FFFFFF 100%);
   border-radius: 5px;
@@ -2547,7 +2572,7 @@ img {
 
 .bg_header {
   position: fixed;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
   top: 0;
   left: 0;
   width: 100%;
