@@ -1,0 +1,49 @@
+
+<div class="modal fade show" id="myModalCD" role="dialog" style="padding-right: 15px; display: block;">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal">×</button>
+        <h4 class="modal-title">Trả lời bình luận</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-comments" action="comment-rep" autocomplete="off" method="POST">
+          <input id="token" type="hidden" name="_token" value="h7ZyBNx76XFIZFSg4ZYuGYITkSKkLXn3x68lOmOw"/>
+          <input id="binhluan_parent_id_cd" type="hidden" name="binhluan_parent_id" value="293"/>
+          <input id="binhluan_level_cd" type="hidden" name="binhluan_level" value="1"/>
+          <input type="hidden" name="post_id" value="9276"/>
+          <input type="hidden" name="binhluan_url" value="https://dangcapphaidep.vn/kem-chong-nang-image-spf50-prevention.html"/>
+          <input type="hidden" name="loai_bl" value="1"/>
+          <input type="hidden" name="user_id" value="145"/>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input class="form-control" type="text" name="username" value="Nam Lê" placeholder="Tên của bạn..." required=""/>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input class="form-control" type="text" name="email" value="" placeholder="Số ĐT(để nhận phản hồi qua zalo)" required=""/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <textarea class="form-control" name="content" cols="30" rows="5" placeholder="Bình luận của bạn.."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <button class="btn btn-block btn-default btn-lg pull-right" type="submit">Trả lời bình luận</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

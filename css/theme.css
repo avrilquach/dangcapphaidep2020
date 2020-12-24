@@ -1603,10 +1603,10 @@ img {
 }
 .thongtinsanpham .left {
   position: relative;
+  margin-right: 20px;
 }
 .thongtinsanpham .left .content {
   width: 828px;
-  margin-right: 20px;
   background: #FFFFFF;
   border-radius: 5px;
   padding: 20px;
