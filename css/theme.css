@@ -399,6 +399,7 @@ img {
 }
 .contentproduct .item .inner .star img {
   margin-right: 5px;
+  width: auto;
 }
 .contentproduct .item .inner .price .new {
   font-size: 16px;
@@ -3274,6 +3275,25 @@ img {
 .popup-gallery a {
   margin: 0 10px 10px 0;
   display: inline-block;
+}
+
+.productslider .owl-nav .owl-next {
+  background: url("../img/right.svg") no-repeat;
+  width: 20px;
+  height: 45px;
+  position: absolute;
+  top: 40%;
+  right: -30px;
+  text-indent: -9999px;
+}
+.productslider .owl-nav .owl-prev {
+  background: url("../img/left.svg") no-repeat;
+  width: 20px;
+  height: 45px;
+  position: absolute;
+  top: 40%;
+  left: -30px;
+  text-indent: -9999px;
 }
 
 #top {

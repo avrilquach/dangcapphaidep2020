@@ -172,4 +172,9 @@ $(".mua-chung input[type='checkbox']").click(function(e){
 	var ele = id+"_new";
 	$("#"+ele).toggleClass("active");
 })
+var product = $(".productslider");
+	product.owlCarousel({
+    	items:5,
+		nav: true,
+	});
 })
