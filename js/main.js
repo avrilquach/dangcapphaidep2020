@@ -167,4 +167,9 @@ $(".thongtinsanpham .show-data a").click(function(e){
 	$(".thongtinsanpham .left .content").css("overflow", "scroll");
 	$(".thongtinsanpham .show-data").hide();
 })
+$(".mua-chung input[type='checkbox']").click(function(e){
+	var id = $(this).attr("id");
+	var ele = id+"_new";
+	$("#"+ele).toggleClass("active");
+})
 })
