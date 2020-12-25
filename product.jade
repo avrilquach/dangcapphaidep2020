@@ -581,15 +581,16 @@ html
             .choose-star
               ul
                 li
-                  span Không thích
-                li
-                  span Tạm được
-                li
-                  span Bình thường
+                  span Tuyệt vời quá
                 li
                   span Rất tốt
                 li
-                  span Tuyệt vời quá
+                  span Bình thường
+                li
+                  span Tạm được
+                li
+                  span Không thích
+               
         form.comments-review
           textarea.comments(name='comments' placeholder="Đánh giá sản phẩm")
           span.options.row.align-items-center
@@ -653,7 +654,7 @@ html
                         a 
                           img(src='https://unsplash.it/1200/800?image=841' width='75' height='75').gallery
                   .replay.row.align-items-center
-                    a(href='#') Trả lời
+                    a(data-toggle="modal" data-target="#exampleModal") Trả lời
                     a(href='#')
                       img(src="img/like.svg")
                       | Thích
@@ -670,7 +671,7 @@ html
                       .content
                         | Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.
                     .replay.row.align-items-center
-                      a(href='#') Trả lời
+                      a(data-toggle="modal" data-target="#exampleModal") Trả lời
                       a(href='#')
                         img(src="img/like.svg")
                         | Hài lòng
@@ -701,11 +702,11 @@ html
             br
             | & TƯ VẤN TẬN TÌNH
     include inc/footer.jade
-    
-
+    include inc/popup.jade
     include inc/script.jade
     script(type='text/javascript', src='js/jquery.gallerybox.js')
     script(type='text/javascript', src='js/main2.js')
+    script(type='text/javascript', src='js/bootstrap.js')
     script.
       $(document).ready(function () {
         $('.gallery').gallerybox();

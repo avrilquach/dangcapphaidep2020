@@ -10,7 +10,7 @@ $(document).ready(function () {
 		nav: true,
 		autoplay: true,
 		autoWidth:true,
-		item: 6,
+		item: 5,
 	});
 	var video = $(".videomoinhat .content");
 	video.owlCarousel({

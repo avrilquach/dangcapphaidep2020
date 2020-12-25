@@ -469,11 +469,11 @@
           <div class="row align-items-center item2"><span class="title">Bạn thấy sản phẩm như thế nào ?<br>(Chọn sao nhé)</span>
             <div class="choose-star">
               <ul>
-                <li><span>Không thích</span></li>
-                <li><span>Tạm được</span></li>
-                <li><span>Bình thường</span></li>
-                <li><span>Rất tốt</span></li>
                 <li><span>Tuyệt vời quá</span></li>
+                <li><span>Rất tốt</span></li>
+                <li><span>Bình thường</span></li>
+                <li><span>Tạm được</span></li>
+                <li><span>Không thích</span></li>
               </ul>
             </div>
           </div>
@@ -506,7 +506,7 @@
                       <div class="popup-gallery"><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a><a> <img class="gallery" src="https://unsplash.it/1200/800?image=841" width="75" height="75"></a></div>
                     </div>
                   </div>
-                  <div class="replay row align-items-center"><a href="#">Trả lời</a><a href="#"><img src="img/like.svg">Thích</a>
+                  <div class="replay row align-items-center"><a data-toggle="modal" data-target="#exampleModal">Trả lời</a><a href="#"><img src="img/like.svg">Thích</a>
                     <div class="time">Cách đây 5 giờ</div>
                   </div>
                 </div>
@@ -521,7 +521,7 @@
                       </div>
                       <div class="content">Chào bạn, cảm ơn bạn đã quan tâm đến sản phẩm của chúng tôi.</div>
                     </div>
-                    <div class="replay row align-items-center"><a href="#">Trả lời</a><a href="#"><img src="img/like.svg">Hài lòng</a><a href="#"><img src="img/dislike.svg">Không hài lòng</a>
+                    <div class="replay row align-items-center"><a data-toggle="modal" data-target="#exampleModal">Trả lời</a><a href="#"><img src="img/like.svg">Hài lòng</a><a href="#"><img src="img/dislike.svg">Không hài lòng</a>
                       <div class="time">Cách đây 5 giờ</div>
                     </div>
                   </div>
@@ -612,6 +612,35 @@
         </div>
       </div>
     </footer><a class="active" id="top" href="#top"><img src="img/arrowup.svg" alt=""></a>
+    <!-- Modal-->
+    <div class="modal fade stylett" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: fixed">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Trả lời bình luận</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-between">
+              <div class="input-column2">
+                <input class="input" type="text" name="ten" placeholder="Tên của bạn">
+              </div>
+              <div class="input-column2">
+                <input class="input" type="text" name="phong" placeholder="Nhập số điện thoại">
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-column1">
+                <textarea class="input textarea" placeholder="Bình luận của bạn" name="binhluan"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" type="button">Trả lời bình luận</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/scroll.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
@@ -619,6 +648,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.gallerybox.js"></script>
     <script type="text/javascript" src="js/main2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
     <script>
       $(document).ready(function () {
         $('.gallery').gallerybox();
