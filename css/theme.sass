@@ -2809,6 +2809,287 @@ img
 	z-index: 10
 	&.active
 		right: 30px
+.main_right_thuonghieu
+	background: transparent
+	padding: 0
+	.san_pham_da_xem_2
+		margin: 0 -1%
+		.item
+			background: #fff
+			border: none
+			width: 23%
+			margin: 0 1% 15px 1%
+	.pager2
+		background: #FFFFFF
+		border-radius: 5px
+		padding: 10px
+		clear: both
+		ul
+			display: flex
+			align-items: center
+			justify-content: center
+			li
+				margin: 0 10px
+				a.number
+					width: 35px
+					height: 35px
+					font-size: 14px
+					font-weight: 400
+					background: #C4C4C4
+					border-radius: 50%
+					display: flex
+					color: #fff
+					align-items: center
+					justify-content: center
+				&:hover, &.active
+					a
+						background: #FF326C
+						border-radius: 50%
+.sidebar_thuonghieu
+	padding: 0	
+	.box-filter
+		border-bottom: 1px solid #DBDBDB
+		h2
+			background: url("../img/plus.svg") no-repeat right 16px center 
+			padding: 16px
+			font-size: 16px
+			font-weight: 600
+			text-transform: uppercase
+			cursor: pointer
+		&.active
+			h2
+				background: url("../img/minius.svg") no-repeat right 16px center 
+				&.top
+					border-bottom: 1px solid #DBDBDB
+			.box-filter-2
+				display: block
+				&.top
+					padding: 16px
+		.box-filter-2
+			padding: 0 16px 16px 16px
+			display: none
+			&.top 
+				border-bottom: 0.5px dashed #BABABA
+			&:last-child.top
+				border-bottom: none
+			h3
+				background: url("../img/left_icon.svg") no-repeat left center 
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				padding-left: 20px
+				line-height: 30px
+				cursor: pointer
+			&.active
+				h3
+					background: url("../img/down_icon.svg") no-repeat left center 
+				.box-filter-3
+					display: block
+			label
+				font-size: 15px
+				font-weight: 300
+				line-height: 30px
+				color: #000000
+				display: flex
+				cursor: pointer
+				position: relative
+				input[type=checkbox]
+					opacity: 0
+					position: absolute
+					left: 0
+				input[type=checkbox]:checked + span::after
+					content: ""
+					background: url("../img/check_icon.svg") no-repeat
+					position: absolute
+					top: 10px
+					right: 0
+					width: 15px
+					height: 10px
+			.box-price
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 16px
+			#price_from, #price_to
+				background: #FFFFFF
+				border: 0.5px solid #545353
+				border-radius: 3px
+				width: 140px
+				height: 35px
+				font-size: 15px
+				font-weight: 300
+				text-align: center
+				color: #B8B8B8
+			.box-filter-3
+				padding-left: 20px
+				display: none
+				h4
+					font-size: 16px
+					font-weight: 600
+					line-height: 30px
+				label
+					padding-left: 10px
+					font-size: 15px
+					font-weight: 300
+					line-height: 30px
+					color: #000000
+					display: flex
+					cursor: pointer
+					position: relative
+					input[type=checkbox]
+						opacity: 0
+						position: absolute
+						left: 0
+					input[type=checkbox]:checked + span::after
+						content: ""
+						background: url("../img/check_icon.svg") no-repeat
+						position: absolute
+						top: 10px
+						right: 0
+						width: 15px
+						height: 10px
+.sort
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border-radius: 5px
+	background: #fff
+	padding: 10px 20px
+	margin-bottom: 15px
+	position: relative
+	span.top
+		font-size: 15px
+		font-weight: 400
+		background: url("../img/down_icon.svg") no-repeat right center
+		padding-right: 20px
+		cursor: pointer
+	.sort_thuonghieu
+		position: relative
+		&.active
+			.box-open
+				display: block
+				left: -20px
+				top: 32px
+	.sort_sapxep
+		position: relative
+		&.active
+			.box-open
+				display: block
+				right: -20px
+				top: 32px
+				width: 235px
+	label
+		font-size: 15px
+		font-weight: 300
+		line-height: 30px
+		color: #000000
+		display: flex
+		cursor: pointer
+		position: relative
+		input[type=checkbox]
+			opacity: 0
+			position: absolute
+			left: 0
+		input[type=checkbox]:checked + span::after
+			content: ""
+			background: url("../img/check_icon.svg") no-repeat
+			position: absolute
+			top: 10px
+			right: 0
+			width: 15px
+			height: 10px
+	.search-form
+		position: relative
+		margin-bottom: 16px
+		input[type="text"]
+			border: 0.5px solid #A4A4A4
+			border-radius: 5px
+			width: 325px
+			height: 40px
+			font-size: 14px
+			font-weight: 300
+			color: #8C8C8C
+			padding: 0 30px 0 10px
+		button
+			border: nonen
+			position: absolute
+			right: 0
+			top: 0
+			height: 40px
+			border: none
+			background: transparent
+			outline: none
+	.button
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-top: 0.5px solid #AAAAAA
+		padding-top: 20px
+		button
+			width: 156px
+			height: 40px 
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 16px
+			font-weight: 400
+			border: none
+			outline: none 
+			
+			&.accept 
+				background: #212121
+				border-radius: 5px
+				color: #fff
+			&.cancel
+				color: #000
+				background: #fff
+	.box-open
+		display: none
+		background: #FFFFFF
+		box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.13)
+		border-radius: 5px
+		position: absolute
+		padding: 20px
+._form_search
+	.box-open
+		position: absolute
+		background: #FFFFFF
+		border-radius: 5px
+		width: 100%
+		z-index: 10
+		border: 0.5px solid #797979
+		border-top: none
+		border-radius: 0
+		border-bottom-left-radius: 5px
+		border-bottom-right-radius: 5px
+		padding: 10px
+		display: none
+		span	
+			font-size: 18px
+			font-weight: 300
+			margin-bottom: 10px
+			display: block
+		ul
+			li	
+				border: 1px solid #C0C0C0
+				float: left
+				margin-right: 10px
+				margin-bottom: 10px
+				border-radius: 5px
+				a
+					padding: 5px 10px 
+					font-size: 16px
+					color: #000
+					display: flex
+				&:hover a
+					background: #FF326C
+					color: #fff
+	input[type=text]:focus
+		border-radius: 0
+		border-top-left-radius: 5px
+		border-top-right-radius: 5px
+	input[type=text]:focus ~ .box-open
+		display: block
 @media(max-width: 1280px)
 	#header, #footer-new, #header2, .banner, .partner, .videomoinhat
 		width: 1280px !important
