@@ -3507,6 +3507,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+  clear: both;
 }
 .sidebar_thuonghieu .box-filter .box-filter-2 #price_from, .sidebar_thuonghieu .box-filter .box-filter-2 #price_to {
   background: #FFFFFF;
@@ -3577,6 +3578,19 @@ img {
   display: block;
   left: -20px;
   top: 32px;
+}
+.sort .sort_thuonghieu.active .box-open .content {
+  overflow-y: scroll;
+  height: 350px;
+  margin-bottom: 10px;
+}
+.sort .sort_thuonghieu.active .box-open .content::-webkit-scrollbar {
+  width: 4px;
+  background-color: #d6d6d6;
+  border-radius: 5px;
+}
+.sort .sort_thuonghieu.active .box-open .content::-webkit-scrollbar-thumb {
+  background-color: #494949;
 }
 .sort .sort_sapxep {
   position: relative;
@@ -3837,6 +3851,18 @@ img {
 .tag ul li a.red {
   background: linear-gradient(90.33deg, #FEADA6 3.36%, #F5576C 97.72%);
   border-radius: 5px;
+}
+
+.load-price .item {
+  float: left;
+  border: 0.5px solid #545353;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 10px 10px 0;
+}
+.load-price .item span {
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 1280px) {

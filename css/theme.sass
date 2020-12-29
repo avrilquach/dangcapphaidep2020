@@ -3467,6 +3467,7 @@ img
 				justify-content: space-between
 				align-items: center
 				margin-bottom: 16px
+				clear: both
 
 			#price_from, #price_to
 				background: #FFFFFF
@@ -3536,7 +3537,17 @@ img
 			display: block
 			left: -20px
 			top: 32px
+			.content
+				overflow-y: scroll
+				height: 350px
+				margin-bottom: 10px
+				&::-webkit-scrollbar
+					width: 4px
+					background-color: #d6d6d6
+					border-radius: 5px
 
+				&::-webkit-scrollbar-thumb
+					background-color: #494949
 	.sort_sapxep
 		position: relative
 
@@ -3771,6 +3782,16 @@ img
 			a.red
 				background: linear-gradient(90.33deg, #FEADA6 3.36%, #F5576C 97.72%)
 				border-radius: 5px
+.load-price
+	.item
+		float: left
+		border: 0.5px solid #545353
+		padding: 5px 10px
+		border-radius: 5px
+		margin: 0 10px 10px 0
+		span
+			margin-left: 5px
+			cursor: pointer
 @media(max-width: 1280px)
 	#header, #footer-new, #header2, .banner, .partner, .videomoinhat
 		width: 1280px !important
