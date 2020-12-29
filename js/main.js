@@ -20,7 +20,7 @@ $(document).ready(function() {
 			nav: true,
 			autoplay: true,
 	});
-	$('#header .menu ul > li.first').hover(
+	$('#header .menu ul > li.dropdown').hover(
 			function() {
 					$(".bg_header").show();
 			},

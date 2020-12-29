@@ -3682,6 +3682,43 @@ img {
   display: block;
 }
 
+.tag {
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.tag ul {
+  display: flex;
+  padding: 10px;
+}
+.tag ul li {
+  display: flex;
+  padding: 10px;
+}
+.tag ul li a {
+  padding: 15px 25px;
+  display: inline-flex;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.tag ul li a.black {
+  background: linear-gradient(90.33deg, #C7C7C7 3.36%, #9B9B9B 97.72%);
+  border-radius: 5px;
+}
+.tag ul li a.blue {
+  background: linear-gradient(90.33deg, #B2CFD8 3.36%, #87ADB7 97.72%);
+  border-radius: 5px;
+}
+.tag ul li a.green {
+  background: linear-gradient(90.33deg, #99C596 3.36%, #C1DFC4 97.72%);
+  border-radius: 5px;
+}
+.tag ul li a.red {
+  background: linear-gradient(90.33deg, #FEADA6 3.36%, #F5576C 97.72%);
+  border-radius: 5px;
+}
+
 @media (max-width: 1280px) {
   #header, #footer-new, #header2, .banner, .partner, .videomoinhat {
     width: 1280px !important;
