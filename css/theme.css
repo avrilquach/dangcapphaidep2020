@@ -3888,6 +3888,121 @@ img {
   background: #F1F1F1;
 }
 
+.feed .center {
+  width: calc(100% - 560px);
+  padding: 0 20px;
+}
+.feed .center .baiviet {
+  background: #FFFFFF;
+  border: 0.5px solid #D5D5D5;
+  border-radius: 5px;
+  padding: 15px;
+}
+.feed .center .baiviet .picture {
+  padding: 10px 0;
+  clear: both;
+}
+.feed .center .baiviet .count {
+  border-top: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8;
+  padding: 10px 0;
+}
+.feed .center .baiviet .count .like {
+  margin-right: 20px;
+}
+.feed .center .baiviet .count span {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 300;
+  color: #414141;
+}
+.feed .center .baiviet .content p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  line-height: 25px;
+  padding: 10px 0;
+}
+.feed .center .baiviet .content ul li {
+  float: left;
+  margin-right: 10px;
+}
+.feed .center .baiviet .content ul li a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000000;
+}
+.feed .center .baiviet .top .title {
+  width: calc(100% - 111px);
+  padding: 0 50px 0 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+.feed .center .baiviet .top .title .name {
+  font-weight: 600;
+}
+.feed .center .baiviet .top .title span.date {
+  font-weight: 300;
+  font-size: 14px;
+  color: #878787;
+  margin-left: 20px;
+}
+.feed .center .baiviet .top .avatar img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.feed .center .baiviet .top .nameproduct {
+  background: #FFFFFF;
+  border: 0.5px solid #D5D5D5;
+  border-radius: 5px;
+  padding: 5px;
+  height: 57px;
+}
+.feed .center .baiviet .top .nameproduct img {
+  width: 45px;
+  height: 45px;
+}
+.feed .left, .feed .right {
+  width: 280px;
+  background: #FFFFFF;
+  border: 0.5px solid #D5D5D5;
+  border-radius: 5px;
+}
+.feed .left ul, .feed .right ul {
+  padding: 30px;
+}
+.feed .left ul:first-child, .feed .right ul:first-child {
+  border-bottom: 1px solid #E3E3E3;
+}
+.feed .left ul li, .feed .right ul li {
+  padding: 10px 0;
+}
+.feed .left ul li a, .feed .right ul li a {
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.feed .left ul li a .img, .feed .right ul li a .img {
+  width: 22px;
+  margin-right: 20px;
+}
+.feed .left ul li a .text, .feed .right ul li a .text {
+  width: 22px;
+  height: 22px;
+  margin-right: 22px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5B5B5B;
+  text-align: center;
+}
+
 @media (min-width: 1900px) {
   body ._container {
     width: 1440px;

@@ -1,0 +1,79 @@
+doctype html
+html
+  include inc/head.jade
+  body
+    include inc/header.jade
+    .main.pad30_0.feed
+      ._container
+        .row
+          .left
+            ul
+              li
+                a(href="#")
+                  .img 
+                    img(src='img/feed1.svg')
+                  | New Feeds
+              li
+                a(href="#")
+                  .img 
+                    img(src='img/feed2.svg')
+                  | Unboxing
+              li
+                a(href="#")
+                  .img 
+                    img(src='img/feed3.svg')
+                  | Best Deals
+            ul
+              li
+                a(href="#") 
+                  .text N
+                  | Ngoc Anh
+              li
+                a(href="#")
+                  .img 
+                    img(src='img/feed4.svg')
+                  | Đánh giá sản phẩm 
+          .center
+            .baiviet
+              .top.row.align-items-center
+                .avatar
+                  img(src='img/avatar.png')
+                .title 
+                  .text 
+                    span.name Ngọc Anh 
+                    | đã viết đánh giá cho sản phẩm Mặt Nạ Ngủ Naruko Tea Tree Shine Control Blemish Clear Night Gelly 80 gr
+                  .row.align-items-center
+                    .rating
+                      img(src='img/Star3.svg')
+                      img(src='img/Star3.svg')
+                      img(src='img/Star3.svg')
+                      img(src='img/Star3.svg')
+                      img(src='img/Star2.svg')
+                    span.date 25/12/2020
+                .nameproduct
+                  img(src='img/product1.png')
+              .content
+                p Được tặng kèm đơn hàng, đc gói trong hộp quà rất xinh em gái mình rất thích, shop rất chu đáo, thanks shop Được tặng kèm đơn hàng, đc gói trong hộp quà rất xinh em gái mình rất thích, shop rất chu đáo, thanks shop
+                ul
+                  li
+                    a(href="#") #Chăm sóc da
+                  li
+                    a(href="#") #Trị mụn
+              .picture
+                img(src='img/picture1.jpg')
+              .count.row.justify-content-between
+                .row.align-items-center
+                  .like
+                    img(src='img/likefeed.svg')
+                    span 20
+                  .comments
+                    img(src='img/commentfeed.svg')
+                    span 50
+                .forward
+                  img(src='img/feed5.svg')
+              .binhluan
+
+          .right
+    include inc/footer.jade
+    include inc/script.jade
+    script(type='text/javascript', src='js/main2.js')
