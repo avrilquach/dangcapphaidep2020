@@ -3873,3 +3873,61 @@ img {
 .top_thuong_hieu .owl-carousel .owl-item img {
   height: 340px;
 }
+
+.top_account ul li:hover {
+  background: #F1F1F1;
+}
+
+@media (min-width: 1440px) {
+  body ._container {
+    width: 1440px;
+  }
+
+  .partner ul li {
+    width: 141px;
+  }
+
+  .contentproduct .item {
+    width: 269px;
+  }
+
+  .styleproduct .banner-left {
+    width: 555px;
+  }
+
+  .contentproduct.contentproduct_right {
+    width: calc(100% - 558px);
+  }
+
+  .contentproduct .item .inner img.product {
+    height: 246px;
+  }
+
+  .timkiemnhieunhat .owl-item:last-child {
+    display: none;
+  }
+
+  .main_right, .main_right2 {
+    width: 1040px;
+  }
+
+  .menu ul > li .open {
+    width: 1410px;
+  }
+
+  .product .right {
+    width: 700px;
+  }
+
+  .thongtinsanpham .left .content {
+    width: 988px;
+  }
+
+  .sidebar_right {
+    width: 455px;
+  }
+
+  .main_left {
+    width: 935px;
+  }
+}
