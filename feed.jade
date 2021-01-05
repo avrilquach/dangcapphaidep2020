@@ -72,7 +72,57 @@ html
                 .forward
                   img(src='img/feed5.svg')
               .binhluan
-
+                form.form
+                  .name N
+                  .options
+                    input(type="text" name="binhluan" placeholder="Gửi bình luận của bạn")
+                    .file
+                      input(type="file" id="avatar" name="avatar" accept="image/png, image/jpeg")
+                      img(src='img/camera2.svg')
+                .list
+                  .personal
+                    .img
+                      img(src='img/avatar.png')
+                    .text
+                      .bg
+                        .name Jerry
+                        .bl 
+                          p Hàng được gói trong hộp quà rất xinh, còn đc tặng kèm quà, em gái mình rất thích, shop rất chu đáo, thanks shop
+                      .options
+                        a(href="#") Like
+                        a(href="#") Reply
+                  .personal
+                    .img
+                      img(src='img/avatar.png')
+                    .text
+                      .bg
+                        .name Jerry
+                        .bl 
+                          p Hàng được gói trong hộp quà rất xinh, còn đc tặng kèm quà, em gái mình rất thích, shop rất chu đáo, thanks shop
+                      .options
+                        a(href="#") Like
+                        a(href="#") Reply
+                    .reply
+                      .img
+                        img(src='img/avatar.png')
+                      .text
+                        .bg
+                          .name Jerry
+                          .bl 
+                            p Hàng được gói trong hộp quà rất xinh, còn đc tặng kèm quà, em gái mình rất thích, shop rất chu đáo, thanks shop
+                        .options
+                          a(href="#") Like
+                          a(href="#") Reply
+                  .personal
+                    .img
+                      img(src='img/avatar.png')
+                    .text
+                      .name Jerry
+                      .imgtext
+                        img(src='img/imgfeed.png')
+                      .options
+                        a(href="#") Like
+                        a(href="#") Reply
           .right
     include inc/footer.jade
     include inc/script.jade
