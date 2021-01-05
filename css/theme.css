@@ -233,7 +233,7 @@ img {
 .menu ul > li .open {
   display: none;
   position: absolute;
-  width: 1290px;
+  width: 1250px;
   top: 47px;
   padding: 15px;
   z-index: 10;
@@ -590,7 +590,7 @@ img {
 
 .main_right2 {
   margin-left: 20px;
-  width: 880px;
+  width: 930px;
 }
 .main_right2 h4 {
   padding-left: 30px;
@@ -1716,7 +1716,6 @@ img {
   background: #FFFFFF;
   border-radius: 5px;
   padding: 30px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -2296,7 +2295,6 @@ img {
 .product .left .gallery #big .item.video {
   margin: 10px auto 0 10px;
   max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .product .left .gallery #thumbs {
