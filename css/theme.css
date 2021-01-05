@@ -415,7 +415,7 @@ img {
   font-weight: 300;
   color: #000000;
   margin-bottom: 5px;
-  height: 46px;
+  height: 43px;
   overflow: hidden;
   display: block;
 }
@@ -590,7 +590,7 @@ img {
 
 .main_right2 {
   margin-left: 20px;
-  width: 930px;
+  width: 880px;
 }
 .main_right2 h4 {
   padding-left: 30px;
@@ -3886,6 +3886,70 @@ img {
   background: #F1F1F1;
 }
 
+@media (min-width: 1900px) {
+  body ._container {
+    width: 1440px;
+  }
+
+  .partner ul li {
+    width: 141px;
+  }
+
+  .contentproduct .item {
+    width: 269px;
+  }
+
+  .styleproduct .banner-left {
+    width: 555px;
+  }
+
+  .contentproduct.contentproduct_right {
+    width: calc(100% - 558px);
+  }
+  .contentproduct .item .inner img.product {
+    height: 246px;
+  }
+
+  .timkiemnhieunhat .owl-item:last-child {
+    display: none;
+  }
+
+  .main_right, .main_right2 {
+    width: 1040px;
+  }
+
+  .menu ul > li .open {
+    width: 1410px;
+  }
+
+  .product .right {
+    width: 700px;
+  }
+
+  .thongtinsanpham .left .content {
+    width: 988px;
+  }
+
+  .sidebar_right {
+    width: 455px;
+  }
+
+  .main_left {
+    width: 935px;
+  }
+
+  .sidebar {
+    width: 350px;
+  }
+
+  .main_right_thuonghieu .san_pham_da_xem_2 {
+    margin: 0 -0.5%;
+  }
+  .main_right_thuonghieu .san_pham_da_xem_2 .item {
+    width: 24%;
+    margin: 0 0.5% 15px 0.5%;
+  }
+}
 .feed .center {
   width: calc(100% - 560px);
   padding: 0 20px;
@@ -3999,70 +4063,4 @@ img {
   font-weight: 400;
   color: #5B5B5B;
   text-align: center;
-}
-
-@media (min-width: 1900px) {
-  body ._container {
-    width: 1440px;
-  }
-
-  .partner ul li {
-    width: 141px;
-  }
-
-  .contentproduct .item {
-    width: 269px;
-  }
-
-  .styleproduct .banner-left {
-    width: 555px;
-  }
-
-  .contentproduct.contentproduct_right {
-    width: calc(100% - 558px);
-  }
-
-  .contentproduct .item .inner img.product {
-    height: 246px;
-  }
-
-  .timkiemnhieunhat .owl-item:last-child {
-    display: none;
-  }
-
-  .main_right, .main_right2 {
-    width: 1040px;
-  }
-
-  .menu ul > li .open {
-    width: 1410px;
-  }
-
-  .product .right {
-    width: 700px;
-  }
-
-  .thongtinsanpham .left .content {
-    width: 988px;
-  }
-
-  .sidebar_right {
-    width: 455px;
-  }
-
-  .main_left {
-    width: 935px;
-  }
-
-  .sidebar {
-    width: 350px;
-  }
-
-  .main_right_thuonghieu .san_pham_da_xem_2 {
-    margin: 0 -0.5%;
-  }
-  .main_right_thuonghieu .san_pham_da_xem_2 .item {
-    width: 24%;
-    margin: 0 0.5% 15px 0.5%;
-  }
 }
