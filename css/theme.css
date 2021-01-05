@@ -590,7 +590,7 @@ img {
 
 .main_right2 {
   margin-left: 20px;
-  width: 880px;
+  width: 930px;
 }
 .main_right2 h4 {
   padding-left: 30px;
@@ -3950,6 +3950,20 @@ img {
     margin: 0 0.5% 15px 0.5%;
   }
 }
+.tag_promotion {
+  width: 45px;
+  border: 1px solid #636363;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 99;
+  justify-content: center;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  padding: 2px 0;
+  height: 23px;
+}
+
 .feed .center {
   width: calc(100% - 560px);
   padding: 0 20px;
