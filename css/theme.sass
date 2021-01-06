@@ -3938,10 +3938,68 @@ img
 			width: 24%
 			margin: 0 0.5% 15px 0.5%
 .feed
+	.right
+		width: 280px
+		background: #FFFFFF
+		border: 0.5px solid #D5D5D5
+		border-radius: 5px
+	.key-word
+		padding: 15px
+		h3
+			font-size: 16px
+			font-weight: 400
+			color: #000000
+			text-transform: uppercase
+			margin-bottom: 10px
+		ul
+			li 
+				float: left
+				margin: 0 10px 10px 0
+				a
+					background: #F5F5F5
+					border-radius: 5px
+					padding: 10px 15px
+					display: block
+					color: #000
+	.baiviet
+		margin-bottom: 20px
 	.binhluan
+		.list
+			.reply
+				padding-left: 60px
+			.personal, .reply
+				display: flex
+				width: 100%
+				margin-bottom: 10px
+				.img
+					width: 45px
+					height: 45px
+				.text
+					width: calc(100% - 60px)
+					margin-left: 15px
+					.bg
+						background: #F0F2F5
+						border-radius: 10px
+						padding: 10px 20px
+						.name
+							font-size: 16px
+							font-weight: 600
+							color: #000
+						.bl
+							font-size: 16px
+							font-weight: 300
+							color: #000
+					.options
+						margin-top: 5px
+						a
+							margin-left: 20px
+							font-size: 14px
+							font-weight: 400
+							color: #3a3a3a
+
 		.form
 			display: flex
-			padding: 10px 0
+			padding: 15px 0
 			.name
 				width: 45px
 				height: 45px
@@ -3956,6 +4014,18 @@ img
 				width: calc(100% - 60px)
 				margin-left: 15px
 				position: relative
+				.file
+					position: absolute
+					top: 0
+					right: 0
+					width: 100px
+					height: 45px
+					#avatar
+						opacity: 0
+					img
+						position: absolute
+						top: 12px
+						right: 25px
 				input[type="text"]
 					width: 100%
 					background: #F0F2F5
@@ -3979,6 +4049,12 @@ img
 			.picture
 				padding: 10px 0
 				clear: both
+				.col2 
+					width: 49%
+				.row
+					margin-bottom: 2%
+					&:last-child
+						margin-bottom: 0
 			.count
 				border-top: 1px solid #C8C8C8
 				border-bottom: 1px solid #C8C8C8
@@ -4032,7 +4108,7 @@ img
 					img
 						width: 45px
 						height: 45px
-	.left, .right
+	.left
 		width: 280px
 		background: #FFFFFF
 		border: 0.5px solid #D5D5D5
