@@ -87,7 +87,7 @@ img
 		position: relative
 
 	input[type=text]
-		width: 500px
+		width: 650px
 		background: #FFFFFF
 		border: 0.5px solid #797979
 		border-radius: 40px
@@ -118,6 +118,10 @@ img
 			right: 0
 			background: transparent
 			height: 40px
+
+@media (max-width: 1600px) and (min-width: 1200px)
+	._form_search input[type=text]
+		width: 500px
 
 ._cart
 	position: relative
@@ -155,7 +159,7 @@ img
 	overflow-y: scroll
 
 	&::-webkit-scrollbar
-		width: 4px
+		width: 2px
 		background-color: #EDEDED
 		border-radius: 5px
 
@@ -204,7 +208,7 @@ img
 		.open
 			display: none
 			position: absolute
-			width: 1250px
+			width: 1290px
 			top: 47px
 			padding: 15px
 			z-index: 10
@@ -361,64 +365,75 @@ img
 		width: calc(100% - 494px)
 		margin-right: -5px
 
-		.item
+		.item, .item1
 			margin: 0 7.5px 15px 7.5px
 
-	.item
+	.item, .item1
 		float: left
 		width: 237px
-		margin: 0 7.5px 15px 7.5px
+		margin: 0 7.5px 0px 7.5px
 		border-radius: 5px
 		background: #fff
 
-		.inner
-			padding: 10px
+	.item .inner, .item1 .inner
+		padding: 10px
 
-			img.product
-				margin: 0 auto 5px auto
-				width: 230px
-				height: 198px
-				display: block
+	.item .inner img.product, .item1 .inner img.product
+		margin: 0 auto 5px auto
+		width: 212px
+		height: 212px
+		display: block
 
-			.title
-				font-size: 14px
-				font-weight: 300
-				color: #000000
-				margin-bottom: 5px
-				height: 43px
-				overflow: hidden
-				display: block
+	.item .inner .title, .item1 .inner .title
+		font-size: 14px
+		font-weight: 300
+		color: #000000
+		height: 40px
+		overflow: hidden
+		display: block
 
-			.star
-				margin-bottom: 5px
+	.item .inner .star, .item1 .inner .star
+		/* margin-bottom: 5px;
 
-				img
-					margin-right: 5px
-					width: auto
+	.item .inner .star img, .item1 .inner .star img
+		margin-right: 5px
+		width: auto
 
-			.price
-				.new
-					font-size: 16px
-					font-weight: 300
-					color: #FF326C
-					margin-right: 20px
+	.item .inner .price .new, .item1 .inner .price .new
+		font-size: 16px
+		font-weight: 300
+		color: #FF326C
+		margin-right: 20px
 
-				.old
-					font-size: 14px
-					font-weight: 300
-					color: #C3C3C3
-					-webkit-text-decoration-line: line-through
-					text-decoration-line: line-through
+	.item .inner .price .old, .item1 .inner .price .old
+		font-size: 14px
+		font-weight: 300
+		color: #C3C3C3
+		-webkit-text-decoration-line: line-through
+		text-decoration-line: line-through
 
-		a
-			&.addtocart, &.write
-				background: #FFE0E9
-				border-radius: 0px 0px 5px 5px
-				width: 100%
-				height: 37px
-				font-size: 12px
-				font-weight: 400
-				text-transform: uppercase
+	.item a span, .item1 a span
+		color: #212121
+
+	.item a
+		&.addtocart, &.write
+			background: #FFE0E9
+			border-radius: 0px 0px 5px 5px
+			width: 100%
+			height: 37px
+			font-size: 12px
+			font-weight: 400
+			text-transform: uppercase
+
+	.item1 a
+		&.addtocart, &.write
+			background: #FFE0E9
+			border-radius: 0px 0px 5px 5px
+			width: 100%
+			height: 37px
+			font-size: 12px
+			font-weight: 400
+			text-transform: uppercase
 
 .sidebar
 	width: 300px
@@ -546,9 +561,9 @@ img
 				width: 67px
 				font-size: 14px
 				font-weight: 300
-				color: #106909
+				color: #000
 				background: #FFFFFF
-				border: 1px solid #106909
+				border: 1px solid #636363
 				border-radius: 5px
 				margin-top: 10px
 
@@ -560,7 +575,7 @@ img
 
 .main_right2
 	margin-left: 20px
-	width: 930px
+	width: 880px
 
 	h4
 		padding-left: 30px
@@ -674,27 +689,40 @@ img
 
 		.inner
 			padding: 10px
+			position: relative
 
+.tag_promotion
+	width: auto
+	border: 1px solid #636363
+	border-radius: 30px
+	position: absolute
+	z-index: 99
+	justify-content: center
+	text-align: center
+	display: block
+	font-size: 13px
+	padding: 2px 5px
+	align-items: center
+
+.main_right
+	.san_pham_da_xem_2 .item
+		.inner
 			img.product
 				margin: 0 auto 5px auto
-				width: 220px
-				height: 220px
+				width: 250px
+				height: 250px
 				display: block
 
 			.title
 				font-size: 14px
 				font-weight: 300
 				color: #000000
-				margin-bottom: 5px
-				height: 46px
+				height: 40px
 				overflow: hidden
 				display: block
 
-			.star
-				margin-bottom: 5px
-
-				img
-					margin-right: 5px
+			.star img
+				margin-right: 5px
 
 			.price
 				.new
@@ -741,9 +769,9 @@ img
 
 				span
 					&.title
-						font-size: 14px
+						font-size: 16px
 						font-weight: 600
-						color: #106909
+						color: #000
 						margin-bottom: 5px
 						display: block
 
@@ -1369,7 +1397,7 @@ img
 			margin-bottom: 0
 
 		.box1, .box3
-			padding: 10px 10px 0 10px
+			padding: 15px 10px 10px 10px
 
 		.box2
 			background: #F0F0F0
@@ -1643,6 +1671,7 @@ img
 				font-size: 16px
 				font-weight: 300
 				color: #000
+				background: rgba(255, 255, 255, 0.6)
 
 			.hide-data
 				display: none
@@ -1829,7 +1858,7 @@ img
 		border: 1px solid #106909
 		border-radius: 100%
 		background: #fff
-		border: 1px solid #CECECE
+		border: 1px solid #636363
 
 	&:checked + label:after
 		content: ""
@@ -2033,7 +2062,7 @@ img
 					&::after
 						content: "+"
 						position: absolute
-						right: -25px
+						right: -35px
 						top: 65px
 						font-size: 16px
 						font-weight: 400
@@ -2301,6 +2330,10 @@ img
 							width: 100%
 							height: 100%
 
+@media (max-width: 1899.99px)
+	.product .right .mua-chung .img-product .item::after
+		right: -27px
+
 .partner
 	background: #fff
 	border-top: 1px solid #DBDBDB
@@ -2498,7 +2531,7 @@ img
 		background: #FFFFFF
 		border: 1px solid #C0C0C0
 		border-radius: 40px
-		font-size: 16px
+		font-size: 15px
 		font-weight: 300
 		color: #000
 		display: block
@@ -2593,6 +2626,8 @@ img
 		width: 49%
 
 .styleproduct
+	margin-top: 20px
+
 	.banner-left
 		width: 491px
 
@@ -2645,7 +2680,7 @@ img
 	padding: 30px
 
 .comments-area
-	width: 1000px
+	width: 100%
 
 	.l
 		margin-bottom: 10px
@@ -2720,7 +2755,7 @@ img
 			margin-bottom: 0
 
 .box-comments
-	width: 1000px
+	width: 100%
 	padding: 20px 0
 
 	button
@@ -2761,7 +2796,7 @@ img
 	background: #FFFFFF
 	border: 1px solid #D1D1D1
 	border-radius: 5px
-	width: 1000px
+	width: 100%
 	height: 214px
 
 	.comments
@@ -2836,7 +2871,7 @@ img
 				left: 20px
 
 .reviewvote
-	width: 1000px
+	width: 100%
 
 	span.title
 		font-size: 20px
@@ -2851,7 +2886,7 @@ img
 
 			li
 				background: url("../img/Star7.svg") no-repeat
-				width: 47px
+				width: 60px
 				padding-top: 60px
 				margin: 0 10px
 				text-align: center
@@ -2951,7 +2986,7 @@ img
 			font-weight: 300
 
 .lichsugiaodich
-	padding: 50px 100px
+	padding: 50px 40px
 	background: #FFFFFF
 	border-radius: 10px
 
@@ -3081,12 +3116,12 @@ img
 				content: ""
 				position: absolute
 				border: 1px solid #106909
-				width: 24px
-				height: 24px
+				width: 20px
+				height: 20px
 				background: #106909
 				border-radius: 50%
-				left: 6px
-				top: 6px
+				left: 8px
+				top: 8px
 
 	.diem
 		position: relative
@@ -3127,12 +3162,12 @@ img
 				content: ""
 				position: absolute
 				border: 1px solid #106909
-				width: 24px
-				height: 24px
+				width: 20px
+				height: 20px
 				background: #106909
 				border-radius: 50%
-				left: 6px
-				top: 6px
+				left: 8px
+				top: 8px
 
 	.head
 		margin-bottom: 10px
@@ -3324,7 +3359,7 @@ img
 		height: 45px
 		position: absolute
 		top: 40%
-		right: -30px
+		right: 35px
 		text-indent: -9999px
 
 	.owl-prev
@@ -3333,7 +3368,7 @@ img
 		height: 45px
 		position: absolute
 		top: 40%
-		left: -30px
+		left: 35px
 		text-indent: -9999px
 
 #top
@@ -3540,6 +3575,7 @@ img
 			display: block
 			left: -20px
 			top: 32px
+			z-index: 999
 
 			.content
 				overflow-y: scroll
@@ -3552,7 +3588,7 @@ img
 					border-radius: 5px
 
 				&::-webkit-scrollbar-thumb
-					background-color: #494949
+					background-color: #FFC5C5
 
 	.sort_sapxep
 		position: relative
@@ -3562,6 +3598,7 @@ img
 			right: -20px
 			top: 32px
 			width: 235px
+			z-index: 999
 
 	label
 		font-size: 15px
@@ -3711,12 +3748,12 @@ img
 				margin-bottom: 5px
 
 			&::-webkit-scrollbar
-				width: 4px
-				background-color: #d6d6d6
+				width: 1px
+				background-color: #9e9e9e
 				border-radius: 5px
 
 			&::-webkit-scrollbar-thumb
-				background-color: #494949
+				background-color: #FFC5C5
 
 			h1
 				font-size: 15px
@@ -3791,20 +3828,23 @@ img
 			display: flex
 			padding: 10px 5px 0 5px
 			float: left
-			width: 145px
+			width: 153px
 			justify-content: center
 			align-items: center
 
 			a
-				padding: 10px 15px
+				padding: 10px 0
 				display: block
-				font-size: 15px
+				font-size: 14px
 				color: #FFFFFF
 				font-weight: 300
 				width: 100%
-				height: 65px
 				overflow: hidden
 				text-align: center
+				align-items: center
+				justify-content: center
+				text-align: center
+				height: auto
 
 				&.black
 					background: linear-gradient(90.33deg, #C7C7C7 3.36%, #9B9B9B 97.72%)
@@ -3850,18 +3890,22 @@ img
 	.partner ul li
 		width: 141px
 
-	.contentproduct .item
-		width: 269px
+	.contentproduct
+		.item
+			width: 269px
+
+		.item1
+			width: 290px
 
 	.styleproduct .banner-left
-		width: 555px
+		/* width: 491px;
 
 	.contentproduct
 		&.contentproduct_right
-			width: calc(100% - 558px)
+			width: calc(100% - 495px)
 
 		.item .inner img.product
-			height: 246px
+			height: 212px
 
 	.timkiemnhieunhat .owl-item:last-child
 		display: none
@@ -3893,18 +3937,6 @@ img
 		.item
 			width: 24%
 			margin: 0 0.5% 15px 0.5%
-.tag_promotion
-	width: 45px
-	border: 1px solid #636363
-	border-radius: 30px
-	position: absolute
-	z-index: 99
-	justify-content: center
-	text-align: center
-	display: block
-	font-size: 13px
-	padding: 2px 0
-	height: 23px
 .feed
 	.binhluan
 		.form
