@@ -4001,6 +4001,70 @@ img {
   border: 0.5px solid #D5D5D5;
   border-radius: 5px;
 }
+.feed .noibattrongtuan {
+  margin-bottom: 20px;
+}
+.feed .noibattrongtuan h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feed .noibattrongtuan ul {
+  display: flex;
+  margin: 0 -1%;
+}
+.feed .noibattrongtuan ul li {
+  width: 23%;
+  margin: 0 1%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%);
+  border: 0.5px solid #D4D4D4;
+  border-radius: 5px;
+  position: relative;
+}
+.feed .noibattrongtuan ul li span {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+.feed .guibinhluan {
+  background: #FFFFFF;
+  border: 0.5px solid #D4D4D4;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.feed .guibinhluan .formguibinhluan {
+  display: flex;
+  align-items: center;
+}
+.feed .guibinhluan .formguibinhluan .name img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+.feed .guibinhluan .formguibinhluan .options {
+  width: calc(100% - 69px);
+  margin-left: 15px;
+}
+.feed .guibinhluan .formguibinhluan .options input[type=text] {
+  width: 100%;
+  background: #F0F2F5;
+  border-radius: 40px;
+  height: 45px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  color: #929292;
+  border: none;
+  padding: 0 10px;
+}
 .feed .key-word {
   padding: 15px;
 }

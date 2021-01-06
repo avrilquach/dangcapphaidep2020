@@ -34,6 +34,20 @@ html
                     img(src='img/feed4.svg')
                   | Đánh giá sản phẩm 
           .center
+            .guibinhluan
+              form.formguibinhluan
+                .name 
+                  img(src='img/avatar.png')
+                .options
+                  input(type="text" name="binhluan" placeholder="Gửi bình luận của bạn")
+            .noibattrongtuan
+              h3 Nổi bật trong tuần
+              ul
+                -for(i=0;i<4;i++)
+                  li
+                    a(href="#")
+                      img(src='img/noibat.png')
+                      span Được đề cập nhiều nhất
             .baiviet
               .top.row.align-items-center
                 .avatar
