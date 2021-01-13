@@ -606,7 +606,7 @@ img {
 
 .main_right2 {
   margin-left: 20px;
-  width: 880px;
+  width: 930px;
 }
 .main_right2 h4 {
   padding-left: 30px;
@@ -1050,6 +1050,16 @@ img {
   height: 45px;
   border-radius: 50%;
   background: #D4D4D4;
+}
+#header2 ul li::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #D4D4D4;
+  margin: 0 16px;
+}
+#header2 ul li:last-child::after {
+  display: none;
 }
 #header2 ul li.active .img {
   width: 45px;

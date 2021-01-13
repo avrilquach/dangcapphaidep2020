@@ -1,0 +1,65 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		include inc/header3.jade
+		.main
+			._container
+				.row
+					.main_left
+					
+					.sidebar_right
+						.button
+							button(type="button")#cash.row.align-items-center.justify-content-center
+								| Đặt hàng
+						.magiamgia.bgmain
+							.head.row.align-items-center
+								img(src='img/magiamgia.svg')
+								h4 mã giảm giá
+							.content
+								input(type="text" name="code")
+							.bg
+								.row
+									.img
+										img(src='img/gift.svg')
+									p Tặng Sáp tẩy trang Okame Superfruit Cleansing Balm cho đơn hàng từ 
+										span 700K
+						.lixi.bgmain.row.align-items-center.justify-content-center.text-center
+							div
+								span Bạn sẽ nhận được
+								span 3.494 Lixicoin
+						.tongcong.bgmain
+							.item.row.align-items-center.justify-content-between
+								span Tiền hàng:
+								span 80.000.000đ
+							.item.row.align-items-center.justify-content-between
+								span Phí giao hàng:
+								span Miễn phí
+							.item.row.align-items-center.justify-content-between
+								span Giảm giá:
+								span 0đ
+					
+		.information
+			._container.row.align-items-center.justify-content-between
+				.item.row.align-items-center.justify-content-center
+					img(src='img/camketchinhhang.svg')
+					p CAM KẾT 
+						br
+						| HÀNG CHÍNH HÃNG
+				.item.row.align-items-center.justify-content-center
+					img(src='img/tichdiem.svg')
+					p TÍCH ĐIỂM
+						br
+						| THÀNH VIÊN VIP 
+				.item.row.align-items-center.justify-content-center
+					img(src='img/mienphi.svg')
+					p MIỄN PHÍ 
+						br
+						| VẬN CHUYỂN
+				.item.row.align-items-center.justify-content-center
+					img(src='img/chamsoc.svg')
+					p CHĂM SÓC
+						br
+						| & TƯ VẤN TẬN TÌNH
+		include inc/footer.jade
+		include inc/script.jade
