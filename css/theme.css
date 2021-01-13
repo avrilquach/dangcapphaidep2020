@@ -43,7 +43,7 @@ img {
   padding: 10px 0;
 }
 
-.pad20_0 {
+.pad20_0, .pad15_0 {
   padding: 20px 0;
 }
 
@@ -1131,7 +1131,7 @@ img {
   margin-bottom: 15px;
 }
 .button #vnpay {
-  background: #444444;
+  background: #000;
   border: 1px solid #E1E1E1;
   border-radius: 5px;
   font-size: 20px;
@@ -1349,11 +1349,10 @@ img {
   display: none;
 }
 .thong_tin_tai_khoan .button {
-  margin-left: 200px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .thong_tin_tai_khoan .button .update {
-  background: #106909;
+  background: #000;
   border-radius: 5px;
   width: 170px;
   height: 45px;
@@ -3998,8 +3997,9 @@ img {
 .feed .right {
   width: 280px;
   background: #FFFFFF;
-  border: 0.5px solid #D5D5D5;
+  border: 0.5px solid #ececec;
   border-radius: 5px;
+  position: sticky;
 }
 .feed .noibattrongtuan {
   margin-bottom: 20px;
@@ -4017,25 +4017,25 @@ img {
 .feed .noibattrongtuan ul li {
   width: 23%;
   margin: 0 1%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%);
-  border: 0.5px solid #D4D4D4;
+  border: 0.5px solid #ececec;
   border-radius: 5px;
   position: relative;
 }
 .feed .noibattrongtuan ul li span {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
   font-size: 16px;
   text-align: center;
   color: #FFFFFF;
-  padding: 0 20px;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%);
 }
 .feed .guibinhluan {
   background: #FFFFFF;
-  border: 0.5px solid #D4D4D4;
+  border: 0.5px solid #ececec;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -4064,6 +4064,12 @@ img {
   color: #929292;
   border: none;
   padding: 0 10px;
+}
+.feed .bg {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  align-self: flex-start;
 }
 .feed .key-word {
   padding: 15px;
@@ -4182,7 +4188,7 @@ img {
 }
 .feed .center .baiviet {
   background: #FFFFFF;
-  border: 0.5px solid #D5D5D5;
+  border: 0.5px solid #ececec;
   border-radius: 5px;
   padding: 15px;
 }
@@ -4200,8 +4206,8 @@ img {
   margin-bottom: 0;
 }
 .feed .center .baiviet .count {
-  border-top: 1px solid #C8C8C8;
-  border-bottom: 1px solid #C8C8C8;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
   padding: 10px 0;
 }
 .feed .center .baiviet .count .like {
@@ -4252,7 +4258,7 @@ img {
 }
 .feed .center .baiviet .top .nameproduct {
   background: #FFFFFF;
-  border: 0.5px solid #D5D5D5;
+  border: 0.5px solid #ececec;
   border-radius: 5px;
   padding: 5px;
   height: 57px;
@@ -4264,8 +4270,14 @@ img {
 .feed .left {
   width: 280px;
   background: #FFFFFF;
-  border: 0.5px solid #D5D5D5;
+  border: 0.5px solid #ececec;
   border-radius: 5px;
+}
+.feed .left .bg {
+  position: -webkit-sticky;
+  top: 0;
+  position: sticky;
+  align-self: flex-start;
 }
 .feed .left ul {
   padding: 30px;

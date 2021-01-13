@@ -3,36 +3,37 @@ html
   include inc/head.jade
   body
     include inc/header.jade
-    .main.pad30_0.feed
+    .main.pad15_0.feed
       ._container
         .row
           .left
-            ul
-              li
-                a(href="#")
-                  .img 
-                    img(src='img/feed1.svg')
-                  | New Feeds
-              li
-                a(href="#")
-                  .img 
-                    img(src='img/feed2.svg')
-                  | Unboxing
-              li
-                a(href="#")
-                  .img 
-                    img(src='img/feed3.svg')
-                  | Best Deals
-            ul
-              li
-                a(href="#") 
-                  .text N
-                  | Ngoc Anh
-              li
-                a(href="#")
-                  .img 
-                    img(src='img/feed4.svg')
-                  | Đánh giá sản phẩm 
+            .bg
+              ul
+                li
+                  a(href="#")
+                    .img 
+                      img(src='img/feed1.svg')
+                    | New Feeds
+                li
+                  a(href="#")
+                    .img 
+                      img(src='img/feed2.svg')
+                    | Unboxing
+                li
+                  a(href="#")
+                    .img 
+                      img(src='img/feed3.svg')
+                    | Best Deals
+              ul
+                li
+                  a(href="#") 
+                    .text N
+                    | Ngoc Anh
+                li
+                  a(href="#")
+                    .img 
+                      img(src='img/feed4.svg')
+                    | Đánh giá sản phẩm 
           .center
             .guibinhluan
               form.formguibinhluan
@@ -330,12 +331,13 @@ html
                         a(href="#") Like
                         a(href="#") Reply
           .right
-            .key-word
-              h3 Từ khoá nổi bật
-              ul 
-                -for(i=0;i<20;i++)
-                  li
-                    a(href="#") # Collagen
+            .bg
+              .key-word
+                h3 Từ khoá nổi bật
+                ul 
+                  -for(i=0;i<20;i++)
+                    li
+                      a(href="#") # Collagen
     include inc/footer.jade
     include inc/script.jade
     script(type='text/javascript', src='js/main2.js')
