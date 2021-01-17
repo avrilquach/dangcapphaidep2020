@@ -476,6 +476,12 @@ img {
   width: 435px;
 }
 
+.top_account {
+  overflow: auto;
+  height: 100vh;
+  position: sticky;
+  top: 20px;
+}
 .top_account .box {
   border-bottom: 1px solid #E7E7E7;
   padding-bottom: 20px;
@@ -606,7 +612,7 @@ img {
 
 .main_right2 {
   margin-left: 20px;
-  width: 930px;
+  width: 880px;
 }
 .main_right2 h4 {
   padding-left: 30px;
@@ -728,7 +734,7 @@ img {
   border: 1px solid #636363;
   border-radius: 30px;
   position: absolute;
-  z-index: 99;
+  z-index: 2;
   justify-content: center;
   text-align: center;
   display: block;
@@ -1050,16 +1056,6 @@ img {
   height: 45px;
   border-radius: 50%;
   background: #D4D4D4;
-}
-#header2 ul li::after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: #D4D4D4;
-  margin: 0 16px;
-}
-#header2 ul li:last-child::after {
-  display: none;
 }
 #header2 ul li.active .img {
   width: 45px;
@@ -3030,7 +3026,7 @@ img {
 }
 
 .lichsugiaodich {
-  padding: 50px 40px;
+  padding: 20px 40px;
   background: #FFFFFF;
   border-radius: 10px;
 }
@@ -3120,7 +3116,7 @@ img {
 }
 
 .hangdiemhientai {
-  padding: 50px;
+  padding: 30px 50px;
   background: #FFFFFF;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -3473,8 +3469,21 @@ img {
 }
 
 .sidebar_thuonghieu {
+  overflow: auto;
+  height: 100vh;
+  position: sticky;
+  top: 5px;
   padding: 0;
 }
+
+.dcpd_no_scrollbar {
+  scrollbar-width: none;
+  /*for fire fox */
+}
+.dcpd_no_scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 .sidebar_thuonghieu .box-filter {
   border-bottom: 1px solid #DBDBDB;
 }
@@ -3630,7 +3639,7 @@ img {
   margin-bottom: 10px;
 }
 .sort .sort_thuonghieu.active .box-open .content::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
   background-color: #d6d6d6;
   border-radius: 5px;
 }
@@ -3698,7 +3707,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 0.5px solid #AAAAAA;
+  border-top: 0.5px solid #e6e6e6;
   padding-top: 20px;
 }
 .sort .button button {
@@ -4208,6 +4217,30 @@ img {
 }
 .feed .center .baiviet .picture .col2 {
   width: 49%;
+}
+.feed .center .baiviet .picture .col2.last {
+  position: relative;
+}
+.feed .center .baiviet .picture .col2.last::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+.feed .center .baiviet .picture .col2.last .more {
+  font-size: 50px;
+  font-weight: 300;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  color: #fff;
+  z-index: 88;
+  text-align: center;
 }
 .feed .center .baiviet .picture .row {
   margin-bottom: 2%;
