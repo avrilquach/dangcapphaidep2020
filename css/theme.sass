@@ -447,7 +447,6 @@ img
 .top_account
   overflow: auto
   height: 100vh
-  position: -webkit-sticky
   position: sticky
   top: 20px
 
@@ -3430,7 +3429,6 @@ img
 .sidebar_thuonghieu
   overflow: auto
   height: 100vh
-  position: -webkit-sticky
   position: sticky
   top: 5px
   padding: 0
@@ -3988,11 +3986,11 @@ img
           left: 0
           right: 0
           margin: 0 auto
-          font-size: 16px
+          font-size: 14px
           text-align: center
           color: #FFFFFF
-          padding: 20px
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69.79%, rgba(0, 0, 0, 0.6) 100%)
+          padding: 5px
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.8) 100%)
 
   .guibinhluan
     background: #FFFFFF
@@ -4049,9 +4047,10 @@ img
       a
         background: #F5F5F5
         border-radius: 5px
-        padding: 10px 15px
+        padding: 5px 5px
         display: block
         color: #000
+        font-size: 14px
 
   .baiviet
     margin-bottom: 20px
@@ -4161,18 +4160,21 @@ img
 
         .col2
           width: 49%
-          &.last 
+
+          &.last
             position: relative
+
             &::before
               content: ""
-              background: rgba(0,0,0,0.5)
+              background: rgba(0, 0, 0, 0.5)
               position: absolute
               left: 0
               top: 0
-              width: 100% 
-              height: 100% 
+              width: 100%
+              height: 100%
               z-index: 6
-            .more 
+
+            .more
               font-size: 50px
               font-weight: 300
               position: absolute
@@ -4182,12 +4184,12 @@ img
               color: #fff
               z-index: 88
               text-align: center
+
         .row
           margin-bottom: 2%
 
           &:last-child
             margin-bottom: 0
-          
 
       .count
         border-top: 1px solid #e4e4e4
