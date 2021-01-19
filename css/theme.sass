@@ -1016,7 +1016,15 @@ img
       height: 45px
       border-radius: 50%
       background: #D4D4D4
-
+    &::after
+      content: ""
+      width: 50px
+      height: 2px
+      background: #000000
+      margin: 0 16px
+    &:last-child 
+      &::after
+        display: none
     &.active
       .img
         width: 45px
