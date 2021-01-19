@@ -3,31 +3,54 @@ html
 	include inc/head.jade
 	body
 		include inc/header3.jade
-		.main
+		.main.giohang
 			._container
 				.row
 					.main_left
-						
+						.head.row.align-items-center
+							h3 giỏ hàng của bạn
+							span (3 sản phẩm)
+						.content
+							-for(i=0;i<5;i++)
+								.item.row.align-items-center.justify-content-between
+									.left.row.align-items-center
+										.img
+											img(src='img/image4.jpg',alt="")
+										.text
+											span.title mage Clear Cell Salicylic Gel Cleanser 177ml - Trị "dứt điểm" tình trạng to lỗ chân lông
+											.row.align-items-center
+												span.number
+													input(type="number" value="1")
+												span.price-new 500.000đ
+												span.price-old 750.000đ
+									.right
+										a.buy 
+											img(src='img/giohang1.svg',alt="")
+											| Mua sau
+										a.delete
+											img(src='img/giohang2.svg',alt="")
+											| Xoá
+									
 					.sidebar_right
 						.button
 							button(type="button")#cash.row.align-items-center.justify-content-center
 								| Đặt hàng
-						.magiamgia.bgmain
-							.head.row.align-items-center
-								img(src='img/magiamgia.svg')
-								h4 mã giảm giá
-							.content
-								input(type="text" name="code")
-							.bg
-								.row
-									.img
-										img(src='img/gift.svg')
-									p Tặng Sáp tẩy trang Okame Superfruit Cleansing Balm cho đơn hàng từ 
-										span 700K
-						.lixi.bgmain.row.align-items-center.justify-content-center.text-center
-							div
-								span Bạn sẽ nhận được
-								span 3.494 Lixicoin
+						.makhuyenmai.bgmain
+							h3 Mã Khuyến Mãi
+							.item
+								.bg 
+								.row.align-items-center.justify-content-between.content
+									.left.row.align-items-center.justify-content-between
+										span Giảm 100.000đ
+										.chuy
+											img(src='img/chuy.svg',alt="")
+									.right
+										button Áp dụng
+							.item2
+								.bg
+								.row.align-items-center.content
+									img(src='img/giohang3.svg',alt="")
+									span Chọn hoặc nhập khuyến mãi khác
 						.tongcong.bgmain
 							.item.row.align-items-center.justify-content-between
 								span Tiền hàng:
@@ -35,9 +58,14 @@ html
 							.item.row.align-items-center.justify-content-between
 								span Phí giao hàng:
 								span Miễn phí
-							.item.row.align-items-center.justify-content-between
-								span Giảm giá:
-								span 0đ
+							.item2.row.align-items-center.justify-content-between
+								span Tạm tính:
+								span.color 80.000.000đ
+						.lixi.bgmain.row.align-items-center.justify-content-center.text-center
+							div
+								span Bạn sẽ nhận được
+								span 3.494 Lixicoin
+						
 					
 		.information
 			._container.row.align-items-center.justify-content-between
