@@ -3964,6 +3964,9 @@ img
     .item
       width: 24%
       margin: 0 0.5% 15px 0.5%
+  .giohang
+    .contentproduct .item
+      width: 222px
 
 .feed
   .right
@@ -4361,6 +4364,25 @@ img
         border-left: 0.5px solid #D1D1D1
         border-right: 0.5px solid #D1D1D1
 .giohang
+  .styleproduct
+    margin-top: 0
+    h2
+      padding-left: 0
+    h2::before
+      display: none
+  .contentproduct
+    margin-bottom: 10px
+    .item
+      width: 187px
+      a.changecoin 
+        background: #FFFFFF
+        border: 0.5px solid #D8D8D8
+        border-radius: 30px
+        margin: 0 10px 10px 10px
+        line-height: 30px
+        font-size: 14px
+        font-weight: 300
+        color: #878787
   .main_left
     .head
       margin-bottom: 10px
@@ -4380,7 +4402,7 @@ img
       padding: 15px
       margin-bottom: 20px
       .item
-        padding: 15px 0
+        padding: 12px 0
         border-bottom: 1px solid #E9E9E9
         &:last-child
           border-bottom: none
@@ -4437,12 +4459,55 @@ img
           margin: 0 5px
           img 
             margin-right: 10px
+  .sidebar_right
+    margin-top: 40px
+    .button #cash
+      margin-bottom: 20px
 .makhuyenmai
   h3
     font-size: 18px
     font-weight: 400
     color: #000000
     padding-left: 10px
+  .chuy 
+    position: relative
+    &:hover
+      .note
+        display: block
+    .note
+      position: absolute
+      background: url("../img/Union.png") no-repeat
+      width: 419px
+      height: 213px
+      z-index: 10
+      left: -225px
+      top: 5px
+      padding: 50px
+      display: none
+      .top
+        span:nth-child(1)
+          font-size: 14px
+          font-weight: 300
+          color: #525252
+          margin-right: 20px
+        span:nth-child(2)
+          font-size: 14px
+          font-weight: 300
+          color: #000
+      .bottom
+        border-top: 0.5px solid #CACACA
+        padding-top: 10px
+        margin-top: 10px
+        span
+          font-size: 14px
+          font-weight: 300
+          color: #525252
+          display: block
+          margin-bottom: 5px
+        p
+          font-size: 14px
+          font-weight: 300
+          color: #000
   .item2
     position: relative
     .bg

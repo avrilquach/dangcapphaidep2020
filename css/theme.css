@@ -4030,6 +4030,10 @@ img {
     width: 24%;
     margin: 0 0.5% 15px 0.5%;
   }
+
+  .giohang .contentproduct .item {
+    width: 222px;
+  }
 }
 .feed .right {
   width: 280px;
@@ -4422,6 +4426,31 @@ img {
   border-right: 0.5px solid #D1D1D1;
 }
 
+.giohang .styleproduct {
+  margin-top: 0;
+}
+.giohang .styleproduct h2 {
+  padding-left: 0;
+}
+.giohang .styleproduct h2::before {
+  display: none;
+}
+.giohang .contentproduct {
+  margin-bottom: 10px;
+}
+.giohang .contentproduct .item {
+  width: 187px;
+}
+.giohang .contentproduct .item a.changecoin {
+  background: #FFFFFF;
+  border: 0.5px solid #D8D8D8;
+  border-radius: 30px;
+  margin: 0 10px 10px 10px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #878787;
+}
 .giohang .main_left .head {
   margin-bottom: 10px;
 }
@@ -4444,7 +4473,7 @@ img {
   margin-bottom: 20px;
 }
 .giohang .main_left .content .item {
-  padding: 15px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #E9E9E9;
 }
 .giohang .main_left .content .item:last-child {
@@ -4511,12 +4540,63 @@ img {
 .giohang .main_left .content .right a.buy img, .giohang .main_left .content .right a.delete img {
   margin-right: 10px;
 }
+.giohang .sidebar_right {
+  margin-top: 40px;
+}
+.giohang .sidebar_right .button #cash {
+  margin-bottom: 20px;
+}
 
 .makhuyenmai h3 {
   font-size: 18px;
   font-weight: 400;
   color: #000000;
   padding-left: 10px;
+}
+.makhuyenmai .chuy {
+  position: relative;
+}
+.makhuyenmai .chuy:hover .note {
+  display: block;
+}
+.makhuyenmai .chuy .note {
+  position: absolute;
+  background: url("../img/Union.png") no-repeat;
+  width: 419px;
+  height: 213px;
+  z-index: 10;
+  left: -225px;
+  top: 5px;
+  padding: 50px;
+  display: none;
+}
+.makhuyenmai .chuy .note .top span:nth-child(1) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #525252;
+  margin-right: 20px;
+}
+.makhuyenmai .chuy .note .top span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+.makhuyenmai .chuy .note .bottom {
+  border-top: 0.5px solid #CACACA;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.makhuyenmai .chuy .note .bottom span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #525252;
+  display: block;
+  margin-bottom: 5px;
+}
+.makhuyenmai .chuy .note .bottom p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
 }
 .makhuyenmai .item2 {
   position: relative;
