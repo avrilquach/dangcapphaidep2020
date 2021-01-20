@@ -1,0 +1,31 @@
+.bgkm 
+.popupkm 
+	.row.align-items-center.justify-content-between.head
+		h3 Mã Khuyến Mãi
+		span.close
+			img(src="img/close.svg")
+	form.form.row.justify-content-between
+		input(type="text" placeholder="Nhập mã khuyến mãi")
+		button Áp dụng
+	.list
+		-for(i=0;i<4;i++)
+			.item
+				.row.align-items-center.justify-content-between
+					.left.row.align-items-center.justify-content-between.inner
+						span.top
+							span Giảm 500.000đ
+							span HSD: 18/12/2020
+						img(src="img/giohang1.png").img1
+						.chuy
+							img(src='img/chuy.svg',alt="")
+							.note
+								.top.row.align-items-center
+									span Hạn sử dụng
+									span 12/12/2020 - 30/04/2021
+								.bottom
+									span Điều kiện:
+									p Áp dụng khi thanh toán qua MoMo với hóa đơn trên 2.000.000đ
+					.right
+						img(src="img/giohang2.png")
+	button.end Xong
+					
